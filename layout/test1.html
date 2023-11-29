@@ -1,43 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Bootstrap Header Example</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/d69fb28507.js" crossorigin="anonymous"></script>
+  <title>Hidden Search Bar</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #d9d9d9;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .parent {
+      position: relative;
+    }
+
+    .input {
+      outline: none;
+      border: none;
+      border-radius: 100px;
+      padding: 5px 10px;
+      width: 40px;
+      transition: width 0.3s ease;
+    }
+
+    .input::placeholder {
+      color: green;
+    }
+
+    .parent.active .input {
+      width: 200px;
+    }
+
+    .btn {
+      width: 40px;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 100px;
+      border: none;
+      background: green;
+      display: inline;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: transform 0.3s ease;
+    }
+
+    .parent.active .btn {
+      transform: translateX(210px);
+    }
+
+    .fa-solid {
+      color: #ffffff;
+    }
+  </style>
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Official Shop</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">New Arrivals</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Women</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Men</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Shoes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Bags</a>
-        </li>
-      </ul>
-    </div>
-    <form class="form-inline">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-    <div class="navbar-nav">
-      <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
-      <a class="nav-link" href="#"><i class="fa-regular fa-user"></i></a>
-    </div>
-  </nav>
+  <div class="parent">
+    <input class="input" type="type" placeholder="Search..." />
+
+    <button class="btn">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </button>    
+  </div>
+  
+  <script>
+    let input = document.querySelector(".input");
+    let btn = document.querySelector(".btn");
+    let parent = document.querySelector(".parent");
+    btn.addEventListener("click", () => {
+      if (input.value.trim() === "") {
+        // Nếu ô input trống, quay lại trạng thái ban đầu
+        parent.classList.toggle("active");
+        input.focus();
+      } else {
+        // Nếu ô input có thông tin, thực hiện tìm kiếm
+        // Replace phần này bằng code thực hiện tìm kiếm của bạn
+        location.replace(input.value);
+
+        // Sau khi tìm kiếm, xóa nội dung của ô input và quay lại trạng thái ban đầu
+        parent.classList.remove("active");
+      }
+    });
+  </script>
 </body>
+
 </html>
