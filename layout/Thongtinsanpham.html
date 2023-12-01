@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -75,17 +76,211 @@
             height: 80px
         }
 
-        .height3{
-            background: rgb(60,194,220);
-background: linear-gradient(146deg, rgba(60,194,220,1) 0%, rgba(75,157,236,1) 100%);
+        .height3 {
+            background: rgb(60, 194, 220);
+            background: linear-gradient(146deg, rgba(60, 194, 220, 1) 0%, rgba(75, 157, 236, 1) 100%);
         }
 
-        .top{
+        .top {
             float: right;
+
+
+
+        }
+
+        .btntest {
+            border: 1px solid;
+            height: 50px;
+            border-radius: 10px;
+            width: 90px;
+        }
+
+        .btntest1 {
+            border: 2px solid;
+            height: 60px;
+            border-radius: 15px;
+        }
+
+        .btntest1:hover {
+            background-color: #E9F9FF;
+            border-color: #24C1FF;
+
+        }
+
+        .btntest1.active,
+        .btntest.active {
+            background-color: #24C1FF;
+            color: #ffffff;
+        }
+
+        .btntest:hover {
+            background-color: #E9F9FF;
+            border: 2px dotted;
+            border-color: #24C1FF;
+        }
+
+        .quantity-container {
+            display: flex;
+            align-items: center;
+        }
+
+        #number {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            width: 50px;
+            display: inline-block;
+            border: 2px #000000 solid;
+        }
+
+        .button {
+            font-weight: bold;
+            font-size: 24px;
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            color: black;
+            background-color: white;
+            border: none;
+        }
+
+        .black {
+            background-color: black;
+        }
+
+        .button:hover {
+            color: #FF7DC2;
+        }
+
+       
+
+        .product-buttons {
+            display: none;
+        }
+
+        .product-buttons.show {
+            display: block;
+        }
+
+        .product-row {
+            display: none;
+        }
+
+        .product-row.show {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .add{
+            background-color: #E9F9FF;
+            border: 2px dotted;
+            border-color: #24C1FF;
+            font-weight: bold;
+            
+        }
+        .add2{
+            background-color: #E9F9FF;
+            border: 2px solid;
+            border-color: #24C1FF;
+            font-weight: bold;
+        }
+        .preorder{
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+            background-color: #FF7DC2;
+            border: 1px #FF7DC2 solid;
+            border-radius: 35px;
+        }
+        .preorder:hover{
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+            background-color: #FEA3D4;
+            border: 1px #FEA3D4 solid;
+            border-radius: 35px;
         }
         /*End footer*/
     </style>
+    <script>
+        function showProductButtons() {
+            var productButtons = document.getElementById("productButtons");
+            productButtons.innerHTML = '<button class="btntest" type="button">set</button>';
+            productButtons.classList.add("show");
+        }
+
+        function showMoreButtons() {
+            var productButtons = document.getElementById("productButtons");
+            productButtons.innerHTML = '<button class="btntest" type="button">sanpham</button><button class="btntest" type="button">test</button>';
+            productButtons.classList.add("show");
+        }
+        function showProductRow(rowId) {
+            var productRows = document.querySelectorAll('.product-row');
+            productRows.forEach(function (row) {
+                row.classList.remove('show');
+            });
+
+            var productRow = document.getElementById(rowId);
+            productRow.classList.add("show");
+        }
+        function increase() {
+            var number = document.getElementById("number");
+            number.innerHTML = parseInt(number.innerHTML) + 1;
+        }
+
+        function decrease() {
+            var number = document.getElementById("number");
+            var currentNumber = parseInt(number.innerHTML);
+            if (currentNumber > 0) {
+                number.innerHTML = currentNumber - 1;
+            }
+            
+        }
+        function add(){
+            var a = document.getElementById("button1");
+            a.classList.remove("add");
+            var b = document.getElementById("button2");
+            b.classList.add("add");
+        }
+        function add1(){
+            var a = document.getElementById("button1");
+            a.classList.add("add");
+            var b = document.getElementById("button2");
+            b.classList.remove("add");
+        }
+        function add2(){
+            var a = document.getElementById("sanpham1");
+            a.classList.add("add2");
+            var b = document.getElementById("sanpham2");
+            b.classList.remove("add2");
+           
+        }
+        function add3(){
+            var a = document.getElementById("sanpham1");
+            a.classList.remove("add2");
+            var b = document.getElementById("sanpham2");
+            b.classList.add("add2");
+           
+        }
+        function add4(){
+            var c = document.getElementById("sanpham3");
+            c.classList.add("add2");
+            var d = document.getElementById("sanpham4");
+            d.classList.remove("add2");
+        }
+        function add5(){
+            var c = document.getElementById("sanpham3");
+            c.classList.remove("add2");
+            var d = document.getElementById("sanpham4");
+            d.classList.add("add2");
+        }
+        
+
+    </script>
+
 </head>
+
 <body>
     <!-- Header-->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="left: 0; right: 0;">
@@ -146,7 +341,176 @@ background: linear-gradient(146deg, rgba(60,194,220,1) 0%, rgba(75,157,236,1) 10
     </nav>
     <!--End Header-->
 
-    <!--BODY, ĐM GHI VÀO ĐÂY NÈ THẰNG L-->
+    <!--BODY-->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" style="text-align: center;">
+                    <div id="carouselExampleCaptions" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" id="img1">
+                                <img src="../img/pxfuel (1).jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" id="img2">
+                                <img src="../img/pxfuel (2).jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" id="img3">
+                                <img src="../img/pxfuel (3).jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" id="img4">
+                                <img src="../img/pxfuel (4).jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+
+                        <a class="btn" onclick="changeImage(1)"><img src="../img/pxfuel (1).jpg"
+                                style="width: 120px; height: 120px;"></a>
+                        <a class="btn" onclick="changeImage(2)"><img src="../img/pxfuel (2).jpg"
+                                style="width: 120px; height: 120px;"></a>
+                        <a class="btn" onclick="changeImage(3)"><img src="../img/pxfuel (3).jpg"
+                                style="width: 120px; height: 120px;"></a>
+                        <a class="btn" onclick="changeImage(4)"><img src="../img/pxfuel (4).jpg"
+                                style="width: 120px; height: 120px;"></a>
+                    </div>
+
+                    <script>
+                        function changeImage(index) {
+                            // Xóa lớp active của tất cả các phần tử trong carousel
+                            var carouselItems = document.querySelectorAll('.carousel-item');
+                            carouselItems.forEach(function (item) {
+                                item.classList.remove('active');
+                            });
+
+                            // Thêm lớp active cho phần tử tương ứng với index được nhấn
+                            var targetItem = document.getElementById('img' + index);
+                            targetItem.classList.add('active');
+                        }
+                    </script>
+                    <hr>
+                    <p class="d-inline-flex gap-1 " style="padding: 10px">
+
+                        <a class="btn " data-bs-toggle="collapse" href="#collapseExample" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+
+                            Set Purchase
+                        </a>
+
+                    </p>
+                    <div class="collapse" id="collapseExample">
+                        <div class="">
+                            Some placeholder content for the collapse component. This panel is hidden by default but
+                            revealed when the user activates the relevant trigger.
+
+                        </div>
+                    </div>
+
+                    <hr>
+                    <p class="d-inline-flex gap-1 " style="padding: 10px">
+
+                        <a class="btn " data-bs-toggle="collapse" href="#collapseExample1" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+
+                            Set Purchase
+                        </a>
+
+                    </p>
+                    <div class="collapse" id="collapseExample1">
+                        <div class="">
+                            Some placeholder content for the collapse component. This panel is hidden by default but
+                            revealed when the user activates the relevant trigger.
+
+                        </div>
+                    </div>
+
+                    <hr>
+                    <p class="d-inline-flex gap-1 " style="padding: 10px">
+
+                        <a class="btn " data-bs-toggle="collapse" href="#collapseExample2" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+
+                            Set Purchase
+                        </a>
+
+                    </p>
+                    <div class="collapse" id="collapseExample2">
+                        <div class="">
+                            Some placeholder content for the collapse component. This panel is hidden by default but
+                            revealed when the user activates the relevant trigger.
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <h4>La+ Darknesss 2nd Anniversary Celebration </h4>
+                        <hr style="height: 3px; color: blueviolet">
+                        <div class="col-md-9">
+                            <p class="text-danger"
+                                style="border: 1px solid red; height: 40px; text-align: center ;background-color:beige;">
+                                Order Period : 2023/11/26 21:00 ~ 2024/01/04 18:00 (JST)</p>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <p>The merchandise sales for the 2nd anniversary celebration of La+ Darknesss from hololive.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <p>These products are made to order.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <p>〈Shipping Schedule〉
+                                <br> Estimated around early May to early June 2024.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="row py-4">
+                        <div class="col-md-4">
+                            <p class="text-primary" style="font-size: 13px;">Category</p>
+                            <button class="btntest" type="button" onclick="showProductRow('row1'); add1()" id="button1">Button1</button>
+                            <button class="btntest" type="button" onclick="showProductRow('row2'); add()" id="button2" >Button2</button>
+                        </div>
+                    </div>
+                    <div class="row py-3">
+                        <p class="text-primary" style="font-size: 13px;">Product</p>
+                        <div class="row product-row" id="row1">
+                            <button class="btntest1" type="button" id="sanpham1" onclick="add2()">set</button>
+                            <div class="row py-2"></div>
+                            
+                        </div>
+                        <div class="row product-row" id="row2">
+                            <button class="btntest1" type="button" id="sanpham3" onclick="add4()">sanpham</button>
+                            <div class="row py-2"></div>
+                            <button class="btntest1" type="button" id="sanpham4" onclick="add5()">test</button>
+                        </div>
+
+                    </div>
+                    <div class="row py-3">
+                        <p class="text-primary" style="font-size: 13px;">Qty.</p>
+                        <div class="row">
+                            <div class="quantity-container">
+                                <div>
+                                    <button class="button" onclick="decrease()">-</button>
+                                    <span id="number">1</span>
+                                    <button class="button" onclick="increase()">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row py-4">
+                        
+                        <button class="preorder" style="width: 60%; height: 65px; margin: auto;">PRE-ORDER</button>
+                        
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!--End Body-->
 
     <!--Footer-->
     <section class="height3">
@@ -159,7 +523,8 @@ background: linear-gradient(146deg, rgba(60,194,220,1) 0%, rgba(75,157,236,1) 10
                     <div class="text-light">
                         <p> Luctus et dolor nulla facilisi fusce sit amet magna non odio molestie egestas nullam id
                             odio.</p>
-                        <p> Quis risus placerat aliquam nunc nec nunc morbi vel nisi sit amet orci adipiscing pharetra.</p>
+                        <p> Quis risus placerat aliquam nunc nec nunc morbi vel nisi sit amet orci adipiscing pharetra.
+                        </p>
                     </div>
                     <div class="col text-start">
                         <ul class="top-link ">
@@ -181,7 +546,8 @@ background: linear-gradient(146deg, rgba(60,194,220,1) 0%, rgba(75,157,236,1) 10
                         </div>
                         <small class="text-light text-decoration-none">Ariday, 6<sup>th</sup> April 2045</small>
                         <hr class="link-light">
-                        <div class="text-light">Donec turpis aliquam sapien est sodales id elementum at molestie in felis
+                        <div class="text-light">Donec turpis aliquam sapien est sodales id elementum at molestie in
+                            felis
                             class.
                         </div>
                         <small class="text-light text-decoration-none">Thursday, 5<sup>th</sup> April 2045</small>
@@ -242,11 +608,13 @@ background: linear-gradient(146deg, rgba(60,194,220,1) 0%, rgba(75,157,236,1) 10
     <!--End Footer-->
 
     <!--Day thang len tren-->
-    <a href="#top" class="top sticky-xl-bottom position-fixed" style="left: 95%; right: 0; padding-bottom: 15px;"> 
-        <button class="text-bg-info text-light" style="height: 50px; width: 50px; border-radius: 30px; border: 3px solid orange;">
+    <a href="#top" class="top sticky-xl-bottom position-fixed" style="left: 95%; right: 0; padding-bottom: 15px;">
+        <button class="text-bg-info text-light"
+            style="height: 50px; width: 50px; border-radius: 30px; border: 3px solid orange;">
             <i class="fa-solid fa-chevron-up"></i>
         </button>
     </a>
     <!--End day thang len tren-->
 </body>
+
 </html>
