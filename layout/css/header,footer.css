@@ -78,3 +78,10 @@ body {
 }
 
 /*End footer*/
+
+/*Khoảng cách*/
+.khoangcach2 {
+    border-bottom: 2px dashed rgb(197, 197, 12);
+    padding-top: 15px;
+}
+/*end khoảng cách*/
