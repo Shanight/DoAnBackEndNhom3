@@ -1,0 +1,230 @@
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\appsettings.json
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\MyBGList.exe
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\MyBGList.deps.json
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\MyBGList.runtimeconfig.json
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\MyBGList.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\MyBGList.pdb
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\Humanizer.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\obj\Debug\net8.0\MyBGList.csproj.AssemblyReference.cache
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\obj\Debug\net8.0\MyBGList.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\obj\Debug\net8.0\MyBGList.AssemblyInfoInputs.cache
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\obj\Debug\net8.0\MyBGList.AssemblyInfo.cs
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\obj\Debug\net8.0\MyBGList.csproj.CoreCompileInputs.cache
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\obj\Debug\net8.0\MyBGList.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\obj\Debug\net8.0\MyBGList.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\obj\Debug\net8.0\staticwebassets\msbuild.MyBGList.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\obj\Debug\net8.0\staticwebassets\msbuild.build.MyBGList.props
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.MyBGList.props
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.MyBGList.props
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\obj\Debug\net8.0\scopedcss\bundle\MyBGList.styles.css
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\obj\Debug\net8.0\MyBGList.csproj.CopyComplete
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\obj\Debug\net8.0\MyBGList.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\obj\Debug\net8.0\refint\MyBGList.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\obj\Debug\net8.0\MyBGList.pdb
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\obj\Debug\net8.0\MyBGList.genruntimeconfig.cache
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Lab04\MyBGList\obj\Debug\net8.0\ref\MyBGList.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\appsettings.json
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\MyBGList.exe
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\MyBGList.deps.json
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\MyBGList.runtimeconfig.json
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\MyBGList.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\MyBGList.pdb
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Humanizer.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\MyBGList.csproj.AssemblyReference.cache
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\MyBGList.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\MyBGList.AssemblyInfoInputs.cache
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\MyBGList.AssemblyInfo.cs
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\MyBGList.csproj.CoreCompileInputs.cache
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\MyBGList.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\MyBGList.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\MyBGList.sourcelink.json
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\staticwebassets\msbuild.MyBGList.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\staticwebassets\msbuild.build.MyBGList.props
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.MyBGList.props
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.MyBGList.props
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\scopedcss\bundle\MyBGList.styles.css
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\MyBGList.csproj.CopyComplete
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\MyBGList.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\refint\MyBGList.dll
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\MyBGList.pdb
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\MyBGList.genruntimeconfig.cache
+C:\Users\nnmin\Downloads\HomeWork\LTBE\Hololive-Project\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\ref\MyBGList.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\appsettings.Development.json
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\appsettings.json
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\MyBGList.exe
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\MyBGList.deps.json
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\MyBGList.runtimeconfig.json
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\MyBGList.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\MyBGList.pdb
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Azure.Core.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Azure.Identity.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Humanizer.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\System.CodeDom.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\System.Memory.Data.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\MyBGList.csproj.AssemblyReference.cache
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\MyBGList.GeneratedMSBuildEditorConfig.editorconfig
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\MyBGList.AssemblyInfoInputs.cache
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\MyBGList.AssemblyInfo.cs
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\MyBGList.csproj.CoreCompileInputs.cache
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\MyBGList.MvcApplicationPartsAssemblyInfo.cs
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\MyBGList.MvcApplicationPartsAssemblyInfo.cache
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\MyBGList.sourcelink.json
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\staticwebassets.build.json
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\staticwebassets.development.json
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\staticwebassets\msbuild.MyBGList.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\staticwebassets\msbuild.build.MyBGList.props
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.MyBGList.props
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.MyBGList.props
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\staticwebassets.pack.json
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\scopedcss\bundle\MyBGList.styles.css
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\MyBGList.csproj.CopyComplete
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\MyBGList.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\refint\MyBGList.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\MyBGList.pdb
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\MyBGList.genruntimeconfig.cache
+D:\Đồ án BackEnd\DoAnBackEndNhom3\MyBGList\obj\Debug\net8.0\ref\MyBGList.dll
