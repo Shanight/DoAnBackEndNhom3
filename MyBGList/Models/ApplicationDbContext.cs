@@ -10,6 +10,11 @@ namespace MyBGList.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+                    modelBuilder.Entity<Product>()
+        .Property(p => p.Price)
+        .HasColumnType("decimal(18,2)");
+
+
             base.OnModelCreating(modelBuilder);
 
             // Cấu hình liên kết giữa BoardGames và Domains
@@ -63,6 +68,8 @@ namespace MyBGList.Models
         public DbSet<Mechanic> Mechanics => Set<Mechanic>(); 
         public DbSet<BoardGames_Domains> BoardGames_Domains => Set<BoardGames_Domains>(); 
         public DbSet<BoardGames_Mechanics> BoardGames_Mechanics => Set<BoardGames_Mechanics>();
-        public DbSet<Product> Products { get; set; }
+       
+        public DbSet<Product> Products { get; set; }  // Cấu hình cho Product
+        
     }
 } 

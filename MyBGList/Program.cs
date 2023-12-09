@@ -61,6 +61,20 @@ app.MapGet("/weatherforecast", () =>
     return Results.Ok(forecasts);
 });
 
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+
+    app.MapGet("/products", () =>
+    {
+        // Xử lý các yêu cầu liên quan đến sản phẩm ở đây
+        // Ví dụ trả về danh sách sản phẩm
+        var products = dbContext.Products.ToList();
+        return Results.Ok(products);
+    });
+
+    // Thêm các endpoint khác cho việc quản lý sản phẩm (thêm, sửa, xóa, chi tiết, v.v.)
+}
 app.Run();
 
 public record WeatherForecast(DateTime Date, int TemperatureC, string? Summary)
