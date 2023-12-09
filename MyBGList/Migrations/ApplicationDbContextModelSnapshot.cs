@@ -162,6 +162,39 @@ namespace MyBGList.Migrations
                     b.ToTable("Mechanics");
                 });
 
+            modelBuilder.Entity("MyBGList.Models.Product", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Products");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            ImageUrl = "../img/sanpham.jpg",
+                            Name = "Sakamata Chloe 2nd Anniversary Celebration",
+                            Price = 1210m
+                        });
+                });
+
             modelBuilder.Entity("MyBGList.Models.BoardGames_Domains", b =>
                 {
                     b.HasOne("BoardGame", "BoardGame")
