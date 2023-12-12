@@ -152,7 +152,7 @@
             color: #FF7DC2;
         }
 
-       
+
 
         .product-buttons {
             display: none;
@@ -172,20 +172,22 @@
             margin-top: 10px;
         }
 
-        .add{
+        .add {
             background-color: #E9F9FF;
             border: 2px dotted;
             border-color: #24C1FF;
             font-weight: bold;
-            
+
         }
-        .add2{
+
+        .add2 {
             background-color: #E9F9FF;
             border: 2px solid;
             border-color: #24C1FF;
             font-weight: bold;
         }
-        .preorder{
+
+        .preorder {
             font-size: 20px;
             color: white;
             font-weight: bold;
@@ -193,7 +195,8 @@
             border: 1px #FF7DC2 solid;
             border-radius: 35px;
         }
-        .preorder:hover{
+
+        .preorder:hover {
             font-size: 20px;
             color: white;
             font-weight: bold;
@@ -201,6 +204,7 @@
             border: 1px #FEA3D4 solid;
             border-radius: 35px;
         }
+
         /*End footer*/
     </style>
     <script>
@@ -235,47 +239,75 @@
             if (currentNumber > 0) {
                 number.innerHTML = currentNumber - 1;
             }
-            
+
         }
-        function add(){
+        function add() {
             var a = document.getElementById("button1");
             a.classList.remove("add");
             var b = document.getElementById("button2");
             b.classList.add("add");
         }
-        function add1(){
+        function add1() {
             var a = document.getElementById("button1");
             a.classList.add("add");
             var b = document.getElementById("button2");
             b.classList.remove("add");
         }
-        function add2(){
+        function add2() {
             var a = document.getElementById("sanpham1");
             a.classList.add("add2");
             var b = document.getElementById("sanpham2");
             b.classList.remove("add2");
-           
+
         }
-        function add3(){
+        function add3() {
             var a = document.getElementById("sanpham1");
             a.classList.remove("add2");
             var b = document.getElementById("sanpham2");
             b.classList.add("add2");
-           
+
         }
-        function add4(){
+        function add4() {
             var c = document.getElementById("sanpham3");
             c.classList.add("add2");
             var d = document.getElementById("sanpham4");
             d.classList.remove("add2");
         }
-        function add5(){
+        function add5() {
             var c = document.getElementById("sanpham3");
             c.classList.remove("add2");
             var d = document.getElementById("sanpham4");
             d.classList.add("add2");
         }
-        
+        function validateForm() {
+            var nameInput = document.getElementById("myName");
+            var nameValue = nameInput.value.trim();
+
+            var emailInput = document.getElementById("myPassword");
+            var emailValue = emailInput.value.trim();
+
+            if (nameValue === "") {
+                alert("Vui lòng nhập tên");
+                return;
+            }
+
+            if (emailValue === "") {
+                alert("Vui lòng nhập Email");
+                return;
+            }
+
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(emailValue)) {
+                alert("Email vừa nhập không chính xác");
+                return;
+            }
+
+            // Nếu các kiểm tra đều thành công, hiển thị thông báo "Cảm ơn đã đóng góp ý kiến của bạn"
+            alert("Cảm ơn đã đóng góp ý kiến của bạn");
+
+            // Sau khi hiển thị thông báo, bạn có thể tiếp tục xử lý form ở đây
+            // Ví dụ: gửi dữ liệu form lên máy chủ, chuyển hướng trang, v.v.
+        }
 
     </script>
 
@@ -343,9 +375,9 @@
 
     <!--BODY-->
     <section>
-        <div class="container">
+        <div class="container ">
             <div class="row">
-                <div class="col-md-6" style="text-align: center;">
+                <div class="col-md-6 " style="text-align: center; ">
                     <div id="carouselExampleCaptions" class="carousel slide">
                         <div class="carousel-inner">
                             <div class="carousel-item active" id="img1">
@@ -439,7 +471,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 sticky-top">
                     <div class="row">
                         <h4>La+ Darknesss 2nd Anniversary Celebration </h4>
                         <hr style="height: 3px; color: blueviolet">
@@ -472,21 +504,25 @@
                     <div class="row py-4">
                         <div class="col-md-4">
                             <p class="text-primary" style="font-size: 13px;">Category</p>
-                            <button class="btntest" type="button" onclick="showProductRow('row1'); add1()" id="button1">Button1</button>
-                            <button class="btntest" type="button" onclick="showProductRow('row2'); add()" id="button2" >Button2</button>
+                            <button class="btntest" type="button" onclick="showProductRow('row1'); add1()"
+                                id="button1">Button1</button>
+                            <button class="btntest" type="button" onclick="showProductRow('row2'); add()"
+                                id="button2">Button2</button>
                         </div>
                     </div>
                     <div class="row py-3">
                         <p class="text-primary" style="font-size: 13px;">Product</p>
                         <div class="row product-row" id="row1">
-                            <button class="btntest1" type="button" id="sanpham1" onclick="add2()" style="text-align:left;">
-                            <span>set</span>    
+                            <button class="btntest1" type="button" id="sanpham1" onclick="add2()"
+                                style="text-align:left;">
+                                <span>set</span>
                             </button>
-                           
-                            
+
+
                         </div>
                         <div class="row product-row" id="row2">
-                            <button class="btntest1" type="button" id="sanpham3" onclick="add4() " style="text-align:left ;">sanpham</button>
+                            <button class="btntest1" type="button" id="sanpham3" onclick="add4() "
+                                style="text-align:left ;">sanpham</button>
                         </div>
 
                     </div>
@@ -503,9 +539,9 @@
                         </div>
                     </div>
                     <div class="row py-4">
-                        
+
                         <button class="preorder" style="width: 60%; height: 65px; margin: auto;">PRE-ORDER</button>
-                        
+
                     </div>
                 </div>
             </div>
@@ -514,7 +550,7 @@
 
     <!--Footer-->
     <section class="height3">
-        <div class="container text-start">
+        <div class="container text-start ">
             <div class="row">
                 <div class="col">
                     <div>
@@ -580,8 +616,10 @@
                                 <label for="myEmail"></label>
                                 <input type="email" id="myPassword" class="form-control" placeholder="Email">
                             </div>
-                            <button type="submit" class="btn btn-light mt-auto my-md-4">Submit</button>
+                            <button type="submit" class="btn btn-light mt-auto my-md-4"
+                                onclick="validateForm()">Submit</button>
                         </form>
+
                     </div>
                 </div>
             </div>
