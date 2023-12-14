@@ -17,59 +17,59 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Hololive.Web
 build_property.RootNamespace = Hololive.Web
-build_property.ProjectDir = D:\Đồ án BackEnd\test\HololiveSln\Hololive.Web\
+build_property.ProjectDir = C:\Hololive-Project\DoAnBackEndNhom3\HololiveSln\Hololive.Web\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Đồ án BackEnd\test\HololiveSln\Hololive.Web
+build_property.MSBuildProjectDirectory = C:\Hololive-Project\DoAnBackEndNhom3\HololiveSln\Hololive.Web
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Đồ án BackEnd/test/HololiveSln/Hololive.Web/Views/Hololive/Create.cshtml]
+[C:/Hololive-Project/DoAnBackEndNhom3/HololiveSln/Hololive.Web/Views/Hololive/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9sb2xpdmVcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Đồ án BackEnd/test/HololiveSln/Hololive.Web/Views/Hololive/Delete.cshtml]
+[C:/Hololive-Project/DoAnBackEndNhom3/HololiveSln/Hololive.Web/Views/Hololive/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9sb2xpdmVcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Đồ án BackEnd/test/HololiveSln/Hololive.Web/Views/Hololive/Details.cshtml]
+[C:/Hololive-Project/DoAnBackEndNhom3/HololiveSln/Hololive.Web/Views/Hololive/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9sb2xpdmVcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Đồ án BackEnd/test/HololiveSln/Hololive.Web/Views/Hololive/Edit.cshtml]
+[C:/Hololive-Project/DoAnBackEndNhom3/HololiveSln/Hololive.Web/Views/Hololive/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9sb2xpdmVcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Đồ án BackEnd/test/HololiveSln/Hololive.Web/Views/Hololive/Index.cshtml]
+[C:/Hololive-Project/DoAnBackEndNhom3/HololiveSln/Hololive.Web/Views/Hololive/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9sb2xpdmVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Đồ án BackEnd/test/HololiveSln/Hololive.Web/Views/Home/Index.cshtml]
+[C:/Hololive-Project/DoAnBackEndNhom3/HololiveSln/Hololive.Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Đồ án BackEnd/test/HololiveSln/Hololive.Web/Views/Home/Privacy.cshtml]
+[C:/Hololive-Project/DoAnBackEndNhom3/HololiveSln/Hololive.Web/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Đồ án BackEnd/test/HololiveSln/Hololive.Web/Views/Shared/Error.cshtml]
+[C:/Hololive-Project/DoAnBackEndNhom3/HololiveSln/Hololive.Web/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Đồ án BackEnd/test/HololiveSln/Hololive.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Hololive-Project/DoAnBackEndNhom3/HololiveSln/Hololive.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Đồ án BackEnd/test/HololiveSln/Hololive.Web/Views/_ViewImports.cshtml]
+[C:/Hololive-Project/DoAnBackEndNhom3/HololiveSln/Hololive.Web/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Đồ án BackEnd/test/HololiveSln/Hololive.Web/Views/_ViewStart.cshtml]
+[C:/Hololive-Project/DoAnBackEndNhom3/HololiveSln/Hololive.Web/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Đồ án BackEnd/test/HololiveSln/Hololive.Web/Views/Shared/_Layout.cshtml]
+[C:/Hololive-Project/DoAnBackEndNhom3/HololiveSln/Hololive.Web/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-dnxp7e35a3

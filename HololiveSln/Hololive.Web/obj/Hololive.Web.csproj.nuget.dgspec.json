@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Đồ án BackEnd\\test\\HololiveSln\\Hololive.Web\\Hololive.Web.csproj": {}
+    "C:\\Hololive-Project\\DoAnBackEndNhom3\\HololiveSln\\Hololive.Web\\Hololive.Web.csproj": {}
   },
   "projects": {
-    "D:\\Đồ án BackEnd\\test\\HololiveSln\\Hololive.Web.API\\Hololive.Web.API.csproj": {
+    "C:\\Hololive-Project\\DoAnBackEndNhom3\\HololiveSln\\Hololive.Web.API\\Hololive.Web.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Đồ án BackEnd\\test\\HololiveSln\\Hololive.Web.API\\Hololive.Web.API.csproj",
+        "projectUniqueName": "C:\\Hololive-Project\\DoAnBackEndNhom3\\HololiveSln\\Hololive.Web.API\\Hololive.Web.API.csproj",
         "projectName": "Hololive.Web.API",
-        "projectPath": "D:\\Đồ án BackEnd\\test\\HololiveSln\\Hololive.Web.API\\Hololive.Web.API.csproj",
-        "packagesPath": "C:\\Users\\phang\\.nuget\\packages\\",
-        "outputPath": "D:\\Đồ án BackEnd\\test\\HololiveSln\\Hololive.Web.API\\obj\\",
+        "projectPath": "C:\\Hololive-Project\\DoAnBackEndNhom3\\HololiveSln\\Hololive.Web.API\\Hololive.Web.API.csproj",
+        "packagesPath": "C:\\Users\\nnmin\\.nuget\\packages\\",
+        "outputPath": "C:\\Hololive-Project\\DoAnBackEndNhom3\\HololiveSln\\Hololive.Web.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\phang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nnmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -76,20 +76,20 @@
         }
       }
     },
-    "D:\\Đồ án BackEnd\\test\\HololiveSln\\Hololive.Web\\Hololive.Web.csproj": {
+    "C:\\Hololive-Project\\DoAnBackEndNhom3\\HololiveSln\\Hololive.Web\\Hololive.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Đồ án BackEnd\\test\\HololiveSln\\Hololive.Web\\Hololive.Web.csproj",
+        "projectUniqueName": "C:\\Hololive-Project\\DoAnBackEndNhom3\\HololiveSln\\Hololive.Web\\Hololive.Web.csproj",
         "projectName": "Hololive.Web",
-        "projectPath": "D:\\Đồ án BackEnd\\test\\HololiveSln\\Hololive.Web\\Hololive.Web.csproj",
-        "packagesPath": "C:\\Users\\phang\\.nuget\\packages\\",
-        "outputPath": "D:\\Đồ án BackEnd\\test\\HololiveSln\\Hololive.Web\\obj\\",
+        "projectPath": "C:\\Hololive-Project\\DoAnBackEndNhom3\\HololiveSln\\Hololive.Web\\Hololive.Web.csproj",
+        "packagesPath": "C:\\Users\\nnmin\\.nuget\\packages\\",
+        "outputPath": "C:\\Hololive-Project\\DoAnBackEndNhom3\\HololiveSln\\Hololive.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\phang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nnmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -104,8 +104,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Đồ án BackEnd\\test\\HololiveSln\\Hololive.Web.API\\Hololive.Web.API.csproj": {
-                "projectPath": "D:\\Đồ án BackEnd\\test\\HololiveSln\\Hololive.Web.API\\Hololive.Web.API.csproj"
+              "C:\\Hololive-Project\\DoAnBackEndNhom3\\HololiveSln\\Hololive.Web.API\\Hololive.Web.API.csproj": {
+                "projectPath": "C:\\Hololive-Project\\DoAnBackEndNhom3\\HololiveSln\\Hololive.Web.API\\Hololive.Web.API.csproj"
               }
             }
           }
