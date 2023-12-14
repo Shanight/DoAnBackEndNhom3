@@ -1,0 +1,110 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveSln\\Hololive.Web.API\\Hololive.Web.API.csproj": {}
+  },
+  "projects": {
+    "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveSln\\Hololive.Web.API\\Hololive.Web.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveSln\\Hololive.Web.API\\Hololive.Web.API.csproj",
+        "projectName": "Hololive.Web.API",
+        "projectPath": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveSln\\Hololive.Web.API\\Hololive.Web.API.csproj",
+        "packagesPath": "C:\\Users\\phang\\.nuget\\packages\\",
+        "outputPath": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveSln\\Hololive.Web.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\phang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveSln\\Hololive.Web\\Hololive.Web.csproj": {
+                "projectPath": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveSln\\Hololive.Web\\Hololive.Web.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.412\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveSln\\Hololive.Web\\Hololive.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveSln\\Hololive.Web\\Hololive.Web.csproj",
+        "projectName": "Hololive.Web",
+        "projectPath": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveSln\\Hololive.Web\\Hololive.Web.csproj",
+        "packagesPath": "C:\\Users\\phang\\.nuget\\packages\\",
+        "outputPath": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveSln\\Hololive.Web\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\phang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.412\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

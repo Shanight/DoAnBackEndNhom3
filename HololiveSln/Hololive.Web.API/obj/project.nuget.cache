@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wSugb4V2KHFGTL7n5GrdR+nyaoSKxA+6TQg29aVJMKEZp/slAIL4/lyFBreCAqSYhmFnpz3+5gLLlfX6aXsNyA==",
+  "dgSpecHash": "OK5NWU2oR8htCn5qAQigGyiSuUGSHmAG7W9EUeezx9tJGFK3PNB1hv3MnZtDywRN+dbomTFhb+UXXsnbArLeIA==",
   "success": true,
-  "projectFilePath": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveSln\\Hololive.Web.API\\Hololive.Web.API.csproj",
+  "projectFilePath": "D:\\Đồ án BackEnd\\test\\HololiveSln\\Hololive.Web.API\\Hololive.Web.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\phang\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.0\\microsoft.aspnetcore.openapi.8.0.0.nupkg.sha512",
     "C:\\Users\\phang\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
