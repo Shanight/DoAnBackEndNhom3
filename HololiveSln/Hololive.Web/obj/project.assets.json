@@ -59,6 +59,9 @@
           }
         }
       },
+      "FontAwesome/4.7.0": {
+        "type": "package"
+      },
       "Humanizer/2.14.1": {
         "type": "package",
         "dependencies": {
@@ -3073,6 +3076,27 @@
         "lib/netstandard2.0/CsvHelper.xml",
         "lib/netstandard2.1/CsvHelper.dll",
         "lib/netstandard2.1/CsvHelper.xml"
+      ]
+    },
+    "FontAwesome/4.7.0": {
+      "sha512": "n4H/brfszElyoZ4kmGh8E75uqvLzLvFr3h2PFVdPH1LwUmWIpeqdaW2pcC4oZAhg7sESyObh0IZpAI8COCNeUg==",
+      "type": "package",
+      "path": "fontawesome/4.7.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Content/font-awesome.css",
+        "Content/Content/font-awesome.min.css",
+        "Content/fonts/FontAwesome.otf",
+        "Content/fonts/fontawesome-webfont.eot",
+        "Content/fonts/fontawesome-webfont.svg",
+        "Content/fonts/fontawesome-webfont.ttf",
+        "Content/fonts/fontawesome-webfont.woff",
+        "Content/fonts/fontawesome-webfont.woff2",
+        "fontawesome.4.7.0.nupkg.sha512",
+        "fontawesome.nuspec",
+        "tools/install.ps1"
       ]
     },
     "Humanizer/2.14.1": {
@@ -8491,6 +8515,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "CsvHelper >= 30.0.1",
+      "FontAwesome >= 4.7.0",
       "Hololive.Web.API >= 1.0.0",
       "Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter >= 8.0.0",
       "Microsoft.EntityFrameworkCore >= 8.0.0",
@@ -8501,23 +8526,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nnmin\\.nuget\\packages\\": {},
+    "C:\\Users\\phang\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Hololive-Project\\DoAnBackEndNhom3\\HololiveSln\\Hololive.Web\\Hololive.Web.csproj",
+      "projectUniqueName": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveSln\\Hololive.Web\\Hololive.Web.csproj",
       "projectName": "Hololive.Web",
-      "projectPath": "C:\\Hololive-Project\\DoAnBackEndNhom3\\HololiveSln\\Hololive.Web\\Hololive.Web.csproj",
-      "packagesPath": "C:\\Users\\nnmin\\.nuget\\packages\\",
-      "outputPath": "C:\\Hololive-Project\\DoAnBackEndNhom3\\HololiveSln\\Hololive.Web\\obj\\",
+      "projectPath": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveSln\\Hololive.Web\\Hololive.Web.csproj",
+      "packagesPath": "C:\\Users\\phang\\.nuget\\packages\\",
+      "outputPath": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveSln\\Hololive.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\nnmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\phang\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -8532,8 +8557,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Hololive-Project\\DoAnBackEndNhom3\\HololiveSln\\Hololive.Web.API\\Hololive.Web.API.csproj": {
-              "projectPath": "C:\\Hololive-Project\\DoAnBackEndNhom3\\HololiveSln\\Hololive.Web.API\\Hololive.Web.API.csproj"
+            "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveSln\\Hololive.Web.API\\Hololive.Web.API.csproj": {
+              "projectPath": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveSln\\Hololive.Web.API\\Hololive.Web.API.csproj"
             }
           }
         }
@@ -8551,6 +8576,10 @@
           "CsvHelper": {
             "target": "Package",
             "version": "[30.0.1, )"
+          },
+          "FontAwesome": {
+            "target": "Package",
+            "version": "[4.7.0, )"
           },
           "Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter": {
             "target": "Package",
