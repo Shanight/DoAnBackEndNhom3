@@ -20,13 +20,18 @@ dotnet new webapi -n <projetct-name>
 .\\SHIINAMASHIRO
 
 Tạo đồ án cuối kỳ CoffeeSln
-dotnet new globaljson --sdk-version 7.0.404 --output <CoffeeSln>/<Coffee>.Web
-dotnet new mvc --no-https --output <CoffeeSln>/<Coffee>.Web --framework net7.0
-dotnet new sln -o CoffeeSln 
-dotnet sln <CoffeeSln> add <CoffeeSln>/<Coffee>.Web
+dotnet new globaljson --sdk-version 8.0.100 --output HololiveSln/Hololive.Web
+dotnet new mvc --no-https --output HololiveSln/Hololive.Web --framework net8.0
+dotnet new sln -o HololiveSln
+dotnet sln HololiveSln add HololiveSln/Hololive.Web
 
+dotnet new webapi --output HololiveSln/Hololive.Web.API
+dotnet sln HololiveSln add HololiveSln/Hololive.Web.API
 
-dotnet new webapi  --output CoffeeSln/Coffee.Web.API 
-dotnet sln <CoffeeSln> add <CoffeeSln>/<Coffee>.Web.API
+dotnet add HololiveSln/Hololive.Web reference HololiveSln/Hololive.Web.API
 
-dotnet add <CoffeeSln>/<Coffee>.Web reference <CoffeeSln>/<Coffee>.Web.API
+dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore --version 7.0.0
+
+--lệnh visual tím
+update-database
+add-migration "name"

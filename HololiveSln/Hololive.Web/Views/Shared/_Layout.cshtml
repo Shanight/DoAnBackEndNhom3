@@ -110,71 +110,6 @@
 </head>
 <body>
     <!-- Header-->
-    <!--giỏ hàng-->
-    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="" id="offcanvasWithBothOptions"
-        aria-labelledby="offcanvasWithBothOptionsLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel" style="font-weight: bolder;">Cart</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="khoangcach3"></div>
-        <div class="offcanvas-body">
-            <div class="container">
-                <div class="row giohang">
-                    <div class="col-5">
-                        <img src="../img/sanpham.jpg" alt="" style="height: auto; width: 120px;">
-                    </div>
-                    <div class="col-7 text-truncate">
-                        <a href="#" class="carta">
-                            hololive closet - Kureiji Ollie Mafia Princess Outfit hololive closet - Kureiji Oll
-                        </a>
-                        <p class="chudaucart">
-                            グッズ / Kureiji Ollie Mafia Princess Outfit
-                        </p>
-                        <p class="giatiencart">
-                            ¥1,650
-                        </p>
-                        <div class="button2" style="text-align: right;">
-                            <input type="number" class="" value="1" min="1"
-                                style="width: 40%;float: left; border-radius: 3px;">
-                            <a href="#" style="font-size: x-small; color: #000000;">Remove</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row giohang">
-                    <div class="col-5">
-                        <img src="../img/sanpham.jpg" alt="" style="height: auto; width: 120px;">
-                    </div>
-                    <div class="col-7 text-truncate">
-                        <a href="#" class="carta">
-                            hololive closet - Kureiji Ollie Mafia Princess Outfit hololive closet - Kureiji Oll
-                        </a>
-                        <p class="chudaucart">
-                            グッズ / Kureiji Ollie Mafia Princess Outfit
-                        </p>
-                        <p class="giatiencart">
-                            ¥1,650
-                        </p>
-                        <div class="button2" style="text-align: right;">
-                            <input type="number" class="" value="1" min="1"
-                                style="width: 40%;float: left;border-radius: 3px;">
-                            <a href="#" style="font-size: x-small; color: #000000;">Remove</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="checkout" style="text-align: center;">
-            <div class="khoangcach3"></div>
-            <p style="padding: 15px;">Shipping & taxes calculated at checkout</p>
-            <button
-                style="text-align: center; margin-bottom: 15px;width: 80%; height: 50px; color:white; background-color: rgb(60, 194, 220); border: none;">CHECKOUT
-                • ¥17,160</button>
-        </div>
-
-    </div>
-    <!--End giỏ hàng-->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top position-fixed" style="left: 0; right: 0;">
         <div class="container-fluid">
             <div class="col-5 p-2">
@@ -215,9 +150,7 @@
                         width: 150px; border-radius: 35px; border: 2px solid white;
                         color: #1da0d0;">
                     <i class="fa-regular fa-user fa-xl me-5"></i>
-                    <i class="fa-solid fa-cart-shopping fa-xl" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"></i>
-
+                    <a class="nav-link" asp-controller="Carts" asp-action="Index"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
                 </div>
             </div>
             <div class="col"></div>

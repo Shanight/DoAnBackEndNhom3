@@ -1,8 +1,19 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+@model Hololive.Web.Models.CombinedData
 
-    <!--Slide-->
+<h2>Products</h2>
+@foreach (var product in Model.Products)
+{
+    <div>
+        <h3>@product.Name</h3>
+        <p>@product.Catetory</p>
+    </div>
+}
+
+
+ <!--Slide-->
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active" style="height:704px;">
@@ -42,60 +53,28 @@
     <div class="khoangtrang"></div>
 
     <div class="container" style="width: 90%;">
-        <div class="row d-flex align-items-center p-3">
-            <div class="col-2">
-                <div class="cochu1" style="font-size: larger; text-align: center;">
-                    20-11-2023
+        @foreach (var eventItem in Model.Events.Take(3))
+        {
+            <div class="row d-flex align-items-center p-3">
+                <div class="col-2">
+                    <div class="cochu1" style="font-size: larger; text-align: center;">
+                        @eventItem.ThisDay.ToString("dd/MM/yyyy")
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="informationblue text-white"
+                        style="background-color: #23c2fe; text-align: center; border-radius: 30px; width: 70%;">
+                        Information
+                    </div>
+                </div>
+                <div class="col-8">
+                    <a href="@Url.Action("Details", "Events", new { id = eventItem.ID })" class="athongtin1">@eventItem.EVName</a>
                 </div>
             </div>
-            <div class="col-2">
-                <div class="informationblue text-white"
-                    style="background-color: #23c2fe; text-align: center; border-radius: 30px; width: 70%;">
-                    Information
-                </div>
-            </div>
-            <div class="col-8">
-                <a href="#" class="athongtin1">Sakamata Chloe Birthday 2023 - Important notice and apologies regarding
-                    the “Sakamata Chloe Birthday 2023 - Acrylic Diorama Stand” merchandise</a>
-            </div>
-        </div>
-
-        <div class="row d-flex align-items-center p-3">
-            <div class="col-2">
-                <div class="cochu1" style="font-size: larger; text-align: center;">
-                    20-11-2023
-                </div>
-            </div>
-            <div class="col-2">
-                <div class="informationblue text-white"
-                    style="background-color: #23c2fe; text-align: center; border-radius: 30px; width: 70%;">
-                    Information
-                </div>
-            </div>
-            <div class="col-8">
-                <a href="#" class="athongtin1">Sakamata Chloe Birthday 2023 - Important notice and apologies regarding
-                    the “Sakamata Chloe Birthday 2023 - Acrylic Diorama Stand” merchandise</a>
-            </div>
-        </div>
-        <div class="row d-flex align-items-center p-3">
-            <div class="col-2">
-                <div class="cochu1" style="font-size: larger; text-align: center;">
-                    20-11-2023
-                </div>
-            </div>
-            <div class="col-2">
-                <div class="informationblue text-white"
-                    style="background-color: #23c2fe; text-align: center; border-radius: 30px; width: 70%;">
-                    Information
-                </div>
-            </div>
-            <div class="col-8">
-                <a href="#" class="athongtin1">Sakamata Chloe Birthday 2023 - Important notice and apologies regarding
-                    the “Sakamata Chloe Birthday 2023 - Acrylic Diorama Stand” merchandise</a>
-            </div>
-        </div>
+        }
     </div>
     <!--End Thông tin 1-->
+
 
     <!--Thông tin 2 New Arrival-->
     <div class="khoangtrang"></div>
@@ -546,3 +525,4 @@
         </div>
     </div>
     <!--End Thông tin 6-->
+

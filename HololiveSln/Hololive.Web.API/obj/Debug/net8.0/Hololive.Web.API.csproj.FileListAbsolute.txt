@@ -1,0 +1,101 @@
+D:\Đồ án BackEnd\test\HololiveSln\Hololive.Web.API\bin\Debug\net8.0\appsettings.Development.json
+D:\Đồ án BackEnd\test\HololiveSln\Hololive.Web.API\bin\Debug\net8.0\appsettings.json
+D:\Đồ án BackEnd\test\HololiveSln\Hololive.Web.API\bin\Debug\net8.0\Hololive.Web.API.exe
+D:\Đồ án BackEnd\test\HololiveSln\Hololive.Web.API\bin\Debug\net8.0\Hololive.Web.API.deps.json
+D:\Đồ án BackEnd\test\HololiveSln\Hololive.Web.API\bin\Debug\net8.0\Hololive.Web.API.runtimeconfig.json
+D:\Đồ án BackEnd\test\HololiveSln\Hololive.Web.API\bin\Debug\net8.0\Hololive.Web.API.dll
+D:\Đồ án BackEnd\test\HololiveSln\Hololive.Web.API\bin\Debug\net8.0\Hololive.Web.API.pdb
+D:\Đồ án BackEnd\test\HololiveSln\Hololive.Web.API\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
+D:\Đồ án BackEnd\test\HololiveSln\Hololive.Web.API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\Đồ án BackEnd\test\HololiveSln\Hololive.Web.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Đồ án BackEnd\test\HololiveSln\Hololive.Web.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Đồ án BackEnd\test\HololiveSln\Hololive.Web.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Đồ án BackEnd\test\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\Hololive.Web.API.csproj.AssemblyReference.cache
+D:\Đồ án BackEnd\test\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\Hololive.Web.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\Đồ án BackEnd\test\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\Hololive.Web.API.AssemblyInfoInputs.cache
+D:\Đồ án BackEnd\test\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\Hololive.Web.API.AssemblyInfo.cs
+D:\Đồ án BackEnd\test\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\Hololive.Web.API.csproj.CoreCompileInputs.cache
+D:\Đồ án BackEnd\test\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\Hololive.Web.API.MvcApplicationPartsAssemblyInfo.cs
+D:\Đồ án BackEnd\test\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\Hololive.Web.API.MvcApplicationPartsAssemblyInfo.cache
+D:\Đồ án BackEnd\test\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\staticwebassets.build.json
+D:\Đồ án BackEnd\test\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\staticwebassets.development.json
+D:\Đồ án BackEnd\test\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\staticwebassets\msbuild.Hololive.Web.API.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Đồ án BackEnd\test\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\staticwebassets\msbuild.build.Hololive.Web.API.props
+D:\Đồ án BackEnd\test\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Hololive.Web.API.props
+D:\Đồ án BackEnd\test\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Hololive.Web.API.props
+D:\Đồ án BackEnd\test\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\staticwebassets.pack.json
+D:\Đồ án BackEnd\test\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\scopedcss\bundle\Hololive.Web.API.styles.css
+D:\Đồ án BackEnd\test\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\Hololive.Web.API.csproj.CopyComplete
+D:\Đồ án BackEnd\test\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\Hololive.Web.API.dll
+D:\Đồ án BackEnd\test\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\refint\Hololive.Web.API.dll
+D:\Đồ án BackEnd\test\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\Hololive.Web.API.pdb
+D:\Đồ án BackEnd\test\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\Hololive.Web.API.genruntimeconfig.cache
+D:\Đồ án BackEnd\test\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\ref\Hololive.Web.API.dll
+C:\Hololive-Project\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\bin\Debug\net8.0\appsettings.Development.json
+C:\Hololive-Project\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\bin\Debug\net8.0\appsettings.json
+C:\Hololive-Project\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\bin\Debug\net8.0\Hololive.Web.API.exe
+C:\Hololive-Project\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\bin\Debug\net8.0\Hololive.Web.API.deps.json
+C:\Hololive-Project\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\bin\Debug\net8.0\Hololive.Web.API.runtimeconfig.json
+C:\Hololive-Project\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\bin\Debug\net8.0\Hololive.Web.API.dll
+C:\Hololive-Project\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\bin\Debug\net8.0\Hololive.Web.API.pdb
+C:\Hololive-Project\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Hololive-Project\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Hololive-Project\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Hololive-Project\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Hololive-Project\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Hololive-Project\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\Hololive.Web.API.csproj.AssemblyReference.cache
+C:\Hololive-Project\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\Hololive.Web.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Hololive-Project\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\Hololive.Web.API.AssemblyInfoInputs.cache
+C:\Hololive-Project\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\Hololive.Web.API.AssemblyInfo.cs
+C:\Hololive-Project\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\Hololive.Web.API.csproj.CoreCompileInputs.cache
+C:\Hololive-Project\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\Hololive.Web.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Hololive-Project\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\Hololive.Web.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Hololive-Project\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\Hololive.Web.API.sourcelink.json
+C:\Hololive-Project\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\staticwebassets.build.json
+C:\Hololive-Project\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\staticwebassets.development.json
+C:\Hololive-Project\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\staticwebassets\msbuild.Hololive.Web.API.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Hololive-Project\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\staticwebassets\msbuild.build.Hololive.Web.API.props
+C:\Hololive-Project\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Hololive.Web.API.props
+C:\Hololive-Project\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Hololive.Web.API.props
+C:\Hololive-Project\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Hololive-Project\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\scopedcss\bundle\Hololive.Web.API.styles.css
+C:\Hololive-Project\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\Hololive.Web.API.csproj.CopyComplete
+C:\Hololive-Project\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\Hololive.Web.API.dll
+C:\Hololive-Project\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\refint\Hololive.Web.API.dll
+C:\Hololive-Project\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\Hololive.Web.API.pdb
+C:\Hololive-Project\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\Hololive.Web.API.genruntimeconfig.cache
+C:\Hololive-Project\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\ref\Hololive.Web.API.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\bin\Debug\net8.0\appsettings.Development.json
+D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\bin\Debug\net8.0\appsettings.json
+D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\bin\Debug\net8.0\Hololive.Web.API.exe
+D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\bin\Debug\net8.0\Hololive.Web.API.deps.json
+D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\bin\Debug\net8.0\Hololive.Web.API.runtimeconfig.json
+D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\bin\Debug\net8.0\Hololive.Web.API.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\bin\Debug\net8.0\Hololive.Web.API.pdb
+D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\Hololive.Web.API.csproj.AssemblyReference.cache
+D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\Hololive.Web.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\Hololive.Web.API.AssemblyInfoInputs.cache
+D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\Hololive.Web.API.AssemblyInfo.cs
+D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\Hololive.Web.API.csproj.CoreCompileInputs.cache
+D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\Hololive.Web.API.MvcApplicationPartsAssemblyInfo.cs
+D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\Hololive.Web.API.MvcApplicationPartsAssemblyInfo.cache
+D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\Hololive.Web.API.sourcelink.json
+D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\staticwebassets.build.json
+D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\staticwebassets.development.json
+D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\staticwebassets\msbuild.Hololive.Web.API.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\staticwebassets\msbuild.build.Hololive.Web.API.props
+D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Hololive.Web.API.props
+D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Hololive.Web.API.props
+D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\staticwebassets.pack.json
+D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\scopedcss\bundle\Hololive.Web.API.styles.css
+D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\Hololive.Web.API.csproj.CopyComplete
+D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\Hololive.Web.API.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\refint\Hololive.Web.API.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\Hololive.Web.API.pdb
+D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\Hololive.Web.API.genruntimeconfig.cache
+D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveSln\Hololive.Web.API\obj\Debug\net8.0\ref\Hololive.Web.API.dll

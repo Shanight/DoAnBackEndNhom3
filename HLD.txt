@@ -1,0 +1,82 @@
+SQL Server
+
+HLDB<Database Name>
+Mangoo<Database Account>
+123<Database Password>
+
+
+Table{
+Product
+About
+User 
+Category 
+Even 
+Cart 
+}
+
+create table Users(
+	ID int primary key,
+	firstname varchar(50),
+	lastname varchar(50),
+	password varchar(50),
+	email varchar(100)
+)
+
+create table Product(
+	ID int primary key,
+	name varchar(150),
+	catetory int,
+	img1 varchar(50),
+	img2 varchar(50),
+	img3 varchar(50),
+	preview1 text,
+	preview2 text,
+	preview3 text,
+	preview4 text,
+	preview5 text,
+	price varchar(30)
+)
+
+
+create table Catetory(
+	ID int primary key,
+	CTname varchar(100)
+)
+
+create table Event(
+	ID int primary key,
+	EVname varchar(200),
+	thisday datetime,
+	img1 varchar(50),
+	img2 varchar(50),
+	img3 varchar(50),
+	preview1 text,
+	preview2 text,
+	preview3 text,
+	preview4 text,
+	preview5 text
+)
+
+
+create table About (
+    ID int primary key,
+    title varchar(100),
+    content text,
+    image varchar(50)
+)
+
+
+create table Cart (
+    ID int primary key,
+    userID int,
+    productID int,
+    quantity int,
+    total_price varchar(30),
+    foreign key (userID) references Users(ID),
+    foreign key (productID) references Product(ID)
+)
+
+
+
+
+
