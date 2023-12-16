@@ -1,7 +1,8 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-@model Hololive.Web.Models.CombinedData
+
+@model IEnumerable<Hololive.Web.Models.CombinedData>
 
 <h2>Products</h2>
 @foreach (var product in Model.Products)

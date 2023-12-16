@@ -1,6 +1,37 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+
+@model HololiveWeb.Models.CombinedData
+
+
+<h2>Products</h2>
+@if (Model.Products != null && Model.Products.Count > 0)
+{
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model.Products)
+            {
+                <tr>
+                    <td>@product.Id</td>
+                    <td>@product.Name</td>
+                    <td>@product.Price</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No products available.</p>
+}
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
