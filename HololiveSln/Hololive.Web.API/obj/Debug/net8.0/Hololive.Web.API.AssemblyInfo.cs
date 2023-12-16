@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Hololive.Web.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9482a168e5b36cc01a2b9a63841266b05bd94524")]
 [assembly: System.Reflection.AssemblyProductAttribute("Hololive.Web.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Hololive.Web.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HololiveWeb", "HololiveWeb\HololiveWeb.csproj", "{5CC05F94-E2DF-4F9B-9257-EDF55AE30CEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HololiveWeb.API", "HololiveWeb.API\HololiveWeb.API.csproj", "{EF3D86D5-5D2C-4C51-A62F-090491BC4732}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5CC05F94-E2DF-4F9B-9257-EDF55AE30CEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CC05F94-E2DF-4F9B-9257-EDF55AE30CEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CC05F94-E2DF-4F9B-9257-EDF55AE30CEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CC05F94-E2DF-4F9B-9257-EDF55AE30CEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF3D86D5-5D2C-4C51-A62F-090491BC4732}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF3D86D5-5D2C-4C51-A62F-090491BC4732}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF3D86D5-5D2C-4C51-A62F-090491BC4732}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF3D86D5-5D2C-4C51-A62F-090491BC4732}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
