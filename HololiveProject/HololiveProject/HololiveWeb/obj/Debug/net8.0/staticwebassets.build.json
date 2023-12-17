@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7yZDWPxlenPGVwR3cZ0JK7qJCR3reqY1/ElTJLw1Ywk=",
+  "Hash": "jSidB5xKMfaOddv01G1mFePayRw/mZsKJiqNtsROUyc=",
   "Source": "HololiveWeb",
   "BasePath": "_content/HololiveWeb",
   "Mode": "Default",
@@ -3371,6 +3371,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
+    },
+    {
+      "Identity": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\wwwroot\\lib\\fontawesome-free-6.4.2-web.rar",
+      "SourceId": "HololiveWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\wwwroot\\",
+      "BasePath": "_content/HololiveWeb",
+      "RelativePath": "lib/fontawesome-free-6.4.2-web.rar",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\fontawesome-free-6.4.2-web.rar"
     },
     {
       "Identity": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\wwwroot\\lib\\fontawesome-free-6.4.2-web\\css\\all.css",

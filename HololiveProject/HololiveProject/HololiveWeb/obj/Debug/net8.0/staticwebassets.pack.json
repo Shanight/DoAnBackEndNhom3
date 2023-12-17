@@ -693,6 +693,10 @@
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
+      "Id": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\wwwroot\\lib\\fontawesome-free-6.4.2-web.rar",
+      "PackagePath": "staticwebassets\\lib\\fontawesome-free-6.4.2-web.rar"
+    },
+    {
       "Id": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\wwwroot\\lib\\fontawesome-free-6.4.2-web\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\fontawesome-free-6.4.2-web\\LICENSE.txt"
     },
