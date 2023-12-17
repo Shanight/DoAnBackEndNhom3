@@ -26,6 +26,26 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveProject\HololiveProject\HololiveWeb
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Đồ án BackEnd/DoAnBackEndNhom3/HololiveProject/HololiveProject/HololiveWeb/Views/Events/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Đồ án BackEnd/DoAnBackEndNhom3/HololiveProject/HololiveProject/HololiveWeb/Views/Events/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Đồ án BackEnd/DoAnBackEndNhom3/HololiveProject/HololiveProject/HololiveWeb/Views/Events/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Đồ án BackEnd/DoAnBackEndNhom3/HololiveProject/HololiveProject/HololiveWeb/Views/Events/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Đồ án BackEnd/DoAnBackEndNhom3/HololiveProject/HololiveProject/HololiveWeb/Views/Events/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Đồ án BackEnd/DoAnBackEndNhom3/HololiveProject/HololiveProject/HololiveWeb/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
