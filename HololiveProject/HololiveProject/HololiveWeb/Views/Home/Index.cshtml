@@ -1,37 +1,12 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    var random = new Random();
+    var randomProducts = Model.Products.OrderBy(p => random.Next()).Take(8);
 }
 
 @model HololiveWeb.Models.CombinedData
 
 
-<h2>Products</h2>
-@if (Model.Products != null && Model.Products.Count > 0)
-{
-    <table>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Price</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var product in Model.Products)
-            {
-                <tr>
-                    <td>@product.Id</td>
-                    <td>@product.Name</td>
-                    <td>@product.Price</td>
-                </tr>
-            }
-        </tbody>
-    </table>
-}
-else
-{
-    <p>No products available.</p>
-}
  <!--Slide-->
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -111,104 +86,21 @@ else
 
     <div class="container" style="width: 85%;">
         <div class="row">
-            <div class="col-3">
-                <img src="../img/sanpham.jpg" class="img-thumbnail" alt="..." style="height: auto; width: 100%;">
-                <a href="#" class="sanpham1">
-                    Sakamata Chloe 2nd Anniversary Celebration
-                </a>
-                <div class="sanpham2">
-                    ¥1,210~
+            @foreach (var item in randomProducts) {
+                <div class="col-3">
+                    <a href="../products/Details/@item.Id" class="sanpham1">
+                    <img src="../@Html.DisplayFor(modelItem => item.img1)" class="img-thumbnail" alt="..." style="height: auto; width: 100%;">
+                    
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </a>
+                    <div class="sanpham2">
+                        ¥@Html.DisplayFor(modelItem => item.Price)~
+                    </div>
+                    <br>
+                    <br>
+                    <br>
                 </div>
-                <br>
-                <br>
-                <br>
-            </div>
-            <div class="col-3">
-                <img src="../img/sanpham.jpg" class="img-thumbnail" alt="..." style="height: auto; width: 100%;">
-                <a href="#" class="sanpham1">
-                    Sakamata Chloe 2nd Anniversary Celebration
-                </a>
-                <div class="sanpham2">
-                    ¥1,210~
-                </div>
-                <br>
-                <br>
-                <br>
-            </div>
-            <div class="col-3">
-                <img src="../img/sanpham.jpg" class="img-thumbnail" alt="..." style="height: auto; width: 100%;">
-                <a href="#" class="sanpham1">
-                    Sakamata Chloe 2nd Anniversary Celebration
-                </a>
-                <div class="sanpham2">
-                    ¥1,210~
-                </div>
-                <br>
-                <br>
-                <br>
-            </div>
-            <div class="col-3">
-                <img src="../img/sanpham.jpg" class="img-thumbnail" alt="..." style="height: auto; width: 100%;">
-                <a href="#" class="sanpham1">
-                    Sakamata Chloe 2nd Anniversary Celebration
-                </a>
-                <div class="sanpham2">
-                    ¥1,210~
-                </div>
-                <br>
-                <br>
-                <br>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-3">
-                <img src="../img/sanpham.jpg" class="img-thumbnail" alt="..." style="height: auto; width: 100%;">
-                <a href="#" class="sanpham1">
-                    Sakamata Chloe 2nd Anniversary Celebration
-                </a>
-                <div class="sanpham2">
-                    ¥1,210~
-                </div>
-                <br>
-                <br>
-                <br>
-            </div>
-            <div class="col-3">
-                <img src="../img/sanpham.jpg" class="img-thumbnail" alt="..." style="height: auto; width: 100%;">
-                <a href="#" class="sanpham1">
-                    Sakamata Chloe 2nd Anniversary Celebration
-                </a>
-                <div class="sanpham2">
-                    ¥1,210~
-                </div>
-                <br>
-                <br>
-                <br>
-            </div>
-            <div class="col-3">
-                <img src="../img/sanpham.jpg" class="img-thumbnail" alt="..." style="height: auto; width: 100%;">
-                <a href="#" class="sanpham1">
-                    Sakamata Chloe 2nd Anniversary Celebration
-                </a>
-                <div class="sanpham2">
-                    ¥1,210~
-                </div>
-                <br>
-                <br>
-                <br>
-            </div>
-            <div class="col-3">
-                <img src="../img/sanpham.jpg" class="img-thumbnail" alt="..." style="height: auto; width: 100%;">
-                <a href="#" class="sanpham1">
-                    Sakamata Chloe 2nd Anniversary Celebration
-                </a>
-                <div class="sanpham2">
-                    ¥1,210~
-                </div>
-                <br>
-                <br>
-                <br>
-            </div>
+            }
         </div>
         <div class="row">
             <div class="col text-end">
@@ -234,42 +126,21 @@ else
 
     <div class="container" style="width: 85%;">
         <div class="row">
-            <div class="col-3">
-                <img src="../img/sanpham.jpg" class="img-thumbnail" alt="..." style="height: auto; width: 100%;">
-                <a href="#" class="sanpham1">
-                    Sakamata Chloe 2nd Anniversary Celebration
-                </a>
-                <div class="sanpham2">
-                    ¥1,210~
+            @foreach (var item in randomProducts) {
+                <div class="col-3">
+                    <a href="../products/Details/@item.Id" class="sanpham1">
+                    <img src="../@Html.DisplayFor(modelItem => item.img1)" class="img-thumbnail" alt="..." style="height: auto; width: 100%;">
+                    
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </a>
+                    <div class="sanpham2">
+                        ¥@Html.DisplayFor(modelItem => item.Price)~
+                    </div>
+                    <br>
+                    <br>
+                    <br>
                 </div>
-                <br>
-                <br>
-                <br>
-            </div>
-            <div class="col-3">
-                <img src="../img/sanpham.jpg" class="img-thumbnail" alt="..." style="height: auto; width: 100%;">
-                <a href="#" class="sanpham1">
-                    Sakamata Chloe 2nd Anniversary Celebration
-                </a>
-                <div class="sanpham2">
-                    ¥1,210~
-                </div>
-                <br>
-                <br>
-                <br>
-            </div>
-            <div class="col-3">
-                <img src="../img/sanpham.jpg" class="img-thumbnail" alt="..." style="height: auto; width: 100%;">
-                <a href="#" class="sanpham1">
-                    Sakamata Chloe 2nd Anniversary Celebration
-                </a>
-                <div class="sanpham2">
-                    ¥1,210~
-                </div>
-                <br>
-                <br>
-                <br>
-            </div>
+            }
         </div>
         <div class="row">
             <div class="col text-end">
@@ -295,54 +166,21 @@ else
 
     <div class="container" style="width: 85%;">
         <div class="row">
-            <div class="col-3">
-                <img src="../img/sanpham.jpg" class="img-thumbnail" alt="..." style="height: auto; width: 100%;">
-                <a href="#" class="sanpham1">
-                    Sakamata Chloe 2nd Anniversary Celebration
-                </a>
-                <div class="sanpham2">
-                    ¥1,210~
+            @foreach (var item in randomProducts) {
+                <div class="col-3">
+                    <a href="../products/Details/@item.Id" class="sanpham1">
+                    <img src="../@Html.DisplayFor(modelItem => item.img1)" class="img-thumbnail" alt="..." style="height: auto; width: 100%;">
+                    
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </a>
+                    <div class="sanpham2">
+                        ¥@Html.DisplayFor(modelItem => item.Price)~
+                    </div>
+                    <br>
+                    <br>
+                    <br>
                 </div>
-                <br>
-                <br>
-                <br>
-            </div>
-            <div class="col-3">
-                <img src="../img/sanpham.jpg" class="img-thumbnail" alt="..." style="height: auto; width: 100%;">
-                <a href="#" class="sanpham1">
-                    Sakamata Chloe 2nd Anniversary Celebration
-                </a>
-                <div class="sanpham2">
-                    ¥1,210~
-                </div>
-                <br>
-                <br>
-                <br>
-            </div>
-            <div class="col-3">
-                <img src="../img/sanpham.jpg" class="img-thumbnail" alt="..." style="height: auto; width: 100%;">
-                <a href="#" class="sanpham1">
-                    Sakamata Chloe 2nd Anniversary Celebration
-                </a>
-                <div class="sanpham2">
-                    ¥1,210~
-                </div>
-                <br>
-                <br>
-                <br>
-            </div>
-            <div class="col-3">
-                <img src="../img/sanpham.jpg" class="img-thumbnail" alt="..." style="height: auto; width: 100%;">
-                <a href="#" class="sanpham1">
-                    Sakamata Chloe 2nd Anniversary Celebration
-                </a>
-                <div class="sanpham2">
-                    ¥1,210~
-                </div>
-                <br>
-                <br>
-                <br>
-            </div>
+            }
         </div>
         <div class="row">
             <div class="col text-end">
@@ -369,104 +207,21 @@ else
 
     <div class="container" style="width: 85%;">
         <div class="row">
-            <div class="col-3">
-                <img src="../img/sanpham.jpg" class="img-thumbnail" alt="..." style="height: auto; width: 100%;">
-                <a href="#" class="sanpham1">
-                    Sakamata Chloe 2nd Anniversary Celebration
-                </a>
-                <div class="sanpham2">
-                    ¥1,210~
+            @foreach (var item in randomProducts) {
+                <div class="col-3">
+                    <a href="../products/Details/@item.Id" class="sanpham1">
+                    <img src="../@Html.DisplayFor(modelItem => item.img1)" class="img-thumbnail" alt="..." style="height: auto; width: 100%;">
+                    
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </a>
+                    <div class="sanpham2">
+                        ¥@Html.DisplayFor(modelItem => item.Price)~
+                    </div>
+                    <br>
+                    <br>
+                    <br>
                 </div>
-                <br>
-                <br>
-                <br>
-            </div>
-            <div class="col-3">
-                <img src="../img/sanpham.jpg" class="img-thumbnail" alt="..." style="height: auto; width: 100%;">
-                <a href="#" class="sanpham1">
-                    Sakamata Chloe 2nd Anniversary Celebration
-                </a>
-                <div class="sanpham2">
-                    ¥1,210~
-                </div>
-                <br>
-                <br>
-                <br>
-            </div>
-            <div class="col-3">
-                <img src="../img/sanpham.jpg" class="img-thumbnail" alt="..." style="height: auto; width: 100%;">
-                <a href="#" class="sanpham1">
-                    Sakamata Chloe 2nd Anniversary Celebration
-                </a>
-                <div class="sanpham2">
-                    ¥1,210~
-                </div>
-                <br>
-                <br>
-                <br>
-            </div>
-            <div class="col-3">
-                <img src="../img/sanpham.jpg" class="img-thumbnail" alt="..." style="height: auto; width: 100%;">
-                <a href="#" class="sanpham1">
-                    Sakamata Chloe 2nd Anniversary Celebration
-                </a>
-                <div class="sanpham2">
-                    ¥1,210~
-                </div>
-                <br>
-                <br>
-                <br>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-3">
-                <img src="../img/sanpham.jpg" class="img-thumbnail" alt="..." style="height: auto; width: 100%;">
-                <a href="#" class="sanpham1">
-                    Sakamata Chloe 2nd Anniversary Celebration
-                </a>
-                <div class="sanpham2">
-                    ¥1,210~
-                </div>
-                <br>
-                <br>
-                <br>
-            </div>
-            <div class="col-3">
-                <img src="../img/sanpham.jpg" class="img-thumbnail" alt="..." style="height: auto; width: 100%;">
-                <a href="#" class="sanpham1">
-                    Sakamata Chloe 2nd Anniversary Celebration
-                </a>
-                <div class="sanpham2">
-                    ¥1,210~
-                </div>
-                <br>
-                <br>
-                <br>
-            </div>
-            <div class="col-3">
-                <img src="../img/sanpham.jpg" class="img-thumbnail" alt="..." style="height: auto; width: 100%;">
-                <a href="#" class="sanpham1">
-                    Sakamata Chloe 2nd Anniversary Celebration
-                </a>
-                <div class="sanpham2">
-                    ¥1,210~
-                </div>
-                <br>
-                <br>
-                <br>
-            </div>
-            <div class="col-3">
-                <img src="../img/sanpham.jpg" class="img-thumbnail" alt="..." style="height: auto; width: 100%;">
-                <a href="#" class="sanpham1">
-                    Sakamata Chloe 2nd Anniversary Celebration
-                </a>
-                <div class="sanpham2">
-                    ¥1,210~
-                </div>
-                <br>
-                <br>
-                <br>
-            </div>
+            }
         </div>
         <div class="row">
             <div class="col text-end">

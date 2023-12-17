@@ -1,84 +1,266 @@
 ﻿@model HololiveWeb.API.Models.Product
 
 @{
-    ViewData["Title"] = "Details";
+ViewData["Title"] = "Details";
 }
+<script src="~/java/sanpham.js"></script>
 
-<h1>Details</h1>
+<style>
+    .btntest {
+        border: 1px solid;
+        height: 50px;
+        border-radius: 10px;
+        width: 90px;
+    }
 
-<div>
-    <h4>Product</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Catetory)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Catetory)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.img1)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.img1)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.img2)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.img2)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.img3)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.img3)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Preview1)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Preview1)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Preview2)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Preview2)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Preview3)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Preview3)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Preview4)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Preview4)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Preview5)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Preview5)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Price)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Price)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+    .btntest1 {
+        border: 2px solid;
+        height: 70px;
+        border-radius: 10px;
+    }
+
+    .btntest1:hover {
+        background-color: #E9F9FF;
+        border-color: #24C1FF;
+
+    }
+
+    .btntest1.active,
+    .btntest.active {
+        background-color: #24C1FF;
+        color: #ffffff;
+    }
+
+    .btntest:hover {
+        background-color: #E9F9FF;
+        border: 2px dotted;
+        border-color: #24C1FF;
+    }
+
+    .quantity-container {
+        display: flex;
+        align-items: center;
+    }
+
+    #number {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        width: 50px;
+        display: inline-block;
+        border: 2px #000000 solid;
+    }
+
+    .button {
+        font-weight: bold;
+        font-size: 24px;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        color: black;
+        background-color: white;
+        border: none;
+    }
+
+    .black {
+        background-color: black;
+    }
+
+    .button:hover {
+        color: #FF7DC2;
+    }
+
+
+
+    .product-buttons {
+        display: none;
+    }
+
+    .product-buttons.show {
+        display: block;
+    }
+
+    .product-row {
+        display: none;
+    }
+
+    .product-row.show {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .add {
+        background-color: #E9F9FF;
+        border: 2px dotted;
+        border-color: #24C1FF;
+        font-weight: bold;
+
+    }
+
+    .add2 {
+        background-color: #E9F9FF;
+        border: 2px solid;
+        border-color: #24C1FF;
+        font-weight: bold;
+    }
+
+    .preorder {
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+        background-color: #FF7DC2;
+        border: 1px #FF7DC2 solid;
+        border-radius: 35px;
+    }
+
+    .preorder:hover {
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+        background-color: #FEA3D4;
+        border: 1px #FEA3D4 solid;
+        border-radius: 35px;
+    }
+
+    .preview {
+        text-align: left;
+    }
+</style>
+<section style="margin-top: 70px;">
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-6 " style="text-align: center; ">
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" id="img1">
+                            <img src="../../@Html.DisplayFor(model => model.img1)" class="d-block w-100" alt="..."
+                                style="width: 600px; height: 600px;">
+                        </div>
+                        <div class="carousel-item" id="img2">
+                            <img src="../../@Html.DisplayFor(model => model.img2)" class="d-block w-100" alt="..."
+                                style="width: 600px; height: 600px;">
+                        </div>
+                    </div>
+
+                    <a class="btn" onclick="changeImage(1)"><img src="../../@Html.DisplayFor(model => model.img1)"
+                            style="width: 120px; height: 120px;"></a>
+                    <a class="btn" onclick="changeImage(2)"><img src="../../@Html.DisplayFor(model => model.img2)"
+                            style="width: 120px; height: 120px;"></a>
+                </div>
+
+                <script>
+                    function changeImage(index) {
+                        // Xóa lớp active của tất cả các phần tử trong carousel
+                        var carouselItems = document.querySelectorAll('.carousel-item');
+                        carouselItems.forEach(function(item) {
+                            item.classList.remove('active');
+                        });
+                        // Thêm lớp active cho phần tử tương ứng với index được nhấn
+                        var targetItem = document.getElementById('img' + index);
+                        targetItem.classList.add('active');
+                    }
+                </script>
+                <hr>
+                <p class="d-inline-flex gap-1 " style="padding: 10px">
+
+                    <a class="btn " data-bs-toggle="collapse" href="#collapseExample" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        <b>
+                            Product Details
+                        </b>
+                    </a>
+
+                </p>
+                <div class="collapse" id="collapseExample">
+                    <div class="preview">
+                        @Html.Raw(Model.Preview1)
+
+                    </div>
+                </div>
+
+                <hr>
+                <p class="d-inline-flex gap-1 " style="padding: 10px">
+
+                    <a class="btn " data-bs-toggle="collapse" href="#collapseExample1" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        <b>For overseas customers</b>
+                    </a>
+
+                </p>
+                <div class="collapse" id="collapseExample1">
+                    <div class="preview">
+                        @Html.Raw(Model.Preview2)
+                    </div>
+                </div>
+
+                <hr>
+                <p class="d-inline-flex gap-1 " style="padding: 10px">
+
+                    <a class="btn " data-bs-toggle="collapse" href="#collapseExample2" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        <b>Please read before you buy</b>
+
+                    </a>
+
+                </p>
+                <div class="collapse" id="collapseExample2">
+                    <div class="preview">
+                        @Html.Raw(Model.Preview3)
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 sticky-top">
+                <div class="row">
+                    <h4 style="font-weight: 700;">@Html.DisplayFor(model => model.Name)</h4>
+                    <hr style="height: 3px; color: blueviolet">
+                    <div class="col-md-9">
+                        <p class="text-danger"
+                            style="border: 1px solid red; height: 40px; text-align: center ;background-color:beige;">
+                            Order Period : 2023/11/26 21:00 ~ 2024/01/04 18:00 (JST)</p>
+                    </div>
+
+                </div>
+                <div class="row">
+                    @Html.Raw(Model.Preview1)
+                </div>
+                <div class="row py-4">
+                    <div class="col-md-4">
+                        <p class="text-primary" style="font-size: 13px;">Category</p>
+                        <button class="btntest" type="button" onclick="showProductRow('row1'); add1()"
+                            id="button1">@Html.DisplayFor(model => model.Catetory)</button>
+                    </div>
+                </div>
+                <div class="row py-3">
+                    <p class="text-primary" style="font-size: 13px;">Product</p>
+                    <div class="row product-row" id="row1">
+                        <button class="btntest1" type="button" id="sanpham1" onclick="add2()" style="text-align:left;">
+                            <span>Set </span>
+                            <div class="sanpham2">
+                                ¥@Html.DisplayFor(model => model.Price)~
+                            </div>
+                        </button>
+
+                    </div>
+                </div>
+                <div class="row py-3">
+                    <p class="text-primary" style="font-size: 13px;">Qty.</p>
+                    <div class="row">
+                        <div class="quantity-container">
+                            <div>
+                                <button class="button" onclick="decrease()">-</button>
+                                <span id="number">1</span>
+                                <button class="button" onclick="increase()">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row py-4">
+
+                    <button class="preorder" style="width: 60%; height: 65px; margin: auto;">PRE-ORDER</button>
+
+                </div>
+            </div>
+        </div>
+</section>
+
