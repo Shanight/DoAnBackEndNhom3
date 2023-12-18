@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\wwwroot\\img\\1213_Ayame_birth2023_twitter_EN.png",
+      "PackagePath": "staticwebassets\\img\\1213_Ayame_birth2023_twitter_EN.png"
+    },
+    {
       "Id": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\wwwroot\\img\\BGdotblue1.png",
       "PackagePath": "staticwebassets\\img\\BGdotblue1.png"
     },
@@ -421,6 +425,10 @@
       "PackagePath": "staticwebassets\\img\\Information_header.jpg"
     },
     {
+      "Id": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\wwwroot\\img\\KoboKanaeru_2023_banner_EN_banne.png",
+      "PackagePath": "staticwebassets\\img\\KoboKanaeru_2023_banner_EN_banne.png"
+    },
+    {
       "Id": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\wwwroot\\img\\RegularProducts__header--title.png",
       "PackagePath": "staticwebassets\\img\\RegularProducts__header--title.png"
     },
@@ -447,6 +455,14 @@
     {
       "Id": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\wwwroot\\img\\endingsoon.jpg",
       "PackagePath": "staticwebassets\\img\\endingsoon.jpg"
+    },
+    {
+      "Id": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\wwwroot\\img\\holoXmasASMR_twitter_all_2.png",
+      "PackagePath": "staticwebassets\\img\\holoXmasASMR_twitter_all_2.png"
+    },
+    {
+      "Id": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\wwwroot\\img\\hololiveEN_Myth_smol_banner_EN_b.png",
+      "PackagePath": "staticwebassets\\img\\hololiveEN_Myth_smol_banner_EN_b.png"
     },
     {
       "Id": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\wwwroot\\img\\logo.jpg",
@@ -691,10 +707,6 @@
     {
       "Id": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
-    },
-    {
-      "Id": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\wwwroot\\lib\\fontawesome-free-6.4.2-web.rar",
-      "PackagePath": "staticwebassets\\lib\\fontawesome-free-6.4.2-web.rar"
     },
     {
       "Id": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\wwwroot\\lib\\fontawesome-free-6.4.2-web\\LICENSE.txt",

@@ -394,3 +394,4 @@ D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveProject\HololiveProject\HololiveWe
 D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveProject\HololiveProject\HololiveWeb.API\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveProject\HololiveProject\HololiveWeb.API\obj\Debug\net8.0\HololiveWeb.API.RazorAssemblyInfo.cache
 D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveProject\HololiveProject\HololiveWeb.API\obj\Debug\net8.0\HololiveWeb.API.RazorAssemblyInfo.cs
+D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveProject\HololiveProject\HololiveWeb.API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll

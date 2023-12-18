@@ -90,19 +90,20 @@
     <div class="container" style="width: 85%;">
         <div class="row">
             @foreach (var item in randomProducts) {
-                <div class="col-3">
-                    <a href="../products/Details/@item.Id" class="sanpham1">
-                    <img src="../@Html.DisplayFor(modelItem => item.img1)" class="img-thumbnail" alt="..." style="height: auto; width: 100%;">
-                    
-                        @Html.DisplayFor(modelItem => item.Name)
-                    </a>
-                    <div class="sanpham2">
-                        ¥@Html.DisplayFor(modelItem => item.Price)~
+                if (item.Catetory == "Voice") {  // Thêm điều kiện kiểm tra danh mục là "Voice"
+                    <div class="col-3">
+                        <a href="../products/Details/@item.Id" class="sanpham1">
+                            <img src="../@Html.DisplayFor(modelItem => item.img1)" class="img-thumbnail" alt="..." style="height: auto; width: 100%;">
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </a>
+                        <div class="sanpham2">
+                            ¥@Html.DisplayFor(modelItem => item.Price)~
+                        </div>
+                        <br>
+                        <br>
+                        <br>
                     </div>
-                    <br>
-                    <br>
-                    <br>
-                </div>
+                }
             }
         </div>
         <div class="row">
@@ -130,19 +131,21 @@
     <div class="container" style="width: 85%;">
         <div class="row">
             @foreach (var item in randomProducts) {
-                <div class="col-3">
-                    <a href="../products/Details/@item.Id" class="sanpham1">
-                    <img src="../@Html.DisplayFor(modelItem => item.img1)" class="img-thumbnail" alt="..." style="height: auto; width: 100%;">
-                    
-                        @Html.DisplayFor(modelItem => item.Name)
-                    </a>
-                    <div class="sanpham2">
-                        ¥@Html.DisplayFor(modelItem => item.Price)~
+                if (item.Catetory == "Merch"){
+                    <div class="col-3">
+                        <a href="../products/Details/@item.Id" class="sanpham1">
+                        <img src="../@Html.DisplayFor(modelItem => item.img1)" class="img-thumbnail" alt="..." style="height: auto; width: 100%;">
+                        
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </a>
+                        <div class="sanpham2">
+                            ¥@Html.DisplayFor(modelItem => item.Price)~
+                        </div>
+                        <br>
+                        <br>
+                        <br>
                     </div>
-                    <br>
-                    <br>
-                    <br>
-                </div>
+                }
             }
         </div>
         <div class="row">
