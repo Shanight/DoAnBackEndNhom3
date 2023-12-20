@@ -1,0 +1,32 @@
+dotnet ef
+dotnet run or dotnet watch (Suggest)
+dotnet clean
+dotnet build
+
+dotnet add package Microsoft.EntityFrameworkCore.Design --version //7.0.13
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version //7.0.13
+dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore --version //7.0.0
+dotnet add package Microsoft.EntityFrameworkCore.Tools --version 7.0.13
+dotnet add package CsvHelper --version 30.0.1
+dotnet add package System.Linq.Dynamic.Core --version 1.2.23
+Install-Package CsvHelper -Version 30.0.1
+
+dotnet ef migrations add //Initial
+dotnet ef database update //Initial
+dotnet ef database drop --force --context //ApplicationDbContext
+dotnet ef migrations script --output migration.sql
+dotnet new webapi -n <projetct-name>
+
+.\\SHIINAMASHIRO
+
+Tạo đồ án cuối kỳ CoffeeSln
+dotnet new globaljson --sdk-version 7.0.404 --output <CoffeeSln>/<Coffee>.Web
+dotnet new mvc --no-https --output <CoffeeSln>/<Coffee>.Web --framework net7.0
+dotnet new sln -o CoffeeSln 
+dotnet sln <CoffeeSln> add <CoffeeSln>/<Coffee>.Web
+
+
+dotnet new webapi  --output CoffeeSln/Coffee.Web.API 
+dotnet sln <CoffeeSln> add <CoffeeSln>/<Coffee>.Web.API
+
+dotnet add <CoffeeSln>/<Coffee>.Web reference <CoffeeSln>/<Coffee>.Web.API
