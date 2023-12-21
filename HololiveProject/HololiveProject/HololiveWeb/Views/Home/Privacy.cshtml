@@ -1,6 +1,56 @@
 ﻿@{
     ViewData["Title"] = "Privacy Policy";
 }
-<h1>@ViewData["Title"]</h1>
+<style>
+    .dangnhap {
+        font-family: "M PLUS Rounded 1c", sans-serif !important;
+    }
 
-<p>Use this page to detail your site's privacy policy.</p>
+    .about {
+        background-image: url(../img/BGdotblue3.png);
+        height: 370px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .textabout {
+        font-size: 90px;
+        font-weight: 900;
+        background: linear-gradient(146deg, rgba(11, 205, 240, 1) 0%, rgba(77, 163, 241, 1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .noidung {
+        width: 70%;
+    }
+
+    .centered {
+        display: flex;
+        justify-content: center;
+        margin-top: 130px;
+    }
+</style>
+
+<div class="about">
+    <h1 class="textabout">ABOUT</h1>
+</div>
+<div class="centered">
+    <div class="noidung">
+        <div class="img" style="text-align: center;">
+            <img src="../img/about_img_chart.png" alt="" style="width: 90%; justify-content: center;">
+        </div>
+        <p style="margin-top: 30px;">
+            Hololive production is a VTuber agency that consists of the talent groups hololive and HOLOSTARS.
+            hololive production has over 70 affiliated talents active in Japan, Indonesia, and English-speaking
+            countries, and has over 70 million YouTuber subscribers all across the channels.
+        </p>
+        <p>
+            With COVER Corporation’s VR/AR technology, hololive production talents provide various experiences
+            ranging from game streams to offline concerts, and form a stable community that connects fans, creators,
+            and talents all around the world via social networks.
+        </p>
+
+    </div>
+</div>

@@ -51,3 +51,6 @@ add-migration "name"
             </td>
         </tr>
 }
+
+--ghi chú
+[Authorize(Roles="admin")]

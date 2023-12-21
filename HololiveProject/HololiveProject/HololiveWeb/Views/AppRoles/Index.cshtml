@@ -1,0 +1,27 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model IEnumerable<IdentityRole>
+@{
+    ViewData["Title"] = "gwewegew";
+}
+<h1 style="margin-top:50px;"> gwegtewgew</h1>
+<p>
+    <a asp-action="Create">Create Role</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Id)</th>
+            <th>@Html.DisplayNameFor(model => model.Name)</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach(var item in Model)
+        {
+            <tr>
+                <th>@Html.DisplayFor(modelItem => item.Id)</th>
+                <th>@Html.DisplayFor(modelItem => item.Name)</th>
+            </tr>
+        }
+    </tbody>
+</table>
