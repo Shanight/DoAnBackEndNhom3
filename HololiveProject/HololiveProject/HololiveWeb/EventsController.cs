@@ -11,9 +11,9 @@ namespace HololiveWeb
 {
     public class EventsController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        private readonly ApplicationDbContext1 _context;
 
-        public EventsController(ApplicationDbContext context)
+        public EventsController(ApplicationDbContext1 context)
         {
             _context = context;
         }

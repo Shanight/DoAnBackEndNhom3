@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace HololiveWeb.API.Models;
 
-public class ApplicationDbContext : IdentityDbContext<IdentityUser>
+public class ApplicationDbContext1 : IdentityDbContext<IdentityUser>
 {
-    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+    public ApplicationDbContext1(DbContextOptions<ApplicationDbContext1> options)
         : base(options)
     {
     }

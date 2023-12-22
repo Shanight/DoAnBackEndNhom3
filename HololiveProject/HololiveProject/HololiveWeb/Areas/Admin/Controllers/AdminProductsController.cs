@@ -7,24 +7,26 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using HololiveWeb.API.Models;
 
-namespace HololiveWeb
+namespace HololiveWeb.Areas.Admin.Controllers
 {
-    public class UsersController : Controller
+    [Area("Admin")]
+    public class AdminProductsController : Controller
     {
-        private readonly ApplicationDbContext1 _context;
+        private readonly ApplicationDbContext _context;
 
-        public UsersController(ApplicationDbContext1 context)
+        public AdminProductsController(ApplicationDbContext context)
         {
             _context = context;
         }
 
-        // GET: Users
+        // GET: Admin/AdminProducts
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Users.ToListAsync());
+            var products = await _context.Products.ToListAsync();
+            return View(products);
         }
 
-        // GET: Users/Details/5
+        // GET: Admin/AdminProducts/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -32,39 +34,39 @@ namespace HololiveWeb
                 return NotFound();
             }
 
-            var user = await _context.Users
+            var product = await _context.Products
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (user == null)
+            if (product == null)
             {
                 return NotFound();
             }
 
-            return View(user);
+            return View(product);
         }
 
-        // GET: Users/Create
+        // GET: Admin/AdminProducts/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Users/Create
+        // POST: Admin/AdminProducts/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,FirstName,LastName,Password,Email,Role")] User user)
+        public async Task<IActionResult> Create([Bind("Id,Name,Catetory,img1,img2,img3,Preview1,Preview2,Preview3,Preview4,Preview5,Price")] Product product)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(user);
+                _context.Add(product);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(user);
+            return View(product);
         }
 
-        // GET: Users/Edit/5
+        // GET: Admin/AdminProducts/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -72,22 +74,22 @@ namespace HololiveWeb
                 return NotFound();
             }
 
-            var user = await _context.Users.FindAsync(id);
-            if (user == null)
+            var product = await _context.Products.FindAsync(id);
+            if (product == null)
             {
                 return NotFound();
             }
-            return View(user);
+            return View(product);
         }
 
-        // POST: Users/Edit/5
+        // POST: Admin/AdminProducts/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,FirstName,LastName,Password,Email,Role")] User user)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Catetory,img1,img2,img3,Preview1,Preview2,Preview3,Preview4,Preview5,Price")] Product product)
         {
-            if (id != user.Id)
+            if (id != product.Id)
             {
                 return NotFound();
             }
@@ -96,12 +98,12 @@ namespace HololiveWeb
             {
                 try
                 {
-                    _context.Update(user);
+                    _context.Update(product);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!UserExists(user.Id))
+                    if (!ProductExists(product.Id))
                     {
                         return NotFound();
                     }
@@ -112,10 +114,10 @@ namespace HololiveWeb
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(user);
+            return View(product);
         }
 
-        // GET: Users/Delete/5
+        // GET: Admin/AdminProducts/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -123,34 +125,34 @@ namespace HololiveWeb
                 return NotFound();
             }
 
-            var user = await _context.Users
+            var product = await _context.Products
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (user == null)
+            if (product == null)
             {
                 return NotFound();
             }
 
-            return View(user);
+            return View(product);
         }
 
-        // POST: Users/Delete/5
+        // POST: Admin/AdminProducts/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var user = await _context.Users.FindAsync(id);
-            if (user != null)
+            var product = await _context.Products.FindAsync(id);
+            if (product != null)
             {
-                _context.Users.Remove(user);
+                _context.Products.Remove(product);
             }
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool UserExists(int id)
+        private bool ProductExists(int id)
         {
-            return _context.Users.Any(e => e.Id == id);
+            return _context.Products.Any(e => e.Id == id);
         }
     }
 }

@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\header,footer.css"
     },
     {
+      "Id": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\wwwroot\\css\\loading.css",
+      "PackagePath": "staticwebassets\\css\\loading.css"
+    },
+    {
       "Id": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -455,6 +459,10 @@
     {
       "Id": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\wwwroot\\img\\endingsoon.jpg",
       "PackagePath": "staticwebassets\\img\\endingsoon.jpg"
+    },
+    {
+      "Id": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\wwwroot\\img\\gura.gif",
+      "PackagePath": "staticwebassets\\img\\gura.gif"
     },
     {
       "Id": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\wwwroot\\img\\holoXmasASMR_twitter_all_2.png",

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1VKqbBDNmdi2hLEn5E9r4RqLwI/s0SgeWOmKQgVq6qo=",
+  "Hash": "NyCWOw5E0dPgc3L8Pk6zJuhA54hJudqDb5gLVL5N6Rc=",
   "Source": "HololiveWeb",
   "BasePath": "_content/HololiveWeb",
   "Mode": "Default",
@@ -1264,6 +1264,25 @@
       "OriginalItemSpec": "wwwroot\\css\\header,footer.css"
     },
     {
+      "Identity": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\wwwroot\\css\\loading.css",
+      "SourceId": "HololiveWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\wwwroot\\",
+      "BasePath": "_content/HololiveWeb",
+      "RelativePath": "css/loading.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\loading.css"
+    },
+    {
       "Identity": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\wwwroot\\css\\site.css",
       "SourceId": "HololiveWeb",
       "SourceType": "Discovered",
@@ -1471,6 +1490,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Event__header--title.png"
+    },
+    {
+      "Identity": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\wwwroot\\img\\gura.gif",
+      "SourceId": "HololiveWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\wwwroot\\",
+      "BasePath": "_content/HololiveWeb",
+      "RelativePath": "img/gura.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\gura.gif"
     },
     {
       "Identity": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\wwwroot\\img\\hololiveEN_Myth_smol_banner_EN_b.png",

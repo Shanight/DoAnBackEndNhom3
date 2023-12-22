@@ -1,25 +1,33 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
-    var random = new Random();
-    var randomProducts = Model.Products.OrderBy(p => random.Next()).Take(8);
+ViewData["Title"] = "Home Page";
+var random = new Random();
+var randomProducts = Model.Products.OrderBy(p => random.Next()).Take(8);
+
 }
 
 @model HololiveWeb.Models.CombinedData
 
+<div id="loader" style="display: flex; justify-content: center; align-items: center;">
+    <img src="../../img/gura.gif" alt="Loader Image" style="width: 100%; height: auto; object-fit: cover;">
+</div>
 
- <!--Slide-->
+<div style="display:none;" id="myDiv" class="animate-bottom">
+
+    <!--Slide-->
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active" style="height:704px;">
-                <img src="~/img/1213_Ayame_birth2023_twitter_EN.png" class="d-flex w-100" alt="..." style="object-fit: cover;">
+            <div class="carousel-item active" style="height:1080px;">
+                <img src="~/img/1213_Ayame_birth2023_twitter_EN.png" class="d-flex w-100" alt="..."
+                    style="object-fit: cover;">
             </div>
-            <div class="carousel-item" style="height: 704px;">
-    <img src="../img/holoXmasASMR_twitter_all_2.png" class="d-flex w-100" alt="..." style="object-fit: cover;">
-</div>
-            <div class="carousel-item" style="height:704px;">
+            <div class="carousel-item" style="height: 1080px;">
+                <img src="../img/holoXmasASMR_twitter_all_2.png" class="d-flex w-100" alt="..."
+                    style="object-fit: cover;">
+            </div>
+            <div class="carousel-item" style="height:1080px;">
                 <img src="../img/hololiveEN_Myth_smol_banner_EN_b.png" class="d-flex w-100" alt="...">
             </div>
-            <div class="carousel-item" style="height:704px;">
+            <div class="carousel-item" style="height:1080px;">
                 <img src="../img/KoboKanaeru_2023_banner_EN_banne.png" class="d-flex w-100" alt="...">
             </div>
         </div>
@@ -52,26 +60,26 @@
     <div class="container" style="width: 90%;">
         @foreach (var eventItem in Model.Events.Take(3))
         {
-            <div class="row d-flex align-items-center p-3">
-                <div class="col-2">
-                    <div class="cochu1" style="font-size: larger; text-align: center;">
-                        @eventItem.Date.ToString("dd/MM/yyyy")
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="informationblue text-white"
-                        style="background-color: #23c2fe; text-align: center; border-radius: 30px; width: 70%;">
-                        Information
-                    </div>
-                </div>
-                <div class="col-8">
-                    <a href="@Url.Action("Details", "Events", new { id = eventItem.Id })" class="athongtin1">@eventItem.Title</a>
+        <div class="row d-flex align-items-center p-3">
+            <div class="col-2">
+                <div class="cochu1" style="font-size: larger; text-align: center;">
+                    @eventItem.Date.ToString("dd/MM/yyyy")
                 </div>
             </div>
+            <div class="col-2">
+                <div class="informationblue text-white"
+                    style="background-color: #23c2fe; text-align: center; border-radius: 30px; width: 70%;">
+                    Information
+                </div>
+            </div>
+            <div class="col-8">
+                <a href="@Url.Action(" Details", "Events" , new { id=eventItem.Id })"
+                    class="athongtin1">@eventItem.Title</a>
+            </div>
+        </div>
         }
     </div>
     <!--End Thông tin 1-->
-
 
     <!--Thông tin 2 New Arrival-->
     <div class="khoangtrang"></div>
@@ -89,21 +97,22 @@
 
     <div class="container" style="width: 85%;">
         <div class="row">
-            @foreach (var item in randomProducts) {
-                if (item.Catetory == "Voice") {  // Thêm điều kiện kiểm tra danh mục là "Voice"
-                    <div class="col-3">
-                        <a href="../products/Details/@item.Id" class="sanpham1">
-                            <img src="../@Html.DisplayFor(modelItem => item.img1)" class="img-thumbnail" alt="..." style="height: auto; width: 100%;">
-                            @Html.DisplayFor(modelItem => item.Name)
-                        </a>
-                        <div class="sanpham2">
-                            ¥@Html.DisplayFor(modelItem => item.Price)~
-                        </div>
-                        <br>
-                        <br>
-                        <br>
-                    </div>
-                }
+            @foreach (var item in Model.Products.Take(18))
+            {
+            if (item.Catetory == "Voice") { // Thêm điều kiện kiểm tra danh mục là "Voice"
+            <div class="col-3">
+                <a href="../products/Details/@item.Id" class="sanpham1">
+                    <img src="../../../@Html.DisplayFor(modelItem => item.img1)" class="img-thumbnail" alt="..."
+                        style="height: auto; width: 100%;"> @Html.DisplayFor(modelItem => item.Name)
+                </a>
+                <div class="sanpham2">
+                    ¥@Html.DisplayFor(modelItem => item.Price)~
+                </div>
+                <br>
+                <br>
+                <br>
+            </div>
+            }
             }
         </div>
         <div class="row">
@@ -130,22 +139,24 @@
 
     <div class="container" style="width: 85%;">
         <div class="row">
-            @foreach (var item in randomProducts) {
-                if (item.Catetory == "Merch"){
-                    <div class="col-3">
-                        <a href="../products/Details/@item.Id" class="sanpham1">
-                        <img src="../@Html.DisplayFor(modelItem => item.img1)" class="img-thumbnail" alt="..." style="height: auto; width: 100%;">
-                        
-                            @Html.DisplayFor(modelItem => item.Name)
-                        </a>
-                        <div class="sanpham2">
-                            ¥@Html.DisplayFor(modelItem => item.Price)~
-                        </div>
-                        <br>
-                        <br>
-                        <br>
-                    </div>
-                }
+            @foreach (var item in Model.Products.Take(11))
+            {
+            if (item.Catetory == "Merch"){
+            <div class="col-3">
+                <a href="../products/Details/@item.Id" class="sanpham1">
+                    <img src="../@Html.DisplayFor(modelItem => item.img1)" class="img-thumbnail" alt="..."
+                        style="height: auto; width: 100%;">
+
+                    @Html.DisplayFor(modelItem => item.Name)
+                </a>
+                <div class="sanpham2">
+                    ¥@Html.DisplayFor(modelItem => item.Price)~
+                </div>
+                <br>
+                <br>
+                <br>
+            </div>
+            }
             }
         </div>
         <div class="row">
@@ -173,19 +184,20 @@
     <div class="container" style="width: 85%;">
         <div class="row">
             @foreach (var item in randomProducts) {
-                <div class="col-3">
-                    <a href="../products/Details/@item.Id" class="sanpham1">
-                    <img src="../@Html.DisplayFor(modelItem => item.img1)" class="img-thumbnail" alt="..." style="height: auto; width: 100%;">
-                    
-                        @Html.DisplayFor(modelItem => item.Name)
-                    </a>
-                    <div class="sanpham2">
-                        ¥@Html.DisplayFor(modelItem => item.Price)~
-                    </div>
-                    <br>
-                    <br>
-                    <br>
+            <div class="col-3">
+                <a href="../products/Details/@item.Id" class="sanpham1">
+                    <img src="../@Html.DisplayFor(modelItem => item.img1)" class="img-thumbnail" alt="..."
+                        style="height: auto; width: 100%;">
+
+                    @Html.DisplayFor(modelItem => item.Name)
+                </a>
+                <div class="sanpham2">
+                    ¥@Html.DisplayFor(modelItem => item.Price)~
                 </div>
+                <br>
+                <br>
+                <br>
+            </div>
             }
         </div>
         <div class="row">
@@ -214,19 +226,20 @@
     <div class="container" style="width: 85%;">
         <div class="row">
             @foreach (var item in randomProducts) {
-                <div class="col-3">
-                    <a href="../products/Details/@item.Id" class="sanpham1">
-                    <img src="../@Html.DisplayFor(modelItem => item.img1)" class="img-thumbnail" alt="..." style="height: auto; width: 100%;">
-                    
-                        @Html.DisplayFor(modelItem => item.Name)
-                    </a>
-                    <div class="sanpham2">
-                        ¥@Html.DisplayFor(modelItem => item.Price)~
-                    </div>
-                    <br>
-                    <br>
-                    <br>
+            <div class="col-3">
+                <a href="../products/Details/@item.Id" class="sanpham1">
+                    <img src="../@Html.DisplayFor(modelItem => item.img1)" class="img-thumbnail" alt="..."
+                        style="height: auto; width: 100%;">
+
+                    @Html.DisplayFor(modelItem => item.Name)
+                </a>
+                <div class="sanpham2">
+                    ¥@Html.DisplayFor(modelItem => item.Price)~
                 </div>
+                <br>
+                <br>
+                <br>
+            </div>
             }
         </div>
         <div class="row">
@@ -305,5 +318,17 @@
         </div>
     </div>
     <!--End Thông tin 6-->
+</div>
 
+<script>
+    var myVar;
 
+    function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+    }
+
+    function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+    }
+</script>

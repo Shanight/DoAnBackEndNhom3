@@ -11,9 +11,9 @@ namespace HololiveWeb
 {
     public class ProductsController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        private readonly ApplicationDbContext1 _context;
 
-        public ProductsController(ApplicationDbContext context)
+        public ProductsController(ApplicationDbContext1 context)
         {
             _context = context;
         }

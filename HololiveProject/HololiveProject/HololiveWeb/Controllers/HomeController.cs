@@ -9,9 +9,9 @@ public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
 
-    private readonly ApplicationDbContext _dbContext;
+    private readonly ApplicationDbContext1 _dbContext;
 
-    public HomeController(ILogger<HomeController> logger, ApplicationDbContext dbContext)
+    public HomeController(ILogger<HomeController> logger, ApplicationDbContext1 dbContext)
     {
         _logger = logger;
         _dbContext = dbContext;
