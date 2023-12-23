@@ -73,7 +73,7 @@ var randomProducts = Model.Products.OrderBy(p => random.Next()).Take(8);
                 </div>
             </div>
             <div class="col-8">
-                <a href="@Url.Action(" Details", "Events" , new { id=eventItem.Id })"
+                <a href="@Url.Action("Details", "Events" , new { id=eventItem.Id })"
                     class="athongtin1">@eventItem.Title</a>
             </div>
         </div>
@@ -102,7 +102,7 @@ var randomProducts = Model.Products.OrderBy(p => random.Next()).Take(8);
             if (item.Catetory == "Voice") { // Thêm điều kiện kiểm tra danh mục là "Voice"
             <div class="col-3">
                 <a href="../products/Details/@item.Id" class="sanpham1">
-                    <img src="../../../@Html.DisplayFor(modelItem => item.img1)" class="img-thumbnail" alt="..."
+                    <img src="../../img/@Html.DisplayFor(modelItem => item.img1)" class="img-thumbnail" alt="..."
                         style="height: auto; width: 100%;"> @Html.DisplayFor(modelItem => item.Name)
                 </a>
                 <div class="sanpham2">
@@ -144,7 +144,7 @@ var randomProducts = Model.Products.OrderBy(p => random.Next()).Take(8);
             if (item.Catetory == "Merch"){
             <div class="col-3">
                 <a href="../products/Details/@item.Id" class="sanpham1">
-                    <img src="../@Html.DisplayFor(modelItem => item.img1)" class="img-thumbnail" alt="..."
+                    <img src="../img/@Html.DisplayFor(modelItem => item.img1)" class="img-thumbnail" alt="..."
                         style="height: auto; width: 100%;">
 
                     @Html.DisplayFor(modelItem => item.Name)
@@ -186,7 +186,7 @@ var randomProducts = Model.Products.OrderBy(p => random.Next()).Take(8);
             @foreach (var item in randomProducts) {
             <div class="col-3">
                 <a href="../products/Details/@item.Id" class="sanpham1">
-                    <img src="../@Html.DisplayFor(modelItem => item.img1)" class="img-thumbnail" alt="..."
+                    <img src="../img/@Html.DisplayFor(modelItem => item.img1)" class="img-thumbnail" alt="..."
                         style="height: auto; width: 100%;">
 
                     @Html.DisplayFor(modelItem => item.Name)
@@ -228,7 +228,7 @@ var randomProducts = Model.Products.OrderBy(p => random.Next()).Take(8);
             @foreach (var item in randomProducts) {
             <div class="col-3">
                 <a href="../products/Details/@item.Id" class="sanpham1">
-                    <img src="../@Html.DisplayFor(modelItem => item.img1)" class="img-thumbnail" alt="..."
+                    <img src="../img/@Html.DisplayFor(modelItem => item.img1)" class="img-thumbnail" alt="..."
                         style="height: auto; width: 100%;">
 
                     @Html.DisplayFor(modelItem => item.Name)

@@ -35,22 +35,31 @@ app.UseAuthorization();
 app.MapRazorPages();
 
 
+
 app.UseEndpoints(endpoints =>
 {
-    endpoints.MapControllerRoute(
+    endpoints.MapAreaControllerRoute(
         name: "admin",
-        pattern: "admin/{controller=Home}/{action=Index}/{id?}",
-        defaults: new { area = "Admin" }
+        areaName: "Admin",
+        pattern: "admin/{controller=Home}/{action=Index}/{id?}"
     );
+
+    endpoints.MapControllerRoute(
+        name: "products",
+        pattern: "products/{action=Index}/{id?}",
+        defaults: new { controller = "Products", action = "Index" }
+    );
+
+    endpoints.MapControllerRoute(
+        name: "events",
+        pattern: "events/{action=Index}/{id?}",
+        defaults: new { controller = "Events", action = "Index" }
+    );
+
     endpoints.MapControllerRoute(
         name: "default",
         pattern: "{controller=Home}/{action=Index}/{id?}"
     );
-
 });
-
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

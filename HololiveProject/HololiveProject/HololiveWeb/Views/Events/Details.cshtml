@@ -1,78 +1,40 @@
 ﻿@model HololiveWeb.API.Models.Event
+@Model.Date.ToString("dd/MM/yyyy")
 
 @{
     ViewData["Title"] = "Details";
 }
+<style>
+    .centered {
+            display: flex;
+            justify-content: center;
+        }
 
-<h1>Details</h1>
+        .main {
+            width: 48%;
+        }
+        .alink{
+            color: #1da0d0;
+        }
+</style>
 
-<div>
-    <h4>Event</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Title)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Date)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Date)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Img1)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Img1)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Img2)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Img2)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Img3)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Img3)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Preview1)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Preview1)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Preview2)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Preview2)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Preview3)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Preview3)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Preview4)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Preview4)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Preview5)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Preview5)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+<div class="centered" style="margin-top: 70px;">
+        <div class="main">
+            <p>@Html.DisplayFor(model => model.Date)</p>
+            <h4 style="font-weight: 600; color: #1da0d0;">@Html.DisplayFor(model => model.Title)</h4>
+            <div class="khoangcach2"></div>
+            <p style="margin-top: 50px;">
+                @Html.Raw(Model.Preview1)</p>
+            <img src="../../../img/@Html.DisplayFor(model => model.Img1)" alt="" style="height: 380px; width: 705px;">
+            <p style="margin-top: 30px;">@Html.Raw(Model.Preview2)</p>
+            <br>
+            <p>@Html.Raw(Model.Preview3)</p>
+            <img src="../../../img/@Html.DisplayFor(model => model.Img2)" alt="" style="height: 380px; width: 705px;">
+            <p>@Html.Raw(Model.Preview4)</p>
+                        <img src="../../../img/@Html.DisplayFor(model => model.Img3)" alt="" style="height: 380px; width: 705px;">
+<p>@Html.Raw(Model.Preview5)</p>
+        </div>
+    </div>
+
+
+

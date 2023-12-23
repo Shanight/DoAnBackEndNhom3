@@ -134,18 +134,18 @@ ViewData["Title"] = "Details";
                 <div id="carouselExampleCaptions" class="carousel slide">
                     <div class="carousel-inner">
                         <div class="carousel-item active" id="img1">
-                            <img src="../../@Html.DisplayFor(model => model.img1)" class="d-block w-100" alt="..."
+                            <img src="../../img/@Html.DisplayFor(model => model.img1)" class="d-block w-100" alt="..."
                                 style="width: 600px; height: 600px;">
                         </div>
                         <div class="carousel-item" id="img2">
-                            <img src="../../@Html.DisplayFor(model => model.img2)" class="d-block w-100" alt="..."
+                            <img src="../../img/@Html.DisplayFor(model => model.img2)" class="d-block w-100" alt="..."
                                 style="width: 600px; height: 600px;">
                         </div>
                     </div>
 
-                    <a class="btn" onclick="changeImage(1)"><img src="../../@Html.DisplayFor(model => model.img1)"
+                    <a class="btn" onclick="changeImage(1)"><img src="../../img/@Html.DisplayFor(model => model.img1)"
                             style="width: 120px; height: 120px;"></a>
-                    <a class="btn" onclick="changeImage(2)"><img src="../../@Html.DisplayFor(model => model.img2)"
+                    <a class="btn" onclick="changeImage(2)"><img src="../../img/@Html.DisplayFor(model => model.img2)"
                             style="width: 120px; height: 120px;"></a>
                 </div>
 
