@@ -1,56 +1,281 @@
-﻿@{
-    ViewData["Title"] = "Privacy Policy";
-}
-<style>
-    .dangnhap {
-        font-family: "M PLUS Rounded 1c", sans-serif !important;
+﻿  @{
+      ViewData["Title"] = "Privacy Policy";
+  }
+  <style>
+      .dangnhap {
+          font-family: "M PLUS Rounded 1c", sans-serif !important;
+      }
+
+      .about {
+          background-image: url(../img/BGdotblue3.png);
+          height: 370px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .textabout {
+          font-size: 90px;
+          font-weight: 900;
+          background: linear-gradient(146deg, rgba(11, 205, 240, 1) 0%, rgba(77, 163, 241, 1) 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+      }
+
+      .noidung {
+          width: 80%;
+      }
+
+      .centered {
+          display: flex;
+          justify-content: center;
+          margin-top: 40px;
+      }
+    .xanh{
+      color:#24c1ff;
     }
+  </style>
 
-    .about {
-        background-image: url(../img/BGdotblue3.png);
-        height: 370px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .textabout {
-        font-size: 90px;
-        font-weight: 900;
-        background: linear-gradient(146deg, rgba(11, 205, 240, 1) 0%, rgba(77, 163, 241, 1) 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .noidung {
-        width: 70%;
-    }
-
-    .centered {
-        display: flex;
-        justify-content: center;
-        margin-top: 130px;
-    }
-</style>
-
-<div class="about">
-    <h1 class="textabout">ABOUT</h1>
-</div>
-<div class="centered">
-    <div class="noidung">
-        <div class="img" style="text-align: center;">
-            <img src="../img/about_img_chart.png" alt="" style="width: 90%; justify-content: center;">
-        </div>
-        <p style="margin-top: 30px;">
-            Hololive production is a VTuber agency that consists of the talent groups hololive and HOLOSTARS.
-            hololive production has over 70 affiliated talents active in Japan, Indonesia, and English-speaking
-            countries, and has over 70 million YouTuber subscribers all across the channels.
-        </p>
-        <p>
-            With COVER Corporation’s VR/AR technology, hololive production talents provide various experiences
-            ranging from game streams to offline concerts, and form a stable community that connects fans, creators,
-            and talents all around the world via social networks.
-        </p>
-
+  <div class="about">
+      <h1 class="textabout">ABOUT</h1>
+  </div>
+  <div class="centered">
+          <div class="noidung">
+              <div class="img" style="text-align: center;">
+                  <img src="../img/about_img_chart.png" alt="" style="width: 95%; justify-content: center;">
+              </div>
+          </div> 
+      </div>
+  <div class="centered">
+            <div class="noidung">
+              <p style="margin-top: 30px;">
+      Hololive Production is a VTuber agency consisting of talent groups Hololive and HOLOSTARS. The agency boasts over 70 affiliated talents actively performing in Japan, Indonesia, and English-speaking regions, with a combined subscriber base exceeding 70 million across its YouTube channels.
+  </p>
+  <p>
+      Leveraging COVER Corporation's VR/AR technology, Hololive Production talents offer diverse experiences ranging from game streaming to offline concerts. They create a stable community connecting fans, creators, and talents worldwide through social networks.
+  </p>
+  <p>
+      By the year 2023, Hololive Production has grown and established close connections with fans worldwide. VTubers provide interactive entertainment through unique performances and events. Thanks to COVER Corporation's technological innovations, the boundary between virtual and reality continues to blur, enabling fans to engage and empathize with VTubers online.
+  </p>
+     </div>
     </div>
-</div>
+  
+  
+  
+  <section class="centered">
+      <div class="noidung">
+          <div class="col xanh">
+             <p>SPECIALTY 01</p>
+              <h1>Entertainment That Draws in the World</h1>
+
+          </div>
+          <div class="row">
+              <div class="container">
+                  <div class="row align-items-start">
+                      <div class="col-md clearfix">
+                          <div class="col text-center">
+                              <figure class="figure">
+                                  <img src="../img/ab1.png" width="400px" height="300px"
+                                      alt="" class="img-thumbnail float-md-start mb-3 ms-md-3" />
+                                  <figcaption class="figure-caption fw-bold">Shirakami Fubuki</figcaption>
+                              </figure>
+                          </div>
+                      </div>
+                      <div class="col-md clearfix">
+                          <div class="col text-center">
+                              <figure class="figure">
+                                  <img src="../img/ab3.png" width="400px" height="300px"
+                                      alt="" class="img-thumbnail float-md-start mb-3 ms-md-3" />
+                                  <figcaption class="figure-caption fw-bold">Kobo Kanaeru</figcaption>
+                              </figure>
+                          </div>
+                      </div>
+                      <div class="col-md clearfix">
+                          <div class="col text-center">
+                              <figure class="figure">
+                                  <img src="../img/ab2.png" width="400px" height="300px"
+                                      alt="" class="img-thumbnail float-md-start mb-3 ms-md-3" />
+                                  <figcaption class="figure-caption fw-bold">Houshou Marine</figcaption>
+                              </figure>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <div class="centered">
+      <div class="noidung">
+        <!-- Additional content about Holofest event -->
+  <p>
+      Holofest, an annual extravaganza hosted by Hololive Production, is a spectacular event that captivates fans globally. This grand celebration brings together VTubers, creators, and enthusiasts for an immersive experience like no other.
+  </p>
+  <p>
+      During Holofest, fans can anticipate exclusive live performances, interactive sessions, and exciting reveals from their favorite VTubers. The event serves as a platform for talents to showcase their creativity, share behind-the-scenes moments, and engage with the community in unique ways.
+  </p>
+  <p>
+      Holofest isn't just about entertainment; it's a celebration of the vibrant Hololive community. Fans have the opportunity to participate in fan meetings, Q&A sessions, and even virtual meet-and-greets with their beloved VTubers. The sense of unity and connection during Holofest creates unforgettable memories for fans and talents alike.
+  </p>
+  <p>
+      Each Holofest introduces new elements, themes, and surprises, making every edition a fresh and thrilling experience. Whether you're a seasoned fan or a newcomer, Holofest promises an enchanting journey into the diverse and creative world of Hololive Production.
+  </p>
+
+      </div>
+  </div>
+
+<section class="centered">
+    <div class="noidung">
+        <div class="col xanh">
+            <p>SPECIALTY 02</p>
+            <h1>Over 70 Unique Talents</h1>
+        </div>
+        <div class="row">
+            <div class="container">
+                <div class="row align-items-start">
+                    <div class="col-md clearfix">
+                        <div class="col text-center">
+                            <figure class="figure">
+                                <img src="../img/ab4.png" width="400px" height="300px"
+                                    alt="" class="img-thumbnail mb-3 ms-md-3" />
+                                <figcaption class="figure-caption fw-bold">Inugami Korone</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md clearfix">
+                        <div class="col text-center">
+                            <figure class="figure">
+                                <img src="../img/ab5.png" width="400px" height="300px"
+                                    alt="" class="img-thumbnail mb-3 ms-md-3" />
+                                <figcaption class="figure-caption fw-bold">Gawr Gura</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md clearfix">
+                        <div class="col text-center">
+                            <figure class="figure">
+                                <img src="../img/ab6.png" width="400px" height="300px"
+                                    alt="" class="img-thumbnail mb-3 ms-md-3" />
+                                <figcaption class="figure-caption fw-bold">Usada Pekora</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container">
+                <div class="row align-items-start">
+                    <div class="col-md clearfix">
+                        <div class="col text-center">
+                            <figure class="figure">
+                                <img src="../img/ab7.png" width="400px" height="300px"
+                                    alt="" class="img-thumbnail mb-3 ms-md-3" />
+                                <figcaption class="figure-caption fw-bold">Moona Hoshinova</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md clearfix">
+                        <div class="col text-center">
+                            <figure class="figure">
+                                <img src="../img/ab8.png" width="400px" height="300px"
+                                    alt="" class="img-thumbnail mb-3 ms-md-3" />
+                                <figcaption class="figure-caption fw-bold">Shishiro Botan</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md clearfix">
+                        <div class="col text-center">
+                            <figure class="figure">
+                                <img src="../img/ab9.jpg" width="400px" height="300px"
+                                    alt="" class="img-thumbnail mb-3 ms-md-3" />
+                                <figcaption class="figure-caption fw-bold">Nekomata Okayu</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <div class="centered">
+      <div class="noidung">
+        <!-- Additional content about Holofest event -->
+ <p>
+    Holofest, an annual extravaganza orchestrated by Hololive Production, stands as a mesmerizing spectacle that enraptures fans across the globe. This grandiose celebration unites VTubers, creators, and enthusiasts, offering an unparalleled immersive experience.
+</p>
+<p>
+    Throughout Holofest, fans can eagerly anticipate exclusive live performances, engaging interactive sessions, and thrilling revelations from their beloved VTubers. Serving as a dynamic platform, the event enables talents to showcase their ingenuity, divulge behind-the-scenes moments, and interact with the community in unprecedented ways.
+</p>
+<p>
+    Holofest transcends mere entertainment; it embodies a jubilant celebration of the vibrant Hololive community. Fans are invited to partake in fan meetings, enlightening Q&A sessions, and virtual meet-and-greets with their cherished VTubers. The prevailing sense of unity and connection during Holofest forges indelible memories for both fans and talents alike.
+</p>
+<p>
+    Each iteration of Holofest introduces novel elements, thematic twists, and delightful surprises, ensuring that every edition is a fresh and exhilarating journey. Whether you're a seasoned fan or a newcomer, Holofest pledges an enchanting exploration into the multifaceted and imaginative realm of Hololive Production.
+</p>
+
+      </div>
+  </div>
+
+<section class="centered">
+      <div class="noidung">
+          <div class="col xanh">
+             <p>SPECIALTY 03</p>
+              <h1>Unique Streaming Technology and Facilities</h1>
+
+          </div>
+          <div class="row">
+              <div class="container">
+                  <div class="row align-items-start">
+                      <div class="col-md clearfix">
+                          <div class="col text-center">
+                              <img src="../img/ab10.png" width="400px" height="300px"
+                                      alt="" class="img-thumbnail float-md-start mb-3 ms-md-3" />
+                          </div>
+                      </div>
+                      <div class="col-md clearfix">
+                          <div class="col text-center">
+                            <img src="../img/ab11.png" width="400px" height="300px"
+                                      alt="" class="img-thumbnail float-md-start mb-3 ms-md-3" />
+                          </div>
+                      </div>
+                      <div class="col-md clearfix">
+                          <div class="col text-center">
+                              <img src="../img/ab12.png" width="400px" height="300px"
+                                      alt="" class="img-thumbnail float-md-start mb-3 ms-md-3" />
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <div class="centered">
+      <div class="noidung">
+        <!-- Additional content about Holofest event -->
+  <p>
+   By conducting in-house development of the streaming system and content creation, we have succeeded in providing fans with unprecedented virtual entertainment.
+  </p>
+  <p>
+ We have developed our unique streaming system in cutting-edge areas such as VR and AR. We continuously explore advanced technologies to enable at-home 3D streaming using devices such as mocopi and Meta Quest 2.
+  </p>
+  <p>
+      Holofest isn't just about entertainment; it's a celebration of the vibrant Hololive community. Fans have the opportunity to participate in fan meetings, Q&A sessions, and even virtual meet-and-greets with their beloved VTubers. The sense of unity and connection during Holofest creates unforgettable memories for fans and talents alike.
+  </p>
+  <p>
+      Each Holofest introduces new elements, themes, and surprises, making every edition a fresh and thrilling experience. Whether you're a seasoned fan or a newcomer, Holofest promises an enchanting journey into the diverse and creative world of Hololive Production.
+  </p>
+
+      </div>
+  </div>
+
+
+  
+
+
+
+
+

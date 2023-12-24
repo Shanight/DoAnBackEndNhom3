@@ -9191,23 +9191,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\phang\\.nuget\\packages\\": {},
+    "C:\\Users\\nnmin\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\HololiveWeb.csproj",
+      "projectUniqueName": "C:\\Hololive-Project\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\HololiveWeb.csproj",
       "projectName": "HololiveWeb",
-      "projectPath": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\HololiveWeb.csproj",
-      "packagesPath": "C:\\Users\\phang\\.nuget\\packages\\",
-      "outputPath": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\obj\\",
+      "projectPath": "C:\\Hololive-Project\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\HololiveWeb.csproj",
+      "packagesPath": "C:\\Users\\nnmin\\.nuget\\packages\\",
+      "outputPath": "C:\\Hololive-Project\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\phang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nnmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -9222,8 +9222,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb.API\\HololiveWeb.API.csproj": {
-              "projectPath": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb.API\\HololiveWeb.API.csproj"
+            "C:\\Hololive-Project\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb.API\\HololiveWeb.API.csproj": {
+              "projectPath": "C:\\Hololive-Project\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb.API\\HololiveWeb.API.csproj"
             }
           }
         }

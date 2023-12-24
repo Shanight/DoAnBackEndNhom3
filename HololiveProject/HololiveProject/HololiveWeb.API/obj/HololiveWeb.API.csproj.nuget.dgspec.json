@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb.API\\HololiveWeb.API.csproj": {}
+    "C:\\Hololive-Project\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb.API\\HololiveWeb.API.csproj": {}
   },
   "projects": {
-    "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb.API\\HololiveWeb.API.csproj": {
+    "C:\\Hololive-Project\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb.API\\HololiveWeb.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb.API\\HololiveWeb.API.csproj",
+        "projectUniqueName": "C:\\Hololive-Project\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb.API\\HololiveWeb.API.csproj",
         "projectName": "HololiveWeb.API",
-        "projectPath": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb.API\\HololiveWeb.API.csproj",
-        "packagesPath": "C:\\Users\\phang\\.nuget\\packages\\",
-        "outputPath": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb.API\\obj\\",
+        "projectPath": "C:\\Hololive-Project\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb.API\\HololiveWeb.API.csproj",
+        "packagesPath": "C:\\Users\\nnmin\\.nuget\\packages\\",
+        "outputPath": "C:\\Hololive-Project\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\phang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nnmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

@@ -177,101 +177,106 @@
 
     @RenderBody()
 
-    <!--Footer-->
-    <section class="height3">
-        <div class="container text-start">
-            <div class="row">
-                <div class="col">
-                    <div>
-                        <h4 class="text-light text-nowrap  my-md-5 ">A Convallis Ultricies</h4>
+  @{
+    ViewData["Title"] = "Your Page Title";
+}
+
+<!-- Footer -->
+<section class="height3">
+    <div class="container text-start">
+        <div class="row">
+            <div class="col">
+                <div>
+              <h4 class="text-light text-nowrap my-md-5">Contact Hololive</h4>
+             </div>
+               <div class="text-light">
+             <p>
+             Experiencing sadness and pain is not an easy journey, but it's crucial not to harbor resentment towards our employees.</p>
+            <p> Whether it's about an illness or a clinical case of fat trembling, who can occasionally bring a smile if not us?</p>
+            </div>
+
+                <div class="col text-start">
+                    <ul class="top-link ">
+                        <li class="bg-dark"><a href="#"><i class="fa-brands fa-square-facebook  text-light"></i></a>
+                        </li>
+                        <li class="bg-dark"><a href="#"><i class="fa-brands fa-google-plus-g text-light"></i></a>
+                        </li>
+                        <li class="bg-dark"><a href="#"><i class="fa-brands fa-invision text-light"></i></a></li>
+                        <li class="bg-dark"><a href="#"><i class="fa-brands fa-twitter text-light"></i></a></li>
+                        <li class="bg-dark"><a href="#"><i class="fa-brands fa-vk text-light"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <h4 class="text-light text-nowrap  my-md-5 "> Hololive Family</h4>
+                    <div class="text-light">Hololive is a virtual talent agency featuring a diverse group of talents, including Hololive English, Hololive Indonesia, Holostars, and HOLOSTARS English.
                     </div>
+                    <small class="text-light text-decoration-none">Ariday, 6<sup>th</sup> April 2045</small>
+                    <hr class="link-light">
                     <div class="text-light">
-                        <p> Luctus et dolor nulla facilisi fusce sit amet magna non odio molestie egestas nullam id
-                            odio.</p>
-                        <p> Quis risus placerat aliquam nunc nec nunc morbi vel nisi sit amet orci adipiscing pharetra.
-                        </p>
+                       We cherish everyone's support in making Hololive a beloved community. Thank you for being part of the Hololive family!
                     </div>
-                    <div class="col text-start">
-                        <ul class="top-link ">
-                            <li class="bg-dark"><a href="#"><i class="fa-brands fa-square-facebook  text-light"></i></a>
-                            </li>
-                            <li class="bg-dark"><a href="#"><i class="fa-brands fa-google-plus-g text-light"></i></a>
-                            </li>
-                            <li class="bg-dark"><a href="#"><i class="fa-brands fa-invision text-light"></i></a></li>
-                            <li class="bg-dark"><a href="#"><i class="fa-brands fa-twitter text-light"></i></a></li>
-                            <li class="bg-dark"><a href="#"><i class="fa-brands fa-vk text-light"></i></a></li>
-                        </ul>
-                    </div>
+                    <small class="text-light text-decoration-none">Thursday, 5<sup>th</sup> April 2045</small>
                 </div>
-                <div class="col">
-                    <div>
-                        <h4 class="text-light text-nowrap  my-md-5 ">Mauris Lorem Curabitur</h4>
-                        <div class="text-light">Semper lacus id nibh etiiam iaculis viverra pede proin laoreet dolor ut
-                            nunc..
+            </div>
+            <div class="col ">
+                <div>
+                    <h4 class="text-light text-nowrap  my-md-5  ">
+                        Hololive Talent
+                    </h4>
+                    <div class="text-light">hololive English</div>
+                    <hr class="link-light">
+                    <div class="text-light">hololive Indonesia</div>
+                    <hr class="link-light">
+                    <div class="text-light">hololive DEV_IS</div>
+                    <hr class="link-light">
+                    <div class="text-light">HOLOSTARS</div>
+                    <hr class="link-light">
+                    <div class="text-light">HOLOSTARS English</div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <h4 class="text-light text-nowrap my-md-5 ">Hololive Fans' Favorite</h4>
+                    <p class="text-light text-decoration-none">
+                        Subscribe to our newsletter to receive exciting news, event updates, and behind-the-scenes content.
+                    </p>
+                    <form>
+                        <div class="form-group">
+                            <label for="myName"></label>
+                            <input type="text" id="myName" class="form-control" placeholder="Name">
+                            <label for="myEmail"></label>
+                            <input type="email" id="myPassword" class="form-control" placeholder="Email">
                         </div>
-                        <small class="text-light text-decoration-none">Ariday, 6<sup>th</sup> April 2045</small>
-                        <hr class="link-light">
-                        <div class="text-light">Donec turpis aliquam sapien est sodales id elementum at molestie in
-                            felis
-                            class.
-                        </div>
-                        <small class="text-light text-decoration-none">Thursday, 5<sup>th</sup> April 2045</small>
-                    </div>
+                        <button type="submit" class="btn btn-light mt-auto my-md-4"
+                            onclick="validateForm()">Submit</button>
+                    </form>
                 </div>
-                <div class="col ">
-                    <div>
-                        <h4 class="text-light text-nowrap  my-md-5  "> Eget Mauris Egestas</h4>
-                        <div class="text-light">Aptent taciti sociosqu ad</div>
-                        <hr class="link-light">
-                        <div class="text-light">Litora torquent per conubia</div>
-                        <hr class="link-light">
-                        <div class="text-light">Nostra per inceptos himenaeos</div>
-                        <hr class="link-light">
-                        <div class="text-light">Nam semper ipsum et purus</div>
-                        <hr class="link-light">
-                        <div class="text-light">Suspendisse sed quam aliquam</div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div>
-                        <h4 class="text-light text-nowrap my-md-5 ">Volupat Quisque Mauris</h4>
-                        <p class="text-light text-decoration-none">
-                            Viverra etiam dictum euismod lectus vestibulum tincidunt erat vel molestie.
-                        </p>
-                        <form>
-                            <div class="form-group">
-                                <label for="myName"></label>
-                                <input type="text" id="myName" class="form-control" placeholder="Name">
-                                <label for="myEmail"></label>
-                                <input type="email" id="myPassword" class="form-control" placeholder="Email">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Copyright Section -->
+<section class="bg-dark">
+    <div class="container text-center text-bg-dark p-7">
+        <div class="row align-items-center">
+            <table>
+                <tbody class="height">
+                    <tr>
+                        <td class="align-middle ">
+                            <div class="col text-start ">
+                                Copyright Ⓒ 2023-All Right Reserved - Hololive Production
                             </div>
-                            <button type="submit" class="btn btn-light mt-auto my-md-4"
-                                onclick="validateForm()">Submit</button>
-                        </form>
-
-                    </div>
-                </div>
-            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
+    </div>
+</section>
 
-    </section>
-
-    <section class="bg-dark ">
-        <div class="container text-center text-bg-dark  p-7">
-            <div class="row align-items-center">
-                <table>
-                    <tbody class="height">
-                        <tr>
-                            <td class="align-middle ">
-                                <div class="col text-start ">
-                                    Copyright Ⓒ 2023-All Right Reserved - Domain name
-                                </div>
-                            </td>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
     <!--End Footer-->
 
     <!--Day thang len tren-->
