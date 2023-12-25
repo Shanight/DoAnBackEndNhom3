@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace HololiveWeb.API.Models{
     public class Product
 {
@@ -13,7 +15,7 @@ namespace HololiveWeb.API.Models{
     public string Preview4 { get; set; }
     public string Preview5 { get; set; }
     public decimal Price { get; set; }
-    
+
         // Thêm các trường khác nếu cần
     }
 }

@@ -6,9 +6,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using HololiveWeb.API.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace HololiveWeb.Areas.Admin.Controllers
 {
+    [Authorize(Roles ="admin")]
+
     [Area("Admin")]
     public class AdminProductsController : Controller
     {

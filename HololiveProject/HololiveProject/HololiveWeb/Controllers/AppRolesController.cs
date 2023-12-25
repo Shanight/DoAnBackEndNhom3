@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Identity;
 
 namespace HololiveWeb.Controllers
 {
-    [Authorize(Roles ="admin")]
+    //[Authorize(Roles ="admin")]
     public class AppRolesController : Controller
     {
         private readonly RoleManager<IdentityRole> _roleManager;

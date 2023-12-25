@@ -1,5 +1,5 @@
 ﻿@model HololiveWeb.API.Models.Event
-@Model.Date.ToString("dd/MM/yyyy")
+
 
 @{
     ViewData["Title"] = "Details";
@@ -20,7 +20,7 @@
 
 <div class="centered" style="margin-top: 70px;">
         <div class="main">
-            <p>@Html.DisplayFor(model => model.Date)</p>
+            <p>@Model.Date.ToString("dd/MM/yyyy")</p>
             <h4 style="font-weight: 600; color: #1da0d0;">@Html.DisplayFor(model => model.Title)</h4>
             <div class="khoangcach2"></div>
             <p style="margin-top: 50px;">

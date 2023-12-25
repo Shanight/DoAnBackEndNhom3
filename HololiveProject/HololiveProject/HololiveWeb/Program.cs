@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Identity;
 
+
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("ApplicationDbContextConnection") ?? throw new InvalidOperationException("Connection string 'ApplicationDbContextConnection' not found.");
 
@@ -12,7 +13,7 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<ApplicationDbContext1>(options =>
-    options.UseSqlServer( "Server=.\\SHIINAMASHIRO;Database=HLDB;User Id=Sa;Password=123;Integrated Security=False;MultipleActiveResultSets=True;TrustServerCertificate=True"));
+    options.UseSqlServer("Server=.\\SQLEXPRESS;Database=HololiveShop2;User Id=sa;Password=123;Integrated Security=False;MultipleActiveResultSets=True;TrustServerCertificate=True"));
 builder.Services.AddControllersWithViews();
 
 
@@ -36,28 +37,30 @@ app.MapRazorPages();
 
 
 
-app.MapAreaControllerRoute(
-    name: "admin",
-    areaName: "Admin",
-    pattern: "admin/{controller=Home}/{action=Index}/{id?}"
-);
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapAreaControllerRoute(
+        name: "admin",
+        areaName: "Admin",
+        pattern: "admin/{controller=Home}/{action=Index}/{id?}"
+    );
 
-app.MapControllerRoute(
-    name: "products",
-    pattern: "products/{action=Index}/{id?}",
-    defaults: new { controller = "Products", action = "Index" }
-);
+    endpoints.MapControllerRoute(
+        name: "products",
+        pattern: "products/{action=Index}/{id?}",
+        defaults: new { controller = "Products", action = "Index" }
+    );
 
-app.MapControllerRoute(
-    name: "events",
-    pattern: "events/{action=Index}/{id?}",
-    defaults: new { controller = "Events", action = "Index" }
-);
+    endpoints.MapControllerRoute(
+        name: "events",
+        pattern: "events/{action=Index}/{id?}",
+        defaults: new { controller = "Events", action = "Index" }
+    );
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}"
-);
-
+    endpoints.MapControllerRoute(
+        name: "default",
+        pattern: "{controller=Home}/{action=Index}/{id?}"
+    );
+});
 
 app.Run();

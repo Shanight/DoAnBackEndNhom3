@@ -2,8 +2,8 @@
 
 @{
     ViewData["Title"] = "Index";
+    Layout = "_AdminLayout";
 }
-<p style="margin-top: 40px;">fe</p>
 
 <h1>Index</h1>
 
@@ -29,24 +29,6 @@
                 @Html.DisplayNameFor(model => model.img2)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.img3)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Preview1)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Preview2)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Preview3)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Preview4)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Preview5)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.Price)
             </th>
             <th></th>
@@ -70,30 +52,12 @@
             <td>
                 @Html.DisplayFor(modelItem => item.img2)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.img3)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Preview1)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Preview2)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Preview3)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Preview4)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Preview5)
-            </td>
+            
             <td>
                 @Html.DisplayFor(modelItem => item.Price)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
             </td>
         </tr>

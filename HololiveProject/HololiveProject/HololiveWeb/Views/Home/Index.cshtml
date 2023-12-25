@@ -1,8 +1,9 @@
 ﻿@{
-ViewData["Title"] = "Home Page";
-var random = new Random();
-var randomProducts = Model.Products.OrderBy(p => random.Next()).Take(8);
-
+    ViewData["Title"] = "Home Page";
+    var random = new Random();
+    var randomProducts = Model.Products.OrderBy(p => random.Next()).Take(8);
+    int count = 0;
+    int count1 = 0;
 }
 
 @model HololiveWeb.Models.CombinedData
@@ -45,7 +46,6 @@ var randomProducts = Model.Products.OrderBy(p => random.Next()).Take(8);
     <!--End Slide-->
 
     <!--Thông tin 1-->
-    <div class="khoangtrang"></div>
     <div class="container">
         <div class="row">
             <div class="col"></div>
@@ -60,23 +60,23 @@ var randomProducts = Model.Products.OrderBy(p => random.Next()).Take(8);
     <div class="container" style="width: 90%;">
         @foreach (var eventItem in Model.Events.Take(3))
         {
-        <div class="row d-flex align-items-center p-3">
-            <div class="col-2">
-                <div class="cochu1" style="font-size: larger; text-align: center;">
-                    @eventItem.Date.ToString("dd/MM/yyyy")
+            <div class="row d-flex align-items-center p-3">
+                <div class="col-2">
+                    <div class="cochu1" style="font-size: larger; text-align: center;">
+                        @eventItem.Date.ToString("dd/MM/yyyy")
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="informationblue text-white"
+                        style="background-color: #23c2fe; text-align: center; border-radius: 30px; width: 70%;">
+                        Information
+                    </div>
+                </div>
+                <div class="col-8">
+                    <a href="@Url.Action("Details", "Events" , new { id=eventItem.Id })"
+                        class="athongtin1">@eventItem.Title</a>
                 </div>
             </div>
-            <div class="col-2">
-                <div class="informationblue text-white"
-                    style="background-color: #23c2fe; text-align: center; border-radius: 30px; width: 70%;">
-                    Information
-                </div>
-            </div>
-            <div class="col-8">
-                <a href="@Url.Action("Details", "Events" , new { id=eventItem.Id })"
-                    class="athongtin1">@eventItem.Title</a>
-            </div>
-        </div>
         }
     </div>
     <!--End Thông tin 1-->
@@ -97,22 +97,31 @@ var randomProducts = Model.Products.OrderBy(p => random.Next()).Take(8);
 
     <div class="container" style="width: 85%;">
         <div class="row">
-            @foreach (var item in Model.Products.Take(18))
+            @foreach (var item in Model.Products)
             {
-            if (item.Catetory == "Voice") { // Thêm điều kiện kiểm tra danh mục là "Voice"
-            <div class="col-3">
-                <a href="../products/Details/@item.Id" class="sanpham1">
-                    <img src="../../img/@Html.DisplayFor(modelItem => item.img1)" class="img-thumbnail" alt="..."
-                        style="height: auto; width: 100%;"> @Html.DisplayFor(modelItem => item.Name)
-                </a>
-                <div class="sanpham2">
-                    ¥@Html.DisplayFor(modelItem => item.Price)~
-                </div>
-                <br>
-                <br>
-                <br>
-            </div>
-            }
+                if (item.Catetory == "Voice") // Kiểm tra danh mục là "Voice"
+                {
+                    if (count < 8) // Chỉ hiển thị tối đa 8 sản phẩm
+                    {
+                        <div class="col-3">
+                            <a href="../products/Details/@item.Id" class="sanpham1">
+                                <img src="../../img/@Html.DisplayFor(modelItem => item.img1)" class="img-thumbnail" alt="..."
+                                    style="height: auto; width: 100%;"> @Html.DisplayFor(modelItem => item.Name)
+                            </a>
+                            <div class="sanpham2">
+                                ¥@Html.DisplayFor(modelItem => item.Price)~
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                        count++; // Tăng biến đếm lên sau khi hiển thị một sản phẩm
+                    }
+                    else
+                    {
+                        break; // Đã hiển thị đủ 8 sản phẩm, thoát khỏi vòng lặp
+                    }
+                }
             }
         </div>
         <div class="row">
@@ -139,24 +148,31 @@ var randomProducts = Model.Products.OrderBy(p => random.Next()).Take(8);
 
     <div class="container" style="width: 85%;">
         <div class="row">
-            @foreach (var item in Model.Products.Take(11))
+            @foreach (var item in Model.Products)
             {
-            if (item.Catetory == "Merch"){
-            <div class="col-3">
-                <a href="../products/Details/@item.Id" class="sanpham1">
-                    <img src="../img/@Html.DisplayFor(modelItem => item.img1)" class="img-thumbnail" alt="..."
-                        style="height: auto; width: 100%;">
-
-                    @Html.DisplayFor(modelItem => item.Name)
-                </a>
-                <div class="sanpham2">
-                    ¥@Html.DisplayFor(modelItem => item.Price)~
-                </div>
-                <br>
-                <br>
-                <br>
-            </div>
-            }
+                if (item.Catetory == "Keychain")
+                {
+                    if (count1 < 8) // Chỉ hiển thị tối đa 8 sản phẩm
+                    {
+                        <div class="col-3">
+                            <a href="../products/Details/@item.Id" class="sanpham1">
+                                <img src="../../img/@Html.DisplayFor(modelItem => item.img1)" class="img-thumbnail" alt="..."
+                                    style="height: auto; width: 100%;"> @Html.DisplayFor(modelItem => item.Name)
+                            </a>
+                            <div class="sanpham2">
+                                ¥@Html.DisplayFor(modelItem => item.Price)~
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                        count1++; // Tăng biến đếm lên sau khi hiển thị một sản phẩm
+                    }
+                    else
+                    {
+                        break; // Đã hiển thị đủ 8 sản phẩm, thoát khỏi vòng lặp
+                    }
+                }
             }
         </div>
         <div class="row">
@@ -183,21 +199,22 @@ var randomProducts = Model.Products.OrderBy(p => random.Next()).Take(8);
 
     <div class="container" style="width: 85%;">
         <div class="row">
-            @foreach (var item in randomProducts) {
-            <div class="col-3">
-                <a href="../products/Details/@item.Id" class="sanpham1">
-                    <img src="../img/@Html.DisplayFor(modelItem => item.img1)" class="img-thumbnail" alt="..."
-                        style="height: auto; width: 100%;">
+            @foreach (var item in randomProducts)
+            {
+                <div class="col-3">
+                    <a href="../products/Details/@item.Id" class="sanpham1">
+                        <img src="../img/@Html.DisplayFor(modelItem => item.img1)" class="img-thumbnail" alt="..."
+                            style="height: auto; width: 100%;">
 
-                    @Html.DisplayFor(modelItem => item.Name)
-                </a>
-                <div class="sanpham2">
-                    ¥@Html.DisplayFor(modelItem => item.Price)~
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </a>
+                    <div class="sanpham2">
+                        ¥@Html.DisplayFor(modelItem => item.Price)~
+                    </div>
+                    <br>
+                    <br>
+                    <br>
                 </div>
-                <br>
-                <br>
-                <br>
-            </div>
             }
         </div>
         <div class="row">
@@ -225,21 +242,22 @@ var randomProducts = Model.Products.OrderBy(p => random.Next()).Take(8);
 
     <div class="container" style="width: 85%;">
         <div class="row">
-            @foreach (var item in randomProducts) {
-            <div class="col-3">
-                <a href="../products/Details/@item.Id" class="sanpham1">
-                    <img src="../img/@Html.DisplayFor(modelItem => item.img1)" class="img-thumbnail" alt="..."
-                        style="height: auto; width: 100%;">
+            @foreach (var item in randomProducts)
+            {
+                <div class="col-3">
+                    <a href="../products/Details/@item.Id" class="sanpham1">
+                        <img src="../img/@Html.DisplayFor(modelItem => item.img1)" class="img-thumbnail" alt="..."
+                            style="height: auto; width: 100%;">
 
-                    @Html.DisplayFor(modelItem => item.Name)
-                </a>
-                <div class="sanpham2">
-                    ¥@Html.DisplayFor(modelItem => item.Price)~
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </a>
+                    <div class="sanpham2">
+                        ¥@Html.DisplayFor(modelItem => item.Price)~
+                    </div>
+                    <br>
+                    <br>
+                    <br>
                 </div>
-                <br>
-                <br>
-                <br>
-            </div>
             }
         </div>
         <div class="row">
@@ -267,54 +285,25 @@ var randomProducts = Model.Products.OrderBy(p => random.Next()).Take(8);
 
     <div class="container" style="width: 85%;">
         <div class="row">
-            <div class="col-4">
-                <img src="../img/sanpham.jpg" class="img-thumbnail" alt="..." style="height: 225px; width: 400px;">
+            @foreach (var eventItem in Model.Events.Take(3))
+            {
+                <div class="col-4">
+                    <a href="@Url.Action("Details", "Events" , new { id=eventItem.Id })" class="athongtin1">
+                        <img src="../img/@eventItem.Img1" class="img-thumbnail" alt="..."
+                            style="height: 225px; width: 400px;">
 
-                <a href="#" class="sanpham6">
-                    Sakamata Chloe 2nd Anniversary Celebration
-                </a>
-                <div class="khoangcach2"></div>
-                <div class="sanpham3">
-                    カバー株式会社（本社：東京都港区、代表取締役社⻑：⾕郷元昭）は、弊社が運営する⼥性VTuberグループ「ホロライブ」所属の「⾓巻わため」において、2024年1⽉10⽇（⽔）に初となる全国流通フルアルバムのリリース、⾓巻わため
-                    2nd Live「わためぇ Night Fever!! in TOK
+                        @eventItem.Title
+                    </a>
+                    <div class="khoangcach2"></div>
+                    <div class="sanpham3">
+                        @eventItem.Preview1
+                    </div>
+                    <a href="#" class="Link">Read more</a>
+                    <br>
+                    <br>
+                    <br>
                 </div>
-                <a href="#" class="Link">Read more</a>
-                <br>
-                <br>
-                <br>
-            </div>
-            <div class="col-4">
-                <img src="../img/sanpham.jpg" class="img-thumbnail" alt="..." style="height: 225px; width: 400px;">
-
-                <a href="#" class="sanpham6">
-                    Sakamata Chloe 2nd Anniversary Celebration
-                </a>
-                <div class="khoangcach2"></div>
-                <div class="sanpham3">
-                    カバー株式会社（本社：東京都港区、代表取締役社⻑：⾕郷元昭）は、弊社が運営する⼥性VTuberグループ「ホロライブ」所属の「⾓巻わため」において、2024年1⽉10⽇（⽔）に初となる全国流通フルアルバムのリリース、⾓巻わため
-                    2nd Live「わためぇ Night Fever!! in TOK
-                </div>
-                <a href="#" class="Link">Read more</a>
-                <br>
-                <br>
-                <br>
-            </div>
-            <div class="col-4">
-                <img src="../img/sanpham.jpg" class="img-thumbnail" alt="..." style="height: 225px; width: 400px;">
-
-                <a href="#" class="sanpham6">
-                    Sakamata Chloe 2nd Anniversary Celebration
-                </a>
-                <div class="khoangcach2"></div>
-                <div class="sanpham3">
-                    カバー株式会社（本社：東京都港区、代表取締役社⻑：⾕郷元昭）は、弊社が運営する⼥性VTuberグループ「ホロライブ」所属の「⾓巻わため」において、2024年1⽉10⽇（⽔）に初となる全国流通フルアルバムのリリース、⾓巻わため
-                    2nd Live「わためぇ Night Fever!! in TOK
-                </div>
-                <a href="#" class="Link">Read more</a>
-                <br>
-                <br>
-                <br>
-            </div>
+            }
         </div>
     </div>
     <!--End Thông tin 6-->
