@@ -1,23 +1,33 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using HololiveWeb.API.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Extensions.Hosting;
+
 
 namespace HololiveWeb
 {
+
     public class ProductsController : Controller
     {
+        
         private readonly ApplicationDbContext1 _context;
+        private readonly IWebHostEnvironment _webHostEnvironment;
 
-        public ProductsController(ApplicationDbContext1 context)
+
+        public ProductsController(ApplicationDbContext1 context, IWebHostEnvironment webHostEnvironment)
         {
             _context = context;
+            this._webHostEnvironment = webHostEnvironment;
         }
-
         // GET: Products
         public async Task<IActionResult> Index()
         {
@@ -41,7 +51,6 @@ namespace HololiveWeb
 
             return View(product);
         }
-
         // GET: Products/Create
         public IActionResult Create()
         {
@@ -53,10 +62,52 @@ namespace HololiveWeb
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Catetory,img1,img2,img3,Preview1,Preview2,Preview3,Preview4,Preview5,Price")] Product product)
+        public async Task<IActionResult> Create([Bind("Id,Name,img1,img2,img3,Img1up,Img2up,Img3up,Catetory,Price,Preview1,Preview2,Preview3,Preview4,Preview5")] Product product)
         {
             if (ModelState.IsValid)
             {
+                if (product.Img1up != null && product.Img1up.Length > 0)
+                {
+                    string wwwRootPath = _webHostEnvironment.WebRootPath;
+                    string fileName = Path.GetFileNameWithoutExtension(product.Img1up.FileName);
+                    string extension = Path.GetExtension(product.Img1up.FileName);
+                    fileName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
+                    string path = Path.Combine(wwwRootPath + "/img/", fileName);
+                    using (var fileStream = new FileStream(path, FileMode.Create))
+                    {
+                        await product.Img1up.CopyToAsync(fileStream);
+                    }
+                    product.img1 = fileName;
+                }
+
+                if (product.Img2up != null && product.Img2up.Length > 0)
+                {
+                    string wwwRootPath = _webHostEnvironment.WebRootPath;
+                    string fileName = Path.GetFileNameWithoutExtension(product.Img2up.FileName);
+                    string extension = Path.GetExtension(product.Img2up.FileName);
+                    fileName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
+                    string path = Path.Combine(wwwRootPath + "/img/", fileName);
+                    using (var fileStream = new FileStream(path, FileMode.Create))
+                    {
+                        await product.Img2up.CopyToAsync(fileStream);
+                    }
+                    product.img2 = fileName;
+                }
+
+                if (product.Img3up != null && product.Img3up.Length > 0)
+                {
+                    string wwwRootPath = _webHostEnvironment.WebRootPath;
+                    string fileName = Path.GetFileNameWithoutExtension(product.Img3up.FileName);
+                    string extension = Path.GetExtension(product.Img3up.FileName);
+                    fileName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
+                    string path = Path.Combine(wwwRootPath + "/img/", fileName);
+                    using (var fileStream = new FileStream(path, FileMode.Create))
+                    {
+                        await product.Img3up.CopyToAsync(fileStream);
+                    }
+                    product.img3 = fileName;
+                }
+
                 _context.Add(product);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -83,9 +134,10 @@ namespace HololiveWeb
         // POST: Products/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Catetory,img1,img2,img3,Preview1,Preview2,Preview3,Preview4,Preview5,Price")] Product product)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Catetory,img1,img2,img3,Preview1,Preview2,Preview3,Preview4,Preview5,Price,Img1up,Img2up,Img3up")] Product product)
         {
             if (id != product.Id)
             {
@@ -96,6 +148,48 @@ namespace HololiveWeb
             {
                 try
                 {
+                    if (product.Img1up != null && product.Img1up.Length > 0)
+                    {
+                        string wwwRootPath = _webHostEnvironment.WebRootPath;
+                        string fileName = Path.GetFileNameWithoutExtension(product.Img1up.FileName);
+                        string extension = Path.GetExtension(product.Img1up.FileName);
+                        fileName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
+                        string path = Path.Combine(wwwRootPath + "/img/", fileName);
+                        using (var fileStream = new FileStream(path, FileMode.Create))
+                        {
+                            await product.Img1up.CopyToAsync(fileStream);
+                        }
+                        product.img1 = fileName;
+                    }
+
+                    if (product.Img2up != null && product.Img2up.Length > 0)
+                    {
+                        string wwwRootPath = _webHostEnvironment.WebRootPath;
+                        string fileName = Path.GetFileNameWithoutExtension(product.Img2up.FileName);
+                        string extension = Path.GetExtension(product.Img2up.FileName);
+                        fileName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
+                        string path = Path.Combine(wwwRootPath + "/img/", fileName);
+                        using (var fileStream = new FileStream(path, FileMode.Create))
+                        {
+                            await product.Img2up.CopyToAsync(fileStream);
+                        }
+                        product.img2 = fileName;
+                    }
+
+                    if (product.Img3up != null && product.Img3up.Length > 0)
+                    {
+                        string wwwRootPath = _webHostEnvironment.WebRootPath;
+                        string fileName = Path.GetFileNameWithoutExtension(product.Img3up.FileName);
+                        string extension = Path.GetExtension(product.Img3up.FileName);
+                        fileName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
+                        string path = Path.Combine(wwwRootPath + "/img/", fileName);
+                        using (var fileStream = new FileStream(path, FileMode.Create))
+                        {
+                            await product.Img3up.CopyToAsync(fileStream);
+                        }
+                        product.img3 = fileName;
+                    }
+
                     _context.Update(product);
                     await _context.SaveChangesAsync();
                 }
@@ -114,7 +208,6 @@ namespace HololiveWeb
             }
             return View(product);
         }
-
         // GET: Products/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "xc92fvsZOAciuqlpUckvrRSuaS3SB2LNDrpAYpStYX95ar6iaLUEUqQyhCtF9fyk6Z3RkoDIWouS6Liona1c2w==",
+  "dgSpecHash": "/HTSDihT+QRYFDmRbeKqOdaBChe0uzJtDF5MJtldrHCIO3nIynP5cPF9U0UHI9GM3pPZ2Wth2wPxrp0gugM8hQ==",
   "success": true,
   "projectFilePath": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb.API\\HololiveWeb.API.csproj",
   "expectedPackageFiles": [
@@ -59,6 +59,7 @@
     "C:\\Users\\phang\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.0\\microsoft.aspnetcore.authorization.8.0.0.nupkg.sha512",
     "C:\\Users\\phang\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.0\\microsoft.aspnetcore.components.8.0.0.nupkg.sha512",
     "C:\\Users\\phang\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\8.0.0\\microsoft.aspnetcore.components.analyzers.8.0.0.nupkg.sha512",
+    "C:\\Users\\phang\\.nuget\\packages\\microsoft.aspnetcore.components.authorization\\8.0.0\\microsoft.aspnetcore.components.authorization.8.0.0.nupkg.sha512",
     "C:\\Users\\phang\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\8.0.0\\microsoft.aspnetcore.components.forms.8.0.0.nupkg.sha512",
     "C:\\Users\\phang\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.0\\microsoft.aspnetcore.components.quickgrid.8.0.0.nupkg.sha512",
     "C:\\Users\\phang\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid.entityframeworkadapter\\8.0.0\\microsoft.aspnetcore.components.quickgrid.entityframeworkadapter.8.0.0.nupkg.sha512",

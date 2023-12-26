@@ -1,0 +1,201 @@
+﻿@model IEnumerable<HololiveWeb.API.Models.Product>
+
+
+@{
+    ViewData["Title"] = "Index";
+    int count = 0;
+
+}
+    <style>
+        .sbox {
+            position: relative;
+        }
+
+        .stext {
+            width: 230px;
+            height: 45px;
+            background: rgba(240, 248, 255, 0.82);
+            border: 2px solid rgb(255, 255, 255);
+            font-size: 10pt;
+            float: left;
+            padding-left: 45px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 35px;
+        }
+
+        .fa-search {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin-left: 16px;
+            margin-top: 16px;
+            z-index: 1;
+            color: #000000;
+        }
+
+        /* Footer*/
+        .top-link {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+            .top-link li {
+                display: inline-block;
+                padding: 10px;
+                border-radius: 5px;
+                align-items: center;
+            }
+
+        .text-top {
+            vertical-align: text-top
+        }
+
+        .height1 {
+            height: 500px;
+        }
+
+        .height4 {
+            height: 100px;
+        }
+
+        .btn1 {
+            background-color: aquamarine;
+        }
+
+        .height5 {
+            height: 80px
+        }
+
+        .height3 {
+            background: rgb(60, 194, 220);
+            background: linear-gradient(146deg, rgba(60, 194, 220, 1) 0%, rgba(75, 157, 236, 1) 100%);
+        }
+
+        .top {
+            float: right;
+        }
+
+        /* Thêm CSS để chỉnh khoảng cách */
+    </style>
+
+               
+    <div class="container" style="margin-top:70px">
+        <div class="row">
+            <div class="col-md-2 ">
+                <div class="sticky-top">
+                    <p style="font-weight: bold; padding-left: 6%;">Filter by</p>
+                    <hr style="margin-top: 0;">
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn" data-bs-toggle="collapse" href="#collapseExample">
+                            Recommended
+                        </a>
+                        <hr style="margin-top: 0; margin-bottom: 0;">
+                    </p>
+
+                    <div class="collapse" id="collapseExample" style="padding-left: 10%;">
+                        <label class="" style="margin-bottom: 3%;">
+                            <input type="checkbox" name="" value=""><span class=""></span> Ending Soon
+                        </label>
+                        <label class="" style="margin-bottom: 3%;">
+                            <input type="checkbox" name="" value=""><span class=""></span> Ending Soon
+                        </label>
+                        <label class="" style="margin-bottom: 3%;">
+                            <input type="checkbox" name="" value=""><span class=""></span> Ending Soon
+                        </label>
+                        <label class="" style="margin-bottom: 3%;">
+                            <input type="checkbox" name="" value=""><span class=""></span> Ending Soon
+                        </label>
+                        <label class="" style="margin-bottom: 10%;">
+                            <input type="checkbox" name="" value=""><span class=""></span> Ending Soon
+                        </label>
+
+                    </div>
+
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn" data-bs-toggle="collapse" href="#collapseExample1">
+                            Group
+                        </a>
+                        <hr style="margin-top: 0; margin-bottom: 0;">
+                    </p>
+
+                    <div class="collapse" id="collapseExample1" style="padding-left: 10%;">
+                        <label class="" style="margin-bottom: 3%;">
+                            <input type="checkbox" name="" value=""><span class=""></span> Ending Soon
+                        </label>
+                        <label class="" style="margin-bottom: 3%;">
+                            <input type="checkbox" name="" value=""><span class=""></span> Ending Soon
+                        </label>
+                        <label class="" style="margin-bottom: 3%;">
+                            <input type="checkbox" name="" value=""><span class=""></span> Ending Soon
+                        </label>
+                        <label class="" style="margin-bottom: 3%;">
+                            <input type="checkbox" name="" value=""><span class=""></span> Ending Soon
+                        </label>
+                        <label class="" style="margin-bottom: 10%;">
+                            <input type="checkbox" name="" value=""><span class=""></span> Ending Soon
+                        </label>
+                    </div>
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn" data-bs-toggle="collapse" href="#collapseExample2">
+                            Talents
+                        </a>
+                        <hr style="margin-top: 0; margin-bottom: 0;">
+                    </p>
+
+                    <div class="collapse" id="collapseExample2" style="padding-left: 10%;">
+                        <label class="" style="margin-bottom: 3%;">
+                            <input type="checkbox" name="" value=""><span class=""></span> Ending Soon
+                        </label>
+                        <label class="" style="margin-bottom: 3%;">
+                            <input type="checkbox" name="" value=""><span class=""></span> Ending Soon
+                        </label>
+                        <label class="" style="margin-bottom: 3%;">
+                            <input type="checkbox" name="" value=""><span class=""></span> Ending Soon
+                        </label>
+                        <label class="" style="margin-bottom: 3%;">
+                            <input type="checkbox" name="" value=""><span class=""></span> Ending Soon
+                        </label>
+                        <label class="" style="margin-bottom: 10%;">
+                            <input type="checkbox" name="" value=""><span class=""></span> Ending Soon
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="row">
+                    @foreach (var item in Model)
+                    {
+
+                    if (item.Catetory == "Voice") // Kiểm tra danh mục là "Voice"
+                    {
+                        if (count < 8) // Chỉ hiển thị tối đa 8 sản phẩm
+                        {
+                            <div class="col-3">
+                                <a href="../products/Details/@item.Id" class="sanpham1">
+                                    <img src="../../img/@Html.DisplayFor(modelItem => item.img1)" class="img-thumbnail" alt="..."
+                                         style="height: auto; width: 100%;"> @Html.DisplayFor(modelItem => item.Name)
+                                </a>
+                                <div class="sanpham2">
+                                    ¥@Html.DisplayFor(modelItem => item.Price)~
+                                </div>
+                                <br>
+                                <br>
+                                <br>
+                            </div>
+                            count++; // Tăng biến đếm lên sau khi hiển thị một sản phẩm
+                        }
+                        else
+                        {
+                            break; // Đã hiển thị đủ 8 sản phẩm, thoát khỏi vòng lặp
+                        }
+                    }
+                    }
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    

@@ -5,14 +5,15 @@
     Layout = "_AdminLayout";
 
 }
-
+@if (User.IsInRole("admin"))
+{
 <h1>Edit</h1>
 
 <h4>Event</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Edit">
+            <form asp-action="Edit" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
             <div class="form-group">
@@ -25,45 +26,49 @@
                 <input asp-for="Date" class="form-control" />
                 <span asp-validation-for="Date" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Img1" class="control-label"></label>
-                <input asp-for="Img1" class="form-control" />
-                <span asp-validation-for="Img1" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Img2" class="control-label"></label>
-                <input asp-for="Img2" class="form-control" />
-                <span asp-validation-for="Img2" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Img3" class="control-label"></label>
-                <input asp-for="Img3" class="form-control" />
-                <span asp-validation-for="Img3" class="text-danger"></span>
-            </div>
+                <input asp-for="Img1" class="form-control" value="1" hidden />
+                <input asp-for="Img2" class="form-control" value="1" hidden />
+                <input asp-for="Img3" class="form-control" value="1" hidden />
+
+                <div class="form-group">
+                    <label asp-for="Img1up" class="control-label"></label>
+                    <input asp-for="Img1up" accept="image/*" />
+                    <span asp-validation-for="Img1up" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Img2up" class="control-label"></label>
+                    <input asp-for="Img2up" accept="image/*" />
+                    <span asp-validation-for="Img2up" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Img3up" class="control-label"></label>
+                    <input asp-for="Img3up" accept="image/*" />
+                    <span asp-validation-for="Img3up" class="text-danger"></span>
+                </div>
             <div class="form-group">
                 <label asp-for="Preview1" class="control-label"></label>
-                <input asp-for="Preview1" class="form-control" />
-                <span asp-validation-for="Preview1" class="text-danger"></span>
+                    <textarea asp-for="Preview1" class="form-control ckeditor"></textarea>
+                    <span asp-validation-for="Preview1" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Preview2" class="control-label"></label>
-                <input asp-for="Preview2" class="form-control" />
-                <span asp-validation-for="Preview2" class="text-danger"></span>
+                    <textarea asp-for="Preview2" class="form-control ckeditor1"></textarea>
+                    <span asp-validation-for="Preview2" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Preview3" class="control-label"></label>
-                <input asp-for="Preview3" class="form-control" />
-                <span asp-validation-for="Preview3" class="text-danger"></span>
+                    <textarea asp-for="Preview3" class="form-control ckeditor2"></textarea>
+                    <span asp-validation-for="Preview3" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Preview4" class="control-label"></label>
-                <input asp-for="Preview4" class="form-control" />
-                <span asp-validation-for="Preview4" class="text-danger"></span>
+                    <textarea asp-for="Preview4" class="form-control ckeditor3"></textarea>
+                    <span asp-validation-for="Preview4" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Preview5" class="control-label"></label>
-                <input asp-for="Preview5" class="form-control" />
-                <span asp-validation-for="Preview5" class="text-danger"></span>
+                    <textarea asp-for="Preview5" class="form-control ckeditor4"></textarea>
+                    <span asp-validation-for="Preview5" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
@@ -75,6 +80,43 @@
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
+    <script>
+        ClassicEditor
+            .create(document.querySelector('.ckeditor'))
+            .catch(error => {
+                console.error(error);
+            });
+
+        ClassicEditor
+            .create(document.querySelector('.ckeditor1'))
+            .catch(error => {
+                console.error(error);
+            });
+
+        ClassicEditor
+            .create(document.querySelector('.ckeditor2'))
+            .catch(error => {
+                console.error(error);
+            });
+
+        ClassicEditor
+            .create(document.querySelector('.ckeditor3'))
+            .catch(error => {
+                console.error(error);
+            });
+
+        ClassicEditor
+            .create(document.querySelector('.ckeditor4'))
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
+
+}
+else
+{
+    <h1> Bạn không có quyền truy cập vào đây!!</h1>
+}
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

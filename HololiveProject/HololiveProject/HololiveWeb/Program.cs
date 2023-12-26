@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,9 +14,12 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<ApplicationDbContext1>(options =>
-    options.UseSqlServer("Server=.\\SQLEXPRESS;Database=HololiveShop2;User Id=sa;Password=123;Integrated Security=False;MultipleActiveResultSets=True;TrustServerCertificate=True"));
+    options.UseSqlServer("Server=.\\SQLEXPRESS;Database=HololiveShop3;User Id=sa;Password=123;Integrated Security=False;MultipleActiveResultSets=True;TrustServerCertificate=True"));
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddMvc().AddRazorPagesOptions(options =>
+{
+    options.Conventions.AddPageRoute("/Products/Create", "/products/create");
+}).SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
 
 builder.Services.AddDefaultIdentity<IdentityUser>()
     .AddDefaultTokenProviders()

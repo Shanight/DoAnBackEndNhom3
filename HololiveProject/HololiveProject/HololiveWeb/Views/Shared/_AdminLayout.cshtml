@@ -71,16 +71,48 @@
             /* Hide the horizontal scrollbar */
         }
     </style>
+    <script src="https://cdn.ckeditor.com/ckeditor5/34.1.0/classic/ckeditor.js"></script>
+
+    <script>
+        ClassicEditor
+            .create(document.querySelector('.ckeditor'))
+            .catch(error => {
+                console.error(error);
+            });
+
+        ClassicEditor
+            .create(document.querySelector('.ckeditor1'))
+            .catch(error => {
+                console.error(error);
+            });
+
+        ClassicEditor
+            .create(document.querySelector('.ckeditor2'))
+            .catch(error => {
+                console.error(error);
+            });
+
+        ClassicEditor
+            .create(document.querySelector('.ckeditor3'))
+            .catch(error => {
+                console.error(error);
+            });
+
+        ClassicEditor
+            .create(document.querySelector('.ckeditor4'))
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
 </head>
 
 <body>
     <div class="row">
         <div class="col-md-2">
             <ul class="ul">
-                <li class="li"><a href="mota.html"><i class="fa-solid fa-house"></i> Home</a></li>
-                <li class="li py-1"><a href="them.html"><i class="fa-solid fa-circle-plus"></i> News</a></li>
-                <li class="li py-1"><a href="../products"><i class="fa-solid fa-circle-plus"></i> Products</a></li>
-                <li class="li py-1"><a href="../events"><i class="fa-solid fa-circle-plus"></i> events</a></li>
+                <li class="li"><a asp-controller="Home" asp-action="Index"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li class="li py-1"><a asp-controller="Products" asp-action="Index"><i class="fa-solid fa-circle-plus"></i> Products</a></li>
+                <li class="li py-1"><a asp-controller="events" asp-action="Index"><i class="fa-solid fa-circle-plus"></i> events</a></li>
 
             </ul>
         </div>
