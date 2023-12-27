@@ -21,10 +21,24 @@ namespace HololiveWeb
         }
 
         // GET: Events
-        public async Task<IActionResult> Index()
-        {
-            return View(await _context.Events.ToListAsync());
-        }
+        public IActionResult Index(int page = 1)
+{
+    int pageSize = 10;
+    var totalItems = _context.Events.Count();
+    var totalPages = (int)Math.Ceiling((double)totalItems / pageSize);
+    
+    var events = _context.Events
+        .OrderBy(p => p.Id)
+        .Skip((page - 1) * pageSize)
+        .Take(pageSize)
+        .ToList();
+    
+    ViewBag.CurrentPage = page;
+    ViewBag.TotalPages = totalPages;
+
+    return View(events);
+}
+        
 
         // GET: Events/Details/5
         public async Task<IActionResult> Details(int? id)

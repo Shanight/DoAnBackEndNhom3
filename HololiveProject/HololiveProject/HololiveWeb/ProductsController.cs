@@ -29,10 +29,23 @@ namespace HololiveWeb
             this._webHostEnvironment = webHostEnvironment;
         }
         // GET: Products
-        public async Task<IActionResult> Index()
-        {
-            return View(await _context.Products.ToListAsync());
-        }
+        public IActionResult Index(int page = 1)
+{
+    int pageSize = 10;
+    var totalItems = _context.Products.Count();
+    var totalPages = (int)Math.Ceiling((double)totalItems / pageSize);
+    
+    var products = _context.Products
+        .OrderBy(p => p.Id)
+        .Skip((page - 1) * pageSize)
+        .Take(pageSize)
+        .ToList();
+    
+    ViewBag.CurrentPage = page;
+    ViewBag.TotalPages = totalPages;
+
+    return View(products);
+}
 
         // GET: Products/Details/5
         public async Task<IActionResult> Details(int? id)

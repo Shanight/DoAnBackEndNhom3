@@ -3,63 +3,89 @@
 @{
     ViewData["Title"] = "Index";
     Layout = "_AdminLayout";
+        int currentPage = ViewBag.CurrentPage ?? 1;
+    int totalPages = ViewBag.TotalPages ?? 1;
 }
+<style>
+    .table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.event-image {
+    height: 50px;
+    width: auto;
+}
+
+.edit-link, .delete-link {
+    color: blue;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.edit-link:hover, .delete-link:hover {
+    text-decoration: underline;
+}
+</style>
 @if (User.IsInRole("admin"))
 {
-<h1>Index</h1>
+<h1>Events</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+
 <table class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Title)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Date)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Img1)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Img2)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Img3)
-            </th>
-            
+            <th>Title</th>
+            <th>Date</th>
+            <th>Image 1</th>
+            <th>Image 2</th>
+            <th>Image 3</th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Title)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Date)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Img1)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Img2)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Img3)
-            </td>
-            
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td class="center-align" style="justify-content: center; align-items: center;">@Html.DisplayFor(modelItem => item.Title)</td>
+                <td class="center-align">@Html.DisplayFor(modelItem => item.Date)</td>
+                <td class="center-align">
+                    <img src="~/img/@Html.DisplayFor(modelItem => item.Img1)" alt="Image 1" class="event-image">
+                </td >
+                <td class="center-align">
+                    <img src="~/img/@Html.DisplayFor(modelItem => item.Img2)" alt="Image 2" class="event-image">
+                </td>
+                <td class="center-align">
+                    <img src="~/img/@Html.DisplayFor(modelItem => item.Img3)" alt="Image 3" class="event-image">
+                </td>
+                <td class="center-align">
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="edit-link"><i class="fa-regular fa-pen-to-square fa-xl"style="color: #08f724;"></i></a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="delete-link"><i class="fa-solid fa-delete-left fa-xl" style="color: red;"></i></a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
+@if (totalPages > 1)
+    {
+        <ul class="pagination">
+            @for (int i = 1; i <= totalPages; i++)
+            {
+                <li class="page-item @(i == currentPage ? "active" : "")">
+                    <a class="page-link" href="@Url.Action("Index", new { page = i })">@i</a>
+                </li>
+            }
+        </ul>
+    }
 }
 else
 {

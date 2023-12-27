@@ -1,13 +1,14 @@
 ﻿@model IEnumerable<HololiveWeb.API.Models.Product>
 
-
 @{
     ViewData["Title"] = "Index";
     Layout = "_AdminLayout";
+    int currentPage = ViewBag.CurrentPage ?? 1;
+    int totalPages = ViewBag.TotalPages ?? 1;
 }
+
 @if (User.IsInRole("admin"))
 {
-
     <h1>Index</h1>
     <p>
         <a asp-action="Create">Create New</a>
@@ -50,23 +51,34 @@
                         @Html.DisplayFor(modelItem => item.Catetory)
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.img1)
+                        <img src="../../../../img/@Html.DisplayFor(modelItem => item.img1)" alt="" style="height: 50px; width: auto;">
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.img2)
+                        <img src="../../../../img/@Html.DisplayFor(modelItem => item.img2)" alt="" style="height: 50px; width: auto;">
                     </td>
-
                     <td>
                         @Html.DisplayFor(modelItem => item.Price)
                     </td>
                     <td>
-                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                        <a asp-action="Edit" asp-route-id="@item.Id"><i class="fa-regular fa-pen-to-square fa-xl"style="color: #08f724;"></i></a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id"><i class="fa-solid fa-delete-left fa-xl" style="color: red;"></i></a>
                     </td>
                 </tr>
             }
         </tbody>
     </table>
+
+    @if (totalPages > 1)
+    {
+        <ul class="pagination">
+            @for (int i = 1; i <= totalPages; i++)
+            {
+                <li class="page-item @(i == currentPage ? "active" : "")">
+                    <a class="page-link" href="@Url.Action("Index", new { page = i })">@i</a>
+                </li>
+            }
+        </ul>
+    }
 }
 else
 {
