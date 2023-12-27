@@ -8,78 +8,108 @@
 <script src="https://cdn.ckeditor.com/ckeditor5/34.1.0/classic/ckeditor.js"></script>
 @if (User.IsInRole("admin"))
 {
-<h1>Create</h1>
+<h1 style="margin-top: 50px; text-align: center;">Create event</h1>
 
-<h4>Event</h4>
 <hr />
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-2"></div>
+    <div class="col-md-8">
             <form asp-action="Create" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
+            <div class="row">
+                <div class="col-6">
+<div class="form-group">
                 <label asp-for="Title" class="control-label"></label>
                 <input asp-for="Title" class="form-control" />
                 <span asp-validation-for="Title" class="text-danger"></span>
             </div>
-            <div class="form-group">
+                </div>
+
+<div class="col-6">
+                    <div class="form-group">
                 <label asp-for="Date" class="control-label"></label>
                 <input asp-for="Date" class="form-control" />
                 <span asp-validation-for="Date" class="text-danger"></span>
             </div>
-                <input asp-for="Img1" class="form-control" value="1" hidden />
-                <input asp-for="Img2" class="form-control" value="1" hidden />
-                <input asp-for="Img3" class="form-control" value="1" hidden />
+                </div>
 
-                <div class="form-group">
+                <div class="col-4">
+                    <div class="form-group">
                     <label asp-for="Img1up" class="control-label"></label>
-                    <input asp-for="Img1up" accept="image/*" />
+                    <input asp-for="Img1up" accept="image/*" class="form-control"/>
                     <span asp-validation-for="Img1up" class="text-danger"></span>
                 </div>
-                <div class="form-group">
+                </div>
+
+                <div class="col-4">
+                    <div class="form-group">
                     <label asp-for="Img2up" class="control-label"></label>
-                    <input asp-for="Img2up" accept="image/*" />
+                    <input asp-for="Img2up" accept="image/*" class="form-control"/>
                     <span asp-validation-for="Img2up" class="text-danger"></span>
                 </div>
-                <div class="form-group">
+                </div>
+
+                <div class="col-4">
+                    <div class="form-group">
                     <label asp-for="Img3up" class="control-label"></label>
-                    <input asp-for="Img3up" accept="image/*" />
+                    <input asp-for="Img3up" accept="image/*" class="form-control"/>
                     <span asp-validation-for="Img3up" class="text-danger"></span>
                 </div>
-                <div class="form-group">
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
                     <label asp-for="Preview1" class="control-label"></label>
                     <textarea asp-for="Preview1" class="form-control ckeditor"></textarea>
                     <span asp-validation-for="Preview1" class="text-danger"></span>
                 </div>
-                <div class="form-group">
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
                     <label asp-for="Preview2" class="control-label"></label>
                     <textarea asp-for="Preview2" class="form-control ckeditor1"></textarea>
                     <span asp-validation-for="Preview2" class="text-danger"></span>
                 </div>
-                <div class="form-group">
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
                     <label asp-for="Preview3" class="control-label"></label>
                     <textarea asp-for="Preview3" class="form-control ckeditor2"></textarea>
                     <span asp-validation-for="Preview3" class="text-danger"></span>
                 </div>
-                <div class="form-group">
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
                     <label asp-for="Preview4" class="control-label"></label>
                     <textarea asp-for="Preview4" class="form-control ckeditor3"></textarea>
                     <span asp-validation-for="Preview4" class="text-danger"></span>
                 </div>
-                <div class="form-group">
+                </div>
+                <div class="col-12">
+                    <div class="form-group">
                     <label asp-for="Preview5" class="control-label"></label>
                     <textarea asp-for="Preview5" class="form-control ckeditor4"></textarea>
                     <span asp-validation-for="Preview5" class="text-danger"></span>
                 </div>
+                </div>
+            </div>
+
+            
+            
+                <input asp-for="Img1" class="form-control" value="1" hidden />
+                <input asp-for="Img2" class="form-control" value="1" hidden />
+                <input asp-for="Img3" class="form-control" value="1" hidden />
+                
+                
+                
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
+                <a asp-action="Index"><input type="button" value="Back" class="btn btn-danger"></a>
             </div>
         </form>
     </div>
+    <div class="col-2"></div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
     <script>
         ClassicEditor
             .create(document.querySelector('.ckeditor'))

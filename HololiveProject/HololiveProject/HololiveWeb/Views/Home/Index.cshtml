@@ -99,8 +99,7 @@
         <div class="row">
             @foreach (var item in Model.Products)
             {
-                if (item.Catetory == "Voice") // Kiểm tra danh mục là "Voice"
-                {
+
                     if (count < 8) // Chỉ hiển thị tối đa 8 sản phẩm
                     {
                         <div class="col-3">
@@ -121,7 +120,7 @@
                     {
                         break; // Đã hiển thị đủ 8 sản phẩm, thoát khỏi vòng lặp
                     }
-                }
+                
             }
         </div>
         <div class="row">

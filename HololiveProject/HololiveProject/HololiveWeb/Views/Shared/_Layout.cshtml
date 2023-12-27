@@ -197,25 +197,19 @@
                                 asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-controller="Shop" asp-action="Index">Shop</a>
+                            <a class="nav-link" asp-controller="Search" asp-action="Index">Shop</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" asp-controller="Home" asp-action="Privacy">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-controller="AppRoles" asp-action="Index">Roles</a>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="col-2">
                 <div class="box">
-                    <form class="sbox" action="/search" method="get">
-                        <input class="stext" type="text" name="q" placeholder="Tìm kiếm bài viết..."
+                    <form class="sbox" action="/Search/Index" method="get">
+                        <input class="stext" type="text" name="keyword" placeholder="Tìm kiếm bài viết..."
                             style="font-size: medium; font-weight: 600;">
-                        <a class="sbutton" type="submit" href="javascript:void(0);">
-                            <i class="fa fa-search"></i>
-                        </a>
                     </form>
                 </div>
             </div>

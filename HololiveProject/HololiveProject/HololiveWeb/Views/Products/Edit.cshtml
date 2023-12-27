@@ -6,84 +6,120 @@
 }
 @if (User.IsInRole("admin"))
 {
-<h1 style="margin-top: 50px;">Edit</h1>
+<h1 style="margin-top: 50px; text-align: center;">Edit product</h1>
 
-<h4>Product</h4>
 <hr />
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-2"></div>
+    <div class="col-md-8">
             <form asp-action="Edit" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
-            <div class="form-group">
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
                 <label asp-for="Name" class="control-label"></label>
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
-            <div class="form-group">
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
                 <label asp-for="Catetory" class="control-label"></label>
                 <input asp-for="Catetory" class="form-control" />
                 <span asp-validation-for="Catetory" class="text-danger"></span>
             </div>
+                </div>
+            </div>
+            
+            
                 <input asp-for="img1" class="form-control" value="1" hidden />
                 <input asp-for="img2" class="form-control" value="1" hidden />
                 <input asp-for="img3" class="form-control" value="1" hidden />
 
-                <div class="form-group">
+            <div class="row">
+                <div class="col-4">
+                    <div class="form-group">
                     <label asp-for="Img1up" class="control-label"></label>
-                    <input asp-for="Img1up" accept="image/*" />
+                    <input asp-for="Img1up" accept="image/*" class="form-control"/>
                     <span asp-validation-for="Img1up" class="text-danger"></span>
                 </div>
-                <div class="form-group">
+                </div>
+                <div class="col-4">
+                    <div class="form-group">
                     <label asp-for="Img2up" class="control-label"></label>
-                    <input asp-for="Img2up" accept="image/*" />
+                    <input asp-for="Img2up" accept="image/*" class="form-control"/>
                     <span asp-validation-for="Img2up" class="text-danger"></span>
                 </div>
-                <div class="form-group">
+                </div>
+                <div class="col-4">
+<div class="form-group">
                     <label asp-for="Img3up" class="control-label"></label>
-                    <input asp-for="Img3up" accept="image/*" />
+                    <input asp-for="Img3up" accept="image/*" class="form-control"/>
                     <span asp-validation-for="Img3up" class="text-danger"></span>
                 </div>
-            <div class="form-group">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+<div class="form-group">
                 <label asp-for="Preview1" class="control-label"></label>
                     <textarea asp-for="Preview1" class="form-control ckeditor"></textarea>
                     <span asp-validation-for="Preview1" class="text-danger"></span>
             </div>
-            <div class="form-group">
+                </div>
+                <div class="col-6">
+<div class="form-group">
                 <label asp-for="Preview2" class="control-label"></label>
                     <textarea asp-for="Preview2" class="form-control ckeditor1"></textarea>
                     <span asp-validation-for="Preview2" class="text-danger"></span>
             </div>
-            <div class="form-group">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
                 <label asp-for="Preview3" class="control-label"></label>
                     <textarea asp-for="Preview3" class="form-control ckeditor2"></textarea>
                     <span asp-validation-for="Preview3" class="text-danger"></span>
             </div>
-            <div class="form-group">
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
                 <label asp-for="Preview4" class="control-label"></label>
                     <textarea asp-for="Preview4" class="form-control ckeditor3"></textarea>
                     <span asp-validation-for="Preview4" class="text-danger"></span>
             </div>
-            <div class="form-group">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
                 <label asp-for="Preview5" class="control-label"></label>
                     <textarea asp-for="Preview5" class="form-control ckeditor4"></textarea>
                     <span asp-validation-for="Preview5" class="text-danger"></span>
             </div>
-            <div class="form-group">
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
                 <label asp-for="Price" class="control-label"></label>
                 <input asp-for="Price" class="form-control" />
                 <span asp-validation-for="Price" class="text-danger"></span>
             </div>
+                </div>
+            </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
+                <a asp-action="Index"><input type="button" value="Back" class="btn btn-danger"></a>
             </div>
         </form>
     </div>
+    <div class="col-2"></div>
 </div>
 
-<div>
-    <a href="../../admin/products">Back to List</a>
-</div>
+
     <script>
         ClassicEditor
             .create(document.querySelector('.ckeditor'))

@@ -3,199 +3,180 @@
 
 @{
     ViewData["Title"] = "Index";
-    int count = 0;
+
 
 }
-    <style>
-        .sbox {
-            position: relative;
-        }
+<style>
+    .sbox {
+        position: relative;
+    }
 
-        .stext {
-            width: 230px;
-            height: 45px;
-            background: rgba(240, 248, 255, 0.82);
-            border: 2px solid rgb(255, 255, 255);
-            font-size: 10pt;
-            float: left;
-            padding-left: 45px;
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-            border-radius: 35px;
-        }
+    .stext {
+        width: 230px;
+        height: 45px;
+        background: rgba(240, 248, 255, 0.82);
+        border: 2px solid rgb(255, 255, 255);
+        font-size: 10pt;
+        float: left;
+        padding-left: 45px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 35px;
+    }
 
-        .fa-search {
-            position: absolute;
-            top: 0;
-            left: 0;
-            margin-left: 16px;
-            margin-top: 16px;
-            z-index: 1;
-            color: #000000;
-        }
+    .fa-search {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: 16px;
+        margin-top: 16px;
+        z-index: 1;
+        color: #000000;
+    }
 
-        /* Footer*/
-        .top-link {
-            padding: 0;
-            margin: 0;
-            list-style-type: none;
-        }
+    /* Footer*/
+    .top-link {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
 
-            .top-link li {
-                display: inline-block;
-                padding: 10px;
-                border-radius: 5px;
-                align-items: center;
-            }
+    .top-link li {
+        display: inline-block;
+        padding: 10px;
+        border-radius: 5px;
+        align-items: center;
+    }
 
-        .text-top {
-            vertical-align: text-top
-        }
+    .text-top {
+        vertical-align: text-top
+    }
 
-        .height1 {
-            height: 500px;
-        }
+    .height1 {
+        height: 500px;
+    }
 
-        .height4 {
-            height: 100px;
-        }
+    .height4 {
+        height: 100px;
+    }
 
-        .btn1 {
-            background-color: aquamarine;
-        }
+    .btn1 {
+        background-color: aquamarine;
+    }
 
-        .height5 {
-            height: 80px
-        }
+    .height5 {
+        height: 80px
+    }
 
-        .height3 {
-            background: rgb(60, 194, 220);
-            background: linear-gradient(146deg, rgba(60, 194, 220, 1) 0%, rgba(75, 157, 236, 1) 100%);
-        }
+    .height3 {
+        background: rgb(60, 194, 220);
+        background: linear-gradient(146deg, rgba(60, 194, 220, 1) 0%, rgba(75, 157, 236, 1) 100%);
+    }
 
-        .top {
-            float: right;
-        }
+    .top {
+        float: right;
+    }
+    .preorder {
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+        background-color: #FF7DC2;
+        border: 1px #FF7DC2 solid;
+        border-radius: 35px;
+    }
+    /* Thêm CSS để chỉnh khoảng cách */
+</style>
 
-        /* Thêm CSS để chỉnh khoảng cách */
-    </style>
 
-               
-    <div class="container" style="margin-top:70px">
-        <div class="row">
-            <div class="col-md-2 ">
-                <div class="sticky-top">
-                    <p style="font-weight: bold; padding-left: 6%;">Filter by</p>
-                    <hr style="margin-top: 0;">
-                    <p class="d-inline-flex gap-1">
-                        <a class="btn" data-bs-toggle="collapse" href="#collapseExample">
-                            Recommended
-                        </a>
-                        <hr style="margin-top: 0; margin-bottom: 0;">
-                    </p>
 
-                    <div class="collapse" id="collapseExample" style="padding-left: 10%;">
-                        <label class="" style="margin-bottom: 3%;">
-                            <input type="checkbox" name="" value=""><span class=""></span> Ending Soon
+<div class="container" style="margin-top:70px; min-height: 600px;">
+    <div class="row">
+        <div class="col-md-2">
+            <div class="sticky-top">
+                <p style="font-weight: bold; padding-left: 6%;">Filter by</p>
+                <hr style="margin-top: 0;">
+                <p class="d-inline-flex gap-1">
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseExample">
+                        Category
+                    </a>
+                    <hr style="margin-top: 0; margin-bottom: 0;">
+                </p>
+                <div class="" id="collapseExample" style="padding-left: 10%;">
+
+                    <form id="searchForm" method="get" action="@Url.Action("Index", "Search")"> 
+                        <!-- Checkbox options -->
+                        <label class="" style="margin-bottom: 3%; display: block;">
+                            <input type="checkbox" name="selectedCategories" value="Keychain"><span class=""></span>
+                            Keychain
                         </label>
-                        <label class="" style="margin-bottom: 3%;">
-                            <input type="checkbox" name="" value=""><span class=""></span> Ending Soon
+                        <label class="" style="margin-bottom: 3%; display: block;">
+                            <input type="checkbox" name="selectedCategories" value="Button Badge"><span class=""></span>
+                            Button Badge
                         </label>
-                        <label class="" style="margin-bottom: 3%;">
-                            <input type="checkbox" name="" value=""><span class=""></span> Ending Soon
+                        <label class="" style="margin-bottom: 3%; display: block;">
+                            <input type="checkbox" name="selectedCategories" value="Hololive friends with u"><span
+                                class=""></span> Hololive friends with u
                         </label>
-                        <label class="" style="margin-bottom: 3%;">
-                            <input type="checkbox" name="" value=""><span class=""></span> Ending Soon
+                        <label class="" style="margin-bottom: 3%; display: block;">
+                            <input type="checkbox" name="selectedCategories" value="Voice"><span class=""></span> Voice
                         </label>
-                        <label class="" style="margin-bottom: 10%;">
-                            <input type="checkbox" name="" value=""><span class=""></span> Ending Soon
+                        <label class="" style="margin-bottom: 3%; display: block;">
+                            <input type="checkbox" name="selectedCategories" value="Stand"><span class=""></span> Stand
                         </label>
-
-                    </div>
-
-                    <p class="d-inline-flex gap-1">
-                        <a class="btn" data-bs-toggle="collapse" href="#collapseExample1">
-                            Group
-                        </a>
-                        <hr style="margin-top: 0; margin-bottom: 0;">
-                    </p>
-
-                    <div class="collapse" id="collapseExample1" style="padding-left: 10%;">
-                        <label class="" style="margin-bottom: 3%;">
-                            <input type="checkbox" name="" value=""><span class=""></span> Ending Soon
+                        <label class="" style="margin-bottom: 10%; display: block;">
+                            <input type="checkbox" name="selectedCategories" value="Sticker"><span class=""></span>
+                            Sticker
                         </label>
-                        <label class="" style="margin-bottom: 3%;">
-                            <input type="checkbox" name="" value=""><span class=""></span> Ending Soon
-                        </label>
-                        <label class="" style="margin-bottom: 3%;">
-                            <input type="checkbox" name="" value=""><span class=""></span> Ending Soon
-                        </label>
-                        <label class="" style="margin-bottom: 3%;">
-                            <input type="checkbox" name="" value=""><span class=""></span> Ending Soon
-                        </label>
-                        <label class="" style="margin-bottom: 10%;">
-                            <input type="checkbox" name="" value=""><span class=""></span> Ending Soon
-                        </label>
-                    </div>
-                    <p class="d-inline-flex gap-1">
-                        <a class="btn" data-bs-toggle="collapse" href="#collapseExample2">
-                            Talents
-                        </a>
-                        <hr style="margin-top: 0; margin-bottom: 0;">
-                    </p>
-
-                    <div class="collapse" id="collapseExample2" style="padding-left: 10%;">
-                        <label class="" style="margin-bottom: 3%;">
-                            <input type="checkbox" name="" value=""><span class=""></span> Ending Soon
-                        </label>
-                        <label class="" style="margin-bottom: 3%;">
-                            <input type="checkbox" name="" value=""><span class=""></span> Ending Soon
-                        </label>
-                        <label class="" style="margin-bottom: 3%;">
-                            <input type="checkbox" name="" value=""><span class=""></span> Ending Soon
-                        </label>
-                        <label class="" style="margin-bottom: 3%;">
-                            <input type="checkbox" name="" value=""><span class=""></span> Ending Soon
-                        </label>
-                        <label class="" style="margin-bottom: 10%;">
-                            <input type="checkbox" name="" value=""><span class=""></span> Ending Soon
-                        </label>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-10">
-                <div class="row">
-                    @foreach (var item in Model)
-                    {
-
-                    if (item.Catetory == "Voice") // Kiểm tra danh mục là "Voice"
-                    {
-                        if (count < 8) // Chỉ hiển thị tối đa 8 sản phẩm
-                        {
-                            <div class="col-3">
-                                <a href="../products/Details/@item.Id" class="sanpham1">
-                                    <img src="../../img/@Html.DisplayFor(modelItem => item.img1)" class="img-thumbnail" alt="..."
-                                         style="height: auto; width: 100%;"> @Html.DisplayFor(modelItem => item.Name)
-                                </a>
-                                <div class="sanpham2">
-                                    ¥@Html.DisplayFor(modelItem => item.Price)~
-                                </div>
-                                <br>
-                                <br>
-                                <br>
-                            </div>
-                            count++; // Tăng biến đếm lên sau khi hiển thị một sản phẩm
-                        }
-                        else
-                        {
-                            break; // Đã hiển thị đủ 8 sản phẩm, thoát khỏi vòng lặp
-                        }
+                    </form>
+                        <!-- Button to trigger form submission -->
+                        <button type="button" class="preorder" " onclick="submitForm()">Search</button>
+                   
+                    
+                    <!-- JavaScript function to submit the form -->
+                    <script>
+                        var form = document.getElementById("searchForm");
+                        form.addEventListener("keypress", function (event) {
+                            if (event.keyCode === 13) {
+                                event.preventDefault(); // Prevent form submission
+                                form.submit(); // Submit the form
+                            }
+                        });
+                          function submitForm() {
+                        var form = document.getElementById("searchForm");
+                        form.submit();
                     }
-                    }
-
+                    </script>
                 </div>
 
             </div>
         </div>
+
+
+        <div class="col-md-10">
+            <div class="row">
+                @if (Model != null && Model.Count() > 0)
+                {
+                    foreach (var item in Model)
+                    {
+                        <div class="col-3">
+                            <a href="../products/Details/@item.Id" class="sanpham1">
+                                <img src="../../img/@Html.DisplayFor(modelItem => item.img1)" class="img-thumbnail" alt="..."
+                                    style="height: auto; width: 100%;"> @Html.DisplayFor(modelItem => item.Name)
+                            </a>
+                            <div class="sanpham2">
+                                ¥@Html.DisplayFor(modelItem => item.Price)~
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <h3 class="py-5" style="text-align: center; font-weight:bold; ">Không tìm thấy kết quả.</h3>
+                }
+            </div>
+        </div>
     </div>
-    
+</div>

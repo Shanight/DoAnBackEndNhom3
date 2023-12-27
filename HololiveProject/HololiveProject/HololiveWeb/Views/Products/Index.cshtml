@@ -9,10 +9,14 @@
 
 @if (User.IsInRole("admin"))
 {
-    <h1>Index</h1>
-    <p>
-        <a asp-action="Create">Create New</a>
-    </p>
+    <div style="display: flex; align-items: center; justify-content: space-between;">
+        <h1>Products</h1>
+        <p>
+            <a asp-action="Create" class="btn btn-primary">Create New</a>
+        </p>
+    </div>
+    <hr/>
+    
     <table class="table">
         <thead>
             <tr>
