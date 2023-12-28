@@ -256,9 +256,9 @@ ViewData["Title"] = "Details";
                     </div>
                 </div>
                 <div class="row py-4">
-
-                    <button class="preorder" style="width: 60%; height: 65px; margin: auto;">ADD TO CARD</button>
-
+                    <a asp-action="AddToCart" asp-controller="Cart" asp-route-id="@Model.Id">
+                    <button class="preorder" style="width: 60%; height: 65px; margin: auto;">ADD TO CARD id = @Html.DisplayFor(model => model.Id)</button>
+                    </a>
                 </div>
             </div>
         </div>

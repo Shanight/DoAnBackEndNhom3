@@ -12,6 +12,8 @@ var connectionString = builder.Configuration.GetConnectionString("ApplicationDbC
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddSession();
+builder.Services.AddAuthentication();
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<ApplicationDbContext1>(options =>
     options.UseSqlServer("Server=.\\SQLEXPRESS;Database=HololiveShop3;User Id=sa;Password=123;Integrated Security=False;MultipleActiveResultSets=True;TrustServerCertificate=True"));
@@ -35,10 +37,10 @@ if (!app.Environment.IsDevelopment())
 app.UseStaticFiles();
 
 app.UseRouting();
-
+app.UseAuthentication();
 app.UseAuthorization();
 app.MapRazorPages();
-
+app.UseSession();
 
 
 app.UseEndpoints(endpoints =>

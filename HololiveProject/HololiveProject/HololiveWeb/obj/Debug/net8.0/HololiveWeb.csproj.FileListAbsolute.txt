@@ -1208,3 +1208,5 @@ D:\Đồ án BackEnd\test\HololiveProject\HololiveWeb\obj\Debug\net8.0\refint\Ho
 D:\Đồ án BackEnd\test\HololiveProject\HololiveWeb\obj\Debug\net8.0\HololiveWeb.pdb
 D:\Đồ án BackEnd\test\HololiveProject\HololiveWeb\obj\Debug\net8.0\HololiveWeb.genruntimeconfig.cache
 D:\Đồ án BackEnd\test\HololiveProject\HololiveWeb\obj\Debug\net8.0\ref\HololiveWeb.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveProject\HololiveProject\HololiveWeb\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\Đồ án BackEnd\DoAnBackEndNhom3\HololiveProject\HololiveProject\HololiveWeb\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll

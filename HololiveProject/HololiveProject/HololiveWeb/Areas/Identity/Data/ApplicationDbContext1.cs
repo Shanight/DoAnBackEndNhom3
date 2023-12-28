@@ -17,6 +17,8 @@ public class ApplicationDbContext1 : IdentityDbContext<IdentityUser>
     public DbSet<Category> Categories { get; set; }
     public DbSet<Event> Events { get; set; }
     public DbSet<Cart> Carts { get; set; }
+    public DbSet<CartItem> cartItems{get;set;}
+    public DbSet<CartModel> cartModels{get;set;}
     public DbSet<ApplicationUser> ApplicationUser { get; set; }
     protected override void OnModelCreating(ModelBuilder builder)
     {
