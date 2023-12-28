@@ -23,94 +23,94 @@
     @using Microsoft.AspNetCore.Identity.EntityFrameworkCore
     @using Microsoft.Extensions.DependencyInjection
     @inject SignInManager<IdentityUser> SignInManager
-    @inject UserManager<IdentityUser> UserManager
-    <style>
-        .khoangtrang {
-            height: 50px;
-        }
+        @inject UserManager<IdentityUser> UserManager
+            <style>
+                .khoangtrang {
+                    height: 50px;
+                }
 
-        .khoangcach2 {
-            border-bottom: 2px dashed rgb(197, 197, 12);
-            padding-top: 15px;
-        }
+                .khoangcach2 {
+                    border-bottom: 2px dashed rgb(197, 197, 12);
+                    padding-top: 15px;
+                }
 
-        .khoangcach3 {
-            border-bottom: 1px solid rgba(0, 0, 0, 0.468);
-            padding-top: 15px;
-        }
+                .khoangcach3 {
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.468);
+                    padding-top: 15px;
+                }
 
-        .sanpham1 {
-            font-size: 17px;
-            font-family: "M PLUS Rounded 1c", sans-serif !important;
-            text-decoration: none;
-            color: inherit;
-        }
+                .sanpham1 {
+                    font-size: 17px;
+                    font-family: "M PLUS Rounded 1c", sans-serif !important;
+                    text-decoration: none;
+                    color: inherit;
+                }
 
-        .sanpham2 {
-            font-size: 20px;
-            font-weight: bolder;
-            color: #ff7dc2;
-            font-family: "M PLUS Rounded 1c", sans-serif !important;
-        }
+                .sanpham2 {
+                    font-size: 20px;
+                    font-weight: bolder;
+                    color: #ff7dc2;
+                    font-family: "M PLUS Rounded 1c", sans-serif !important;
+                }
 
-        .sanpham3 {
-            font-family: "M PLUS Rounded 1c", sans-serif !important;
-            padding-top: 15px;
-        }
+                .sanpham3 {
+                    font-family: "M PLUS Rounded 1c", sans-serif !important;
+                    padding-top: 15px;
+                }
 
-        .sanpham6 {
-            font-size: 23px;
-            font-family: "M PLUS Rounded 1c", sans-serif !important;
-            text-decoration: none;
-            color: #24c1ff;
-            font-weight: bolder;
+                .sanpham6 {
+                    font-size: 23px;
+                    font-family: "M PLUS Rounded 1c", sans-serif !important;
+                    text-decoration: none;
+                    color: #24c1ff;
+                    font-weight: bolder;
 
-        }
+                }
 
-        .Link {
-            padding-top: 25px;
-            color: #000000;
-            position: relative;
-            display: inline-block;
-        }
+                .Link {
+                    padding-top: 25px;
+                    color: #000000;
+                    position: relative;
+                    display: inline-block;
+                }
 
-        .athongtin1 {
-            color: #1ba3d4;
-            text-decoration: none;
-            font-size: larger;
-        }
+                .athongtin1 {
+                    color: #1ba3d4;
+                    text-decoration: none;
+                    font-size: larger;
+                }
 
-        .dropdown-menu {
-            background: rgba(240, 248, 255, 0.82);
-            border: 2px solid rgb(255, 255, 255);
-            font-size: 10pt;
-            float: left;
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-        }
+                .dropdown-menu {
+                    background: rgba(240, 248, 255, 0.82);
+                    border: 2px solid rgb(255, 255, 255);
+                    font-size: 10pt;
+                    float: left;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                }
 
-        /*Cart*/
-        .carta {
-            font-size: medium;
-            text-decoration: none;
+                /*Cart*/
+                .carta {
+                    font-size: medium;
+                    text-decoration: none;
 
-        }
+                }
 
-        .chudaucart {
-            padding-top: 5px;
-            font-size: smaller;
-        }
+                .chudaucart {
+                    padding-top: 5px;
+                    font-size: smaller;
+                }
 
-        .giatiencart {
-            font-size: medium;
-        }
+                .giatiencart {
+                    font-size: medium;
+                }
 
-        .giohang {
-            padding-top: 35px;
-        }
+                .giohang {
+                    padding-top: 35px;
+                }
 
-        /*End cart*/
-    </style>
+                /*End cart*/
+            </style>
 </head>
 
 <body onload="myFunction()" style="margin:0;">
@@ -221,24 +221,25 @@
                         color: #1da0d0;">
                     @if (SignInManager.IsSignedIn(User))
                     {
-                        
-                        @if (User.IsInRole("admin"))
-                        {
-                            <a id="manage" class="nav-link" asp-area="Identity" asp-page="/Account/Manage/Index"
-                            title="Manage"><i class="fa-regular fa-user fa-xl me-3"></i></a>
-                                <a id="admin"asp-controller="Products" asp-action="Index" class="nav-link"><i class="fa-solid fa-toolbox fa-xl me-3"></i></a>
-                        }else{
-<a id="manage" class="nav-link" asp-area="Identity" asp-page="/Account/Manage/Index"
-                            title="Manage"><i class="fa-regular fa-user fa-xl me-5"></i></a>
-                        }
+
+                    @if (User.IsInRole("admin"))
+                    {
+                    <a id="manage" class="nav-link" asp-area="Identity" asp-page="/Account/Manage/Index"
+                        title="Manage"><i class="fa-regular fa-user fa-xl me-3"></i></a>
+                    <a id="admin" asp-controller="Products" asp-action="Index" class="nav-link"><i
+                            class="fa-solid fa-toolbox fa-xl me-3"></i></a>
+                    }else{
+                    <a id="manage" class="nav-link" asp-area="Identity" asp-page="/Account/Manage/Index"
+                        title="Manage"><i class="fa-regular fa-user fa-xl me-5"></i></a>
+                    }
                     }
                     else
                     {
-                        <a class="nav-link" id="login" asp-area="Identity" asp-page="/Account/Login"><i
-                                class="fa-regular fa-user fa-xl me-5"></i></a>
+                    <a class="nav-link" id="login" asp-area="Identity" asp-page="/Account/Login"><i
+                            class="fa-regular fa-user fa-xl me-5"></i></a>
                     }
-                    <a asp-controller="Cart" asp-action="Index"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
-                    
+                    <a asp-controller="Cart" asp-action="Index" class="nav-link"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+
                 </div>
             </div>
             <div class="col"></div>
@@ -249,7 +250,7 @@
     @RenderBody()
 
     @{
-        ViewData["Title"] = "Your Page Title";
+    ViewData["Title"] = "Your Page Title";
     }
 
     <!-- Footer -->
