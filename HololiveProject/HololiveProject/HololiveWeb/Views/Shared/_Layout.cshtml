@@ -116,6 +116,7 @@
 <body onload="myFunction()" style="margin:0;">
 
     <!--giỏ hàng-->
+    <!--
     <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="" id="offcanvasWithBothOptions"
         aria-labelledby="offcanvasWithBothOptionsLabel">
         <div class="offcanvas-header">
@@ -178,7 +179,7 @@
                 • ¥17,160</button>
         </div>
 
-    </div>
+    </div>-->
     <!--End giỏ hàng-->
     <!-- Header-->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top position-fixed" style="left: 0; right: 0;">
@@ -236,8 +237,8 @@
                         <a class="nav-link" id="login" asp-area="Identity" asp-page="/Account/Login"><i
                                 class="fa-regular fa-user fa-xl me-5"></i></a>
                     }
-                    <i class="fa-solid fa-cart-shopping fa-xl" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"></i>
+                    <a asp-controller="Cart" asp-action="Index"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+                    
                 </div>
             </div>
             <div class="col"></div>
