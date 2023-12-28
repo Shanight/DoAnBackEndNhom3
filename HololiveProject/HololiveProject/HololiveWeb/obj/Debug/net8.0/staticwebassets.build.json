@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TSbWOh+z0v616H5KUT8F8QDoLygBqfEfQwQyR+HI14I=",
+  "Hash": "vSL5pg5iwkoVxlmZM26IAm3Fo7+u//2bp2V83M6TPNo=",
   "Source": "HololiveWeb",
   "BasePath": "_content/HololiveWeb",
   "Mode": "Default",
@@ -1321,6 +1321,25 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\wwwroot\\img\\__harukaze_doremi_and_waku_nozomi_ojamajo_doremi_drawn_by_sofra__sample-cf0123dca2e5aa81a70ef75c1b6f7749234635481.jpg",
+      "SourceId": "HololiveWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\wwwroot\\",
+      "BasePath": "_content/HololiveWeb",
+      "RelativePath": "img/__harukaze_doremi_and_waku_nozomi_ojamajo_doremi_drawn_by_sofra__sample-cf0123dca2e5aa81a70ef75c1b6f7749234635481.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\__harukaze_doremi_and_waku_nozomi_ojamajo_doremi_drawn_by_sofra__sample-cf0123dca2e5aa81a70ef75c1b6f7749234635481.jpg"
+    },
+    {
       "Identity": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\wwwroot\\img\\__harukaze_doremi_and_waku_nozomi_ojamajo_doremi_drawn_by_sofra__sample-cf0123dca2e5aa81a70ef75c1b6f7749234922003.jpg",
       "SourceId": "HololiveWeb",
       "SourceType": "Discovered",
@@ -1587,6 +1606,25 @@
       "OriginalItemSpec": "wwwroot\\img\\1651824090044234634322.jpg"
     },
     {
+      "Identity": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\wwwroot\\img\\1651824090044234635483.jpg",
+      "SourceId": "HololiveWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\wwwroot\\",
+      "BasePath": "_content/HololiveWeb",
+      "RelativePath": "img/1651824090044234635483.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\1651824090044234635483.jpg"
+    },
+    {
       "Identity": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\wwwroot\\img\\1651824090063234634332.jpg",
       "SourceId": "HololiveWeb",
       "SourceType": "Discovered",
@@ -1661,6 +1699,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\1651824090086234219420.jpg"
+    },
+    {
+      "Identity": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\wwwroot\\img\\1651824090086234635474.jpg",
+      "SourceId": "HololiveWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\wwwroot\\",
+      "BasePath": "_content/HololiveWeb",
+      "RelativePath": "img/1651824090086234635474.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\1651824090086234635474.jpg"
     },
     {
       "Identity": "D:\\Đồ án BackEnd\\DoAnBackEndNhom3\\HololiveProject\\HololiveProject\\HololiveWeb\\wwwroot\\img\\1651824090112233936332.jpg",
